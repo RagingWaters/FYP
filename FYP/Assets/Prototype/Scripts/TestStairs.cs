@@ -20,7 +20,15 @@ public class TestStairs : MonoBehaviour
        
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerStay(Collider other)
+    {
+        if(Input.GetKeyDown(KeyCode.E))
+        {
+            Teleport();
+        }
+    }
+
+    void Teleport()
     {
         player.transform.position = Target.transform.position;
     }
