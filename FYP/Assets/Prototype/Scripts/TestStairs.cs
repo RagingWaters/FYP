@@ -7,6 +7,7 @@ public class TestStairs : MonoBehaviour
 
     public GameObject player;
     public Transform Target;
+    public Transform Target2;
 
     // Start is called before the first frame update
     void Start()
@@ -26,10 +27,20 @@ public class TestStairs : MonoBehaviour
         {
             Teleport();
         }
+
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            Teleport2();
+        }
     }
 
     void Teleport()
     {
         player.transform.position = Target.transform.position;
+    }
+
+    void Teleport2()
+    {
+        player.transform.position = Target2.transform.position;
     }
 }
