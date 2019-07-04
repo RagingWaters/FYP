@@ -14,7 +14,7 @@ public class Collectible : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space) && other.tag == "Player")
         {
-            Debug.Log("Hit");
+            Debug.Log("Collected");
             theScore += 1;
             scoreText.GetComponent<Text>().text = "Pieces : " + theScore;
             Destroy(gameObject);
