@@ -6,17 +6,19 @@ public class PlayerController : MonoBehaviour
 {
 
     public float Speed;
+    public Collectible coll;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        //coll = GetComponent<Collectible>();
     }
 
     // Update is called once per frame
     void Update()
     {
         PlayerMovement();
+     
     }
 
     void PlayerMovement()
