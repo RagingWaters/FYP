@@ -26,7 +26,7 @@ public class PlayerControls : MonoBehaviour
         col = GetComponent<SphereCollider>();
 
 
-        moveSpeed = 3;
+        moveSpeed = 5;
         
     }
 
