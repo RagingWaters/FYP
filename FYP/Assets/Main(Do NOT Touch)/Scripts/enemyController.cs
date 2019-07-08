@@ -16,7 +16,7 @@ public class enemyController : MonoBehaviour
     {
         //GameObject.FindGameObjectWithTag("Player"); -too manual and troublesome
 
-        target = PlayerController.instance.transform;
+        target = PlayerControls.instance.transform;
         agent = GetComponent<NavMeshAgent>();
     }
 
@@ -28,21 +28,23 @@ public class enemyController : MonoBehaviour
         if (distance <= lookRadius)
         {
             agent.SetDestination(target.position);
-
             if (distance <= agent.stoppingDistance)
             {
                 //Add attack target
                 FaceTarget();
+                //print("ter");
             }
         }
+        if (enemySpawner.startSpawn == false) Destroy(gameObject);
     }
 
-    void FaceTarget()
+    void FaceTarget ()
     {
         Vector3 direction = (target.position - transform.position).normalized;
         Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
         // lookRotation; (slerp smoother)
+        Debug.DrawRay(transform.position, direction, Color.green);
 
     }
 

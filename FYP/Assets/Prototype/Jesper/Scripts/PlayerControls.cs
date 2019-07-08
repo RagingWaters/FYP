@@ -18,6 +18,13 @@ public class PlayerControls : MonoBehaviour
     public float jumpForce = 5;
     public SphereCollider col;
 
+    public static PlayerControls instance;
+
+    void Awake()
+    {
+        instance = this;
+    }
+
     // Start is called before the first frame update
     void Start()
     {

@@ -6,19 +6,16 @@ public class PlayerController : MonoBehaviour
 {
     public static PlayerController instance;
     public float Speed;
-    public Collectible coll;
 
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        //coll = GetComponent<Collectible>();
+        instance = this;
     }
 
     // Update is called once per frame
     void Update()
     {
         PlayerMovement();
-     
     }
 
     void PlayerMovement()

@@ -29,6 +29,10 @@ public class enemySpawner : MonoBehaviour
 
     private SpawnState state = SpawnState.COUNTING;
 
+    public static bool startSpawn;
+
+    public static int currentLevel,maxLevel;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -72,7 +76,7 @@ public class enemySpawner : MonoBehaviour
 
         else
         {
-            waveCountdown -= Time.deltaTime;
+           if(startSpawn) waveCountdown -= Time.deltaTime;
         }
     }
 
@@ -132,8 +136,7 @@ public class enemySpawner : MonoBehaviour
     {
         Debug.Log("Spawning Enemy:" + _enemy.name);
 
-        Transform _spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
+        Transform _spawnPoint = spawnPoints[Random.Range(currentLevel, maxLevel + 1)];
         Instantiate(_enemy, _spawnPoint.position, _spawnPoint.rotation);
-
     }
 }
