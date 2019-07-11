@@ -28,7 +28,7 @@ public class LevelManager : MonoBehaviour
     void Win()
     {
         winscreen.SetActive(true);
-        Current = 0;
-        Collectible.theScore = Current;
+        /*Current = 0;
+        Collectible.theScore = Current;*/
     }
 }

@@ -9,8 +9,13 @@ public class Collectible : MonoBehaviour
     private Animation anim;
     public static int theScore;
     bool collected;
-   
+
     //DestroyObject d;
+
+    void Start()
+    {
+        theScore = 0;
+    }
 
     public void OnTriggerStay(Collider other)
     {

@@ -8,6 +8,7 @@ public class MainMenu : MonoBehaviour
 {
 
     public GameObject winscreen;
+    private static int Current2;
 
     // Start is called before the first frame update
     void Start()
@@ -48,7 +49,10 @@ public class MainMenu : MonoBehaviour
 
     public void MainMenuGame()
     {
-        winscreen.SetActive(false);
+        Time.timeScale = 1f;
+        /*Current2 = 0;
+        Collectible.theScore = Current2;*/
+        winscreen.SetActive(false); 
         SceneManager.LoadScene("MainMenu");
     }
 
