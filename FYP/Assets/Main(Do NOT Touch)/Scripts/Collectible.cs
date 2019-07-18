@@ -17,6 +17,11 @@ public class Collectible : MonoBehaviour
         theScore = 0;
     }
 
+    void Update()
+    {
+
+    }
+
     public void OnTriggerStay(Collider other)
     {
         if (Input.GetKey(KeyCode.Space) && other.tag == "Player" && !collected)

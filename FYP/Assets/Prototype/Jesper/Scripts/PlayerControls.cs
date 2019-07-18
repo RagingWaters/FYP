@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerControls : MonoBehaviour
 {
@@ -18,7 +19,21 @@ public class PlayerControls : MonoBehaviour
     public float jumpForce = 5;
     public SphereCollider col;
 
+    public Vector3 respawnPosition;
+
+    public Vector3 position;
+
+    public LevelManager theLevelmanager;
+
     public static PlayerControls instance;
+
+    public int articleValue;
+
+    public GameObject[] players;
+
+
+
+
 
     void Awake()
     {
@@ -34,7 +49,15 @@ public class PlayerControls : MonoBehaviour
 
 
         moveSpeed = 5;
-        
+
+        respawnPosition = transform.position;
+
+
+
+        theLevelmanager = FindObjectOfType<LevelManager>();
+
+        players = GameObject.FindGameObjectsWithTag("Player");
+
     }
 
     // Update is called once per frame
@@ -46,8 +69,8 @@ public class PlayerControls : MonoBehaviour
         FrameStoring();
 
         if (isMoving)
-            Movement(); 
-            else rb.velocity = Vector3.up * rb.velocity.y;
+            Movement();
+        else rb.velocity = Vector3.up * rb.velocity.y;
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -85,19 +108,32 @@ public class PlayerControls : MonoBehaviour
         rb.velocity = new Vector3(moveDirection.x, rb.velocity.y, moveDirection.z);
 
 
-        if (frameStorage <= 2 && frameStorage >= 0) { 
-           rb.velocity = Vector3.up * rb.velocity.y;
+        if (frameStorage <= 2 && frameStorage >= 0)
+        {
+            rb.velocity = Vector3.up * rb.velocity.y;
         }
 
         // rotates the player
         if (frameStorage > 0)
         {
-            
+
             float hlInput = horizontalInput == 0 ? storedInputH : horizontalInput;
             float vInput = verticalInput == 0 ? storedInputV : verticalInput;
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(forward * vInput + right * hlInput).normalized, .2f);
         }
-        else if(frameStorage <= 0) transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(moveDirection), .2f);
+        else if (frameStorage <= 0) transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(moveDirection), .2f);
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Enemy")
+        {
+            Debug.Log("Collision Detected");
+            theLevelmanager.MinusArticle(articleValue);
+            theLevelmanager.Respawn();
+
+        }
+
     }
 
 }

@@ -9,29 +9,9 @@ public class TestStairs : MonoBehaviour
     public Transform Target;
     public Transform Target2;
 
-    // Start is called before the first frame update
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-       
-    }
-
-    void OnTriggerStay(Collider other)
-    {
-        if(Input.GetKeyDown(KeyCode.E))
-        {
-            Teleport();
-        }
-
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            Teleport2();
-        }
+        player = FindObjectOfType<PlayerControls>().gameObject;
     }
 
     void Teleport()
@@ -42,5 +22,21 @@ public class TestStairs : MonoBehaviour
     void Teleport2()
     {
         player.transform.position = Target2.transform.position;
+    }
+
+    void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                Teleport();
+            }
+
+            else if (Input.GetKeyDown(KeyCode.F))
+            {
+                Teleport2();
+            }
+        }
     }
 }
