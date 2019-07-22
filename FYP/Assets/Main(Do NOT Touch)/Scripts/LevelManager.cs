@@ -34,7 +34,15 @@ public class LevelManager : MonoBehaviour
     void Update()
     {
         //currentScore = Collectible.theScore;
-       // currentScore = collectg.theScore;
+        // currentScore = collectg.theScore;
+
+        /*
+        if (currentScore <= 0)
+            currentScore = 0;
+        else
+            currentScore = 0;
+        */
+
        if (currentScore >= 4)
         {
             Win();

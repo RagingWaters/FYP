@@ -8,12 +8,16 @@ public class PlayerControls : MonoBehaviour
     public Camera mainCam;
     Rigidbody rb;
 
-    public float moveSpeed;
+    public float currentSpeed;
+    public float moveSpeedNorm;
+    public float moveRunSpeed;
+    
+
     public float turnSpeed = 10;
     public float horizontalInput, verticalInput;
     public float frameStorage;
     private float storedInputH, storedInputV;
-    bool isMoving;
+    public bool isMoving;
 
     public LayerMask groundLayer;
     public float jumpForce = 5;
@@ -48,7 +52,7 @@ public class PlayerControls : MonoBehaviour
         col = GetComponent<SphereCollider>();
 
 
-        moveSpeed = 5;
+        currentSpeed = 5;
 
         respawnPosition = transform.position;
 
@@ -63,7 +67,7 @@ public class PlayerControls : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //transform.Translate(moveSpeed * Input.GetAxis("Horizontal") * Time.deltaTime, 0f, moveSpeed * Input.GetAxis("Vertical") * Time.deltaTime);
+        //transform.Translate(currentSpeed * Input.GetAxis("Horizontal") * Time.deltaTime, 0f, currentSpeed * Input.GetAxis("Vertical") * Time.deltaTime);
         Inputs();
 
         FrameStoring();
@@ -104,7 +108,7 @@ public class PlayerControls : MonoBehaviour
         Vector3 right = mainCam.transform.right;
         forward.y = 0;
         right.y = 0;
-        Vector3 moveDirection = (forward * verticalInput + right * horizontalInput).normalized * moveSpeed;
+        Vector3 moveDirection = (forward * verticalInput + right * horizontalInput).normalized * currentSpeed;
         rb.velocity = new Vector3(moveDirection.x, rb.velocity.y, moveDirection.z);
 
 
