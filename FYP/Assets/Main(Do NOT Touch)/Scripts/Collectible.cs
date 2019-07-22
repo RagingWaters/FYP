@@ -9,6 +9,7 @@ public class Collectible : MonoBehaviour
     private Animation anim;
     public static int theScore;
     bool collected;
+    public LightAdjuster lightAdjuster;
 
     //DestroyObject d;
 
@@ -31,6 +32,8 @@ public class Collectible : MonoBehaviour
             Debug.Log("Hi2");        
             Debug.Log(theScore);
             GetComponent<MeshRenderer>().enabled = false;
+            lightAdjuster.Range();
+            lightAdjuster.Intensity();
         }
     }
 
