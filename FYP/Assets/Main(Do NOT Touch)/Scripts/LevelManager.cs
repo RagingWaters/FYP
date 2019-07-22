@@ -47,6 +47,7 @@ public class LevelManager : MonoBehaviour
 
        if (currentScore >= 4)
         {
+            newspaperText.SetActive(true);
             Win();
         }
     }
@@ -60,7 +61,7 @@ public class LevelManager : MonoBehaviour
 
     public void Respawn()
     {
-        if (currentScore > 0)
+        if (currentScore > -1)
         {
             StartCoroutine("RespawnCo");
         }

@@ -38,6 +38,7 @@ public class PlayerSprint : MonoBehaviour
         }
         else
         {
+            
             staminaSlider.value += Time.deltaTime / staminaRegenRate * staminaRegenMult;
             
         }

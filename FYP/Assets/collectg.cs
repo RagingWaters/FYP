@@ -12,6 +12,8 @@ public class collectg : MonoBehaviour
     public GameObject newspaperText;
     private Animation anim;
 
+    public LightAdjuster lightAdjuster;
+
     //public static int theScore;
 
 
@@ -37,6 +39,9 @@ public class collectg : MonoBehaviour
                 theLevelManager.AddArticle(articleValue);
                 print("added");
                 Destroy(gameObject);
+                GetComponent<MeshRenderer>().enabled = false;
+                lightAdjuster.Range();
+                lightAdjuster.Intensity();
             }
         }
     }

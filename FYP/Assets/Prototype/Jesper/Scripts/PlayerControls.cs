@@ -75,6 +75,7 @@ public class PlayerControls : MonoBehaviour
         if (isMoving)
             Movement();
         else rb.velocity = Vector3.up * rb.velocity.y;
+        currentSpeed = 5;
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
