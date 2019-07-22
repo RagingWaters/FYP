@@ -22,6 +22,8 @@ public class LevelManager : MonoBehaviour
 
    [SerializeField] private int currentScore;
 
+    public GameObject gameOverScreen;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -48,7 +50,21 @@ public class LevelManager : MonoBehaviour
         Collectible.theScore = Current;*/
     }
 
-    public void Respawn() => StartCoroutine("RespawnCo");
+    public void Respawn()
+    {
+        if (currentScore > 0)
+        {
+            StartCoroutine("RespawnCo");
+        }
+        else
+        {
+            Player.gameObject.SetActive(false);
+            gameOverScreen.SetActive(true);
+        }
+    }
+            
+
+    
 
     public IEnumerator RespawnCo()
     {
