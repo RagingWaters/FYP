@@ -8819,7 +8819,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d326d658faa9b24d9a04447e902acf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  theLevelManager: {fileID: 0}
+  theLevelManager: {fileID: 1404134822}
   articleValue: 1
   newspaperText: {fileID: 358896300}
 --- !u!1 &1547872001
