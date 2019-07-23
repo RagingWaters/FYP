@@ -24,6 +24,8 @@ public class LevelManager : MonoBehaviour
 
     public GameObject gameOverScreen;
 
+    public Slider staminaSlider;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -59,6 +61,14 @@ public class LevelManager : MonoBehaviour
         Collectible.theScore = Current;*/
     }
 
+    void gameOver()
+    {
+        newspaperText.SetActive(false);
+        gameOverScreen.SetActive(true);
+        staminaSlider.gameObject.SetActive(false);
+
+    }
+
     public void Respawn()
     {
         if (currentScore > -1)
@@ -67,13 +77,11 @@ public class LevelManager : MonoBehaviour
         }
         else
         {
+            newspaperText.SetActive(false);
             Player.gameObject.SetActive(false);
-            gameOverScreen.SetActive(true);
-        }
+           gameOver();
+       }
     }
-            
-
-    
 
     public IEnumerator RespawnCo()
     {
@@ -90,23 +98,26 @@ public class LevelManager : MonoBehaviour
     public void AddArticle(int ArticleToAdd)
     {
         currentScore += ArticleToAdd;
-        //newspaperText.GetComponent<Text>().text = "Pieces : " + currentScore + " / 4";
-       // UpdateArticleCount();
         StartCoroutine(TextAnimation());
     }
 
     public void MinusArticle(int ArticleToMinus)
     {
-        currentScore -= ArticleToMinus;
-       // newspaperText.GetComponent<Text>().text = "Pieces : " + currentScore + " / 4";
-        //UpdateArticleCount();
-        StartCoroutine(TextAnimation());
-    }
+        if (currentScore > -1)
+        {
+            currentScore -= ArticleToMinus;
+            StartCoroutine(TextAnimation());
+        }
 
-   // public void UpdateArticleCount()
-    //{
-     //   newspaperText.GetComponent<Text>().text = "Pieces : " + currentScore + " / 4";
-   // }
+        else
+        {
+
+            Player.gameObject.SetActive(false);
+            gameOver();
+            
+
+        }
+    }
 
         IEnumerator TextAnimation()
     {

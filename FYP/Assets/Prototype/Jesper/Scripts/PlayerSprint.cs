@@ -14,6 +14,7 @@ public class PlayerSprint : MonoBehaviour
     public int staminaRegenMult;
 
     PlayerControls playerControls;
+    private int currentSpeed;
 
     // Start is called before the first frame update
     void Start()
@@ -50,7 +51,9 @@ public class PlayerSprint : MonoBehaviour
 
         else if (staminaSlider.value <= 0)
         {
-            staminaSlider.value = 0;
+           // staminaSlider.value = 0;
+            //currentSpeed = 5;
+
             playerControls.currentSpeed = playerControls.moveSpeedNorm;
         }
 
