@@ -89,7 +89,7 @@ public class LevelManager : MonoBehaviour
 
         yield return new WaitForSeconds(waitToRespawn); //How many second we want the game to wait for
 
-        Player.transform.position = Player.position;
+        Player.transform.position = PlayerspawnPoints[Random.Range(0, 3)].position;
 
          
         Player.gameObject.SetActive(true); //Reactivate the player in the world.
@@ -119,23 +119,16 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-        IEnumerator TextAnimation()
+    IEnumerator TextAnimation()
     {
         newspaperText.SetActive(true);
         anim = newspaperText.GetComponent<Animation>();
-       // theScore--++;
+        // theScore--++;
         newspaperText.GetComponent<Text>().text = "Pieces : " + currentScore + " / 4";
         yield return new WaitUntil(() => !anim.isPlaying);
         Debug.Log("Article Count Update");
         newspaperText.SetActive(false);
     }
 
-    public void respawnPosition(Transform _player) //spawn player randomly
-    {
-        Debug.Log("Spawning Player");
-
-        Transform _spawnPoint = PlayerspawnPoints[Random.Range(currentLevel, maxLevel + 1)];
-        Instantiate(_player, _spawnPoint.position, _spawnPoint.rotation);
-    }
 }
 
