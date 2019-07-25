@@ -59,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e70ec68a8454df742b3f65e0b09aff78, type: 2}
+  - {fileID: 2100000, guid: da7c8399f45148343963860e558c8a7a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -105,3 +105,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newspaperText: {fileID: 0}
+  lightAdjuster: {fileID: 0}
