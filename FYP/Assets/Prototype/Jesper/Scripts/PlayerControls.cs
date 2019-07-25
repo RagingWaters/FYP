@@ -11,7 +11,7 @@ public class PlayerControls : MonoBehaviour
     public float currentSpeed;
     public float moveSpeedNorm;
     public float moveRunSpeed;
-    
+       
 
     public float turnSpeed = 10;
     public float horizontalInput, verticalInput;
