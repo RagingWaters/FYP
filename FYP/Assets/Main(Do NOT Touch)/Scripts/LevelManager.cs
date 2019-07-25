@@ -23,6 +23,7 @@ public class LevelManager : MonoBehaviour
    [SerializeField] private int currentScore;
 
     public GameObject gameOverScreen;
+    public GameObject option;
 
     public Slider staminaSlider;
 
@@ -63,6 +64,7 @@ public class LevelManager : MonoBehaviour
 
     void gameOver()
     {
+        option.SetActive(false);
         newspaperText.SetActive(false);
         gameOverScreen.SetActive(true);
         staminaSlider.gameObject.SetActive(false);
