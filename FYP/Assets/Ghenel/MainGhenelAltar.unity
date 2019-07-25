@@ -3997,7 +3997,7 @@ PrefabInstance:
     - target: {fileID: 209367050047000227, guid: e77c7318501cd62499bf15dc9457fa05,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 257013691126751036, guid: e77c7318501cd62499bf15dc9457fa05,
         type: 3}
@@ -4037,7 +4037,7 @@ PrefabInstance:
     - target: {fileID: 2366671665669791649, guid: e77c7318501cd62499bf15dc9457fa05,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2626580331530185451, guid: e77c7318501cd62499bf15dc9457fa05,
         type: 3}
@@ -4192,7 +4192,7 @@ PrefabInstance:
     - target: {fileID: 5642532551158892438, guid: e77c7318501cd62499bf15dc9457fa05,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6930394623211049986, guid: e77c7318501cd62499bf15dc9457fa05,
         type: 3}
@@ -4242,7 +4242,7 @@ PrefabInstance:
     - target: {fileID: 7242721689776599654, guid: e77c7318501cd62499bf15dc9457fa05,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7518859181066422175, guid: e77c7318501cd62499bf15dc9457fa05,
         type: 3}
@@ -4814,7 +4814,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentLevelSpawner1: {fileID: 659222835}
   CurrentLevelSpawner2: {fileID: 659222834}
-  light1: {fileID: 0}
 --- !u!1 &742108581
 GameObject:
   m_ObjectHideFlags: 0
@@ -5991,7 +5990,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentLevelSpawner1: {fileID: 659222838}
   CurrentLevelSpawner2: {fileID: 659222831}
-  light1: {fileID: 0}
 --- !u!65 &882784073
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7547,7 +7545,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentLevelSpawner1: {fileID: 659222833}
   CurrentLevelSpawner2: {fileID: 659222832}
-  light1: {fileID: 0}
 --- !u!1 &1135070158
 GameObject:
   m_ObjectHideFlags: 0
@@ -8087,7 +8084,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentLevelSpawner1: {fileID: 659222838}
   CurrentLevelSpawner2: {fileID: 659222831}
-  light1: {fileID: 0}
 --- !u!1 &1232925669
 GameObject:
   m_ObjectHideFlags: 0
@@ -8800,7 +8796,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentLevelSpawner1: {fileID: 659222835}
   CurrentLevelSpawner2: {fileID: 659222834}
-  light1: {fileID: 0}
 --- !u!65 &1338688205
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9108,7 +9103,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentLevelSpawner1: {fileID: 659222833}
   CurrentLevelSpawner2: {fileID: 659222832}
-  light1: {fileID: 0}
 --- !u!65 &1354734688
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9284,7 +9278,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentLevelSpawner1: {fileID: 659222837}
   CurrentLevelSpawner2: {fileID: 659222836}
-  light1: {fileID: 0}
 --- !u!65 &1399116132
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9397,6 +9390,7 @@ MonoBehaviour:
   newspaperText: {fileID: 358896300}
   currentScore: 0
   gameOverScreen: {fileID: 901748809}
+  option: {fileID: 283401187}
   staminaSlider: {fileID: 1771853777}
 --- !u!1 &1467316240
 GameObject:
@@ -11404,6 +11398,8 @@ MonoBehaviour:
   maxStamina: 5
   staminaFallMult: 1
   staminaRegenMult: 3
+  currentCountTime: 0
+  countDownTime: 0
 --- !u!1 &1944784984
 GameObject:
   m_ObjectHideFlags: 0
@@ -12101,7 +12097,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentLevelSpawner1: {fileID: 659222837}
   CurrentLevelSpawner2: {fileID: 659222836}
-  light1: {fileID: 1232925669}
 --- !u!1 &2055530272
 GameObject:
   m_ObjectHideFlags: 0
