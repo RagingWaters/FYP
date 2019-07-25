@@ -26,12 +26,13 @@ public class LevelManager : MonoBehaviour
 
     public Slider staminaSlider;
 
+    public GameObject Door;
+
     // Start is called before the first frame update
     void Start()
     {
         //theScore = 0;
         //newspaperText.GetComponent<Text>().text = "Pieces : " + currentScore + " / 4";
-
     }
 
     // Update is called once per frame
@@ -50,7 +51,8 @@ public class LevelManager : MonoBehaviour
        if (currentScore >= 4)
         {
             newspaperText.SetActive(true);
-            Win();
+            //Win();
+            OpenDoor();
         }
     }
 
@@ -67,6 +69,11 @@ public class LevelManager : MonoBehaviour
         gameOverScreen.SetActive(true);
         staminaSlider.gameObject.SetActive(false);
 
+    }
+
+    void OpenDoor()
+    {
+        Door.SetActive(false);
     }
 
     public void Respawn()
