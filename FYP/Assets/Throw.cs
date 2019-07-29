@@ -14,7 +14,7 @@ public class Throw : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        player = FindObjectOfType<PlayerController>().transform;
+       // player = FindObjectOfType<PlayerController>().transform;
     }
 
     // Update is called once per frame
@@ -54,6 +54,7 @@ public class Throw : MonoBehaviour
             }
 
         }
+
 
     }
      /*void OnTriggerEnter()

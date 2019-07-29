@@ -8,6 +8,8 @@ public class altar : MonoBehaviour
     public GameObject options;
     public PlayerControls Player;
 
+    
+
     // Start is called before the first frame update
     void Start()
     {
