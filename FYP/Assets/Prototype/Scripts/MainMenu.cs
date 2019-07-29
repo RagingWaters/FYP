@@ -24,7 +24,7 @@ public class MainMenu : MonoBehaviour
 
     public void MainMenuLoad()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("Main New");
     }
 
     public void Restart()
@@ -45,6 +45,7 @@ public class MainMenu : MonoBehaviour
     public void LeaveGame()
     {
         Application.Quit();
+        Debug.Log("I QUIT !!");
     }
 
     public void MainMenuGame()
