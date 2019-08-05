@@ -17,6 +17,7 @@ public class slippery : MonoBehaviour
     void Start()
     {
         playerControls = GetComponent<PlayerControls>();
+        torch = GameObject.FindWithTag("Throwable");
     }
 
     // Update is called once per frame
@@ -29,12 +30,11 @@ public class slippery : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            //if (playerControls.isMoving = true && Input.GetKey(KeyCode.LeftShift));
             if (Input.GetKey(KeyCode.LeftShift))
             {
-                 //Destroy(GameObject.FindWithTag("Throwable"));
-                GameObject item = GameObject.FindWithTag("Throwable");
-                item.transform.parent = null;
+                torch.transform.parent = null;
+                
+
             }
         }
         else

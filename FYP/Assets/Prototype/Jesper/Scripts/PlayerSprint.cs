@@ -41,8 +41,8 @@ public class PlayerSprint : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (playerControls.isMoving = true && Input.GetKey(KeyCode.LeftShift) && countDownActivated == false)      // When player is moving and left shift is pressed, sprint is activated.
-        {
+        if ((playerControls.isMoving = true && Input.GetKey(KeyCode.LeftShift) && countDownActivated == false) || (playerControls.isMoving = true && Input.GetButton("Sprint") && countDownActivated == false))     // When player is moving and left shift is pressed, sprint is activated.
+            {
             staminaSlider.value -= Time.deltaTime / staminaFallRate * staminaFallMult;
             playerControls.currentSpeed = playerControls.moveRunSpeed;                       
         }

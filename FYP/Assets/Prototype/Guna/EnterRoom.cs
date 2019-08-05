@@ -23,8 +23,14 @@ public class EnterRoom : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            mainCam.SetActive(false);
             cam.SetActive(true);
+            StartCoroutine(BigBoy());  
         }
+    }
+
+    IEnumerator BigBoy()
+    {
+        yield return new WaitForSeconds(0.5f);
+        mainCam.SetActive(false);
     }
 }
