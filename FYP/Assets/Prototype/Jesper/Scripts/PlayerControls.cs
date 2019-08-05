@@ -35,7 +35,7 @@ public class PlayerControls : MonoBehaviour
 
     public GameObject[] players;
 
-
+    public enemyController[] enemies;
 
 
 
@@ -81,6 +81,7 @@ public class PlayerControls : MonoBehaviour
         {
             //rb.AddForce(Vector3.up * jumpForce, ForceMode.impluse);
         }
+        enemies = FindObjectsOfType<enemyController>();
     }
 
     void Inputs()
