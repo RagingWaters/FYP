@@ -21,13 +21,19 @@ public class LevelManager : MonoBehaviour
     //public static int theScore;
 
    [SerializeField] private int currentScore;
+   [SerializeField] private int currentCross;
+   [SerializeField] public int currentKey;
 
     public GameObject gameOverScreen;
     public GameObject option;
+    public GameObject tasklistbtn;
 
     public Slider staminaSlider;
 
     public GameObject Door;
+    public GameObject LastDoor;
+    public GameObject lastdoorr;
+    public GameObject warning;
 
     // Start is called before the first frame update
     void Start()
@@ -49,17 +55,30 @@ public class LevelManager : MonoBehaviour
             currentScore = 0;
         */
 
-       if (currentScore >= 4)
+       if (currentScore == 4)
         {
             newspaperText.SetActive(true);
             //Win();
             OpenDoor();
         }
+
+        if (currentKey == 1 && currentCross == 1)
+        {
+            Debug.Log("1 key 1 cross");
+            Openlastdoor();
+        }
     }
 
     void Win()
     {
-        winscreen.SetActive(true);
+        //if (currentKey == 1 && currentCross == 1)
+       // {
+       //     Debug.Log("1 key 1 cross");
+       //     Destroy(LastDoor);
+           // Openlastdoor();
+       // }
+
+        //winscreen.SetActive(true);
         /*Current = 0;
         Collectible.theScore = Current;*/
     }
@@ -67,7 +86,9 @@ public class LevelManager : MonoBehaviour
     void gameOver()
     {
         option.SetActive(false);
+
         newspaperText.SetActive(false);
+        tasklistbtn.SetActive(false);
         gameOverScreen.SetActive(true);
         staminaSlider.gameObject.SetActive(false);
 
@@ -76,6 +97,23 @@ public class LevelManager : MonoBehaviour
     void OpenDoor()
     {
         Door.SetActive(false);
+    }
+
+    void Openlastdoor()
+    {
+        LastDoor.SetActive(false);
+    }
+
+    public void Openlastdoorr()
+    {
+        if (currentKey == 1 && currentCross == 1)
+        {
+            lastdoorr.SetActive(false);
+        }
+        else
+        {
+            warning.SetActive(true);
+        }
     }
 
     public void Respawn()
@@ -102,6 +140,16 @@ public class LevelManager : MonoBehaviour
 
          
         Player.gameObject.SetActive(true); //Reactivate the player in the world.
+    }
+
+    public void AddCross(int CrossToAdd)
+    {
+        currentCross += CrossToAdd;
+    }
+
+    public void AddKey(int KeyToAdd)
+    {
+        currentKey += KeyToAdd;
     }
 
     public void AddArticle(int ArticleToAdd)
