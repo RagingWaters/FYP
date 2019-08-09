@@ -52,7 +52,7 @@ public class PlayerControls : MonoBehaviour
         col = GetComponent<SphereCollider>();
 
 
-        currentSpeed = 5;
+        currentSpeed = 200;
 
         respawnPosition = transform.position;
 
@@ -75,8 +75,8 @@ public class PlayerControls : MonoBehaviour
         if (isMoving)
             Movement();
         else rb.velocity = Vector3.up * rb.velocity.y;
-        currentSpeed = 5;
-
+        //  currentSpeed = 5;
+        rb.AddRelativeForce(Physics.gravity * 10, ForceMode.Acceleration);
         if (Input.GetKeyDown(KeyCode.Space))
         {
             //rb.AddForce(Vector3.up * jumpForce, ForceMode.impluse);

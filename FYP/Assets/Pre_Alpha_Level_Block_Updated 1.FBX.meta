@@ -1,0 +1,355 @@
+fileFormatVersion: 2
+guid: 159ecf8f50cbdfb44a596f192261fb27
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Door_F5_00
+    100002: Door_F5_001
+    100004: Door_F5_002
+    100006: Door_F5_003
+    100008: Door_F5_004
+    100010: Door_F5_005
+    100012: Door_F5_006
+    100014: Door_F5_007
+    100016: Door_F5_008
+    100018: Door_F5_009
+    100020: Door_F5_010
+    100022: Door_F5_011
+    100024: Door_F5_012
+    100026: Door_F5_013
+    100028: Door_F5_014
+    100030: Door_F5_015
+    100032: Door_F5_016
+    100034: Door_F5_017
+    100036: Door_F5_018
+    100038: Door_F5_019
+    100040: Door_F5_020
+    100042: Door_F5_021
+    100044: Door_F5_022
+    100046: Door_F5_023
+    100048: Door_F5_024
+    100050: Floor 2 Floor
+    100052: Floor 2 Floor 2
+    100054: Floor 2 Others 2
+    100056: Floor 2 Units
+    100058: Floor 2 Units 2
+    100060: Floor 3 Floor
+    100062: Floor 3 Floor 2
+    100064: Floor 3 Others 2
+    100066: Floor 3 Units
+    100068: Floor 3 Units 2
+    100070: Floor 4 Floor
+    100072: Floor 4 Floor 2
+    100074: Floor 4 Others 2
+    100076: Floor 4 Units
+    100078: Floor 4 Units 2
+    100080: Floor 5 Floor
+    100082: Floor 5 Units
+    100084: Floor01 Pillars
+    100086: Floor02 Others
+    100088: Floor3 Others
+    100090: Floor4 Others
+    100092: Floor5 Others
+    100094: GFloor
+    100096: GFloor 2
+    100098: GFloor Pillars
+    100100: //RootNode
+    100102: Roof
+    100104: Roof2
+    400000: Door_F5_00
+    400002: Door_F5_001
+    400004: Door_F5_002
+    400006: Door_F5_003
+    400008: Door_F5_004
+    400010: Door_F5_005
+    400012: Door_F5_006
+    400014: Door_F5_007
+    400016: Door_F5_008
+    400018: Door_F5_009
+    400020: Door_F5_010
+    400022: Door_F5_011
+    400024: Door_F5_012
+    400026: Door_F5_013
+    400028: Door_F5_014
+    400030: Door_F5_015
+    400032: Door_F5_016
+    400034: Door_F5_017
+    400036: Door_F5_018
+    400038: Door_F5_019
+    400040: Door_F5_020
+    400042: Door_F5_021
+    400044: Door_F5_022
+    400046: Door_F5_023
+    400048: Door_F5_024
+    400050: Floor 2 Floor
+    400052: Floor 2 Floor 2
+    400054: Floor 2 Others 2
+    400056: Floor 2 Units
+    400058: Floor 2 Units 2
+    400060: Floor 3 Floor
+    400062: Floor 3 Floor 2
+    400064: Floor 3 Others 2
+    400066: Floor 3 Units
+    400068: Floor 3 Units 2
+    400070: Floor 4 Floor
+    400072: Floor 4 Floor 2
+    400074: Floor 4 Others 2
+    400076: Floor 4 Units
+    400078: Floor 4 Units 2
+    400080: Floor 5 Floor
+    400082: Floor 5 Units
+    400084: Floor01 Pillars
+    400086: Floor02 Others
+    400088: Floor3 Others
+    400090: Floor4 Others
+    400092: Floor5 Others
+    400094: GFloor
+    400096: GFloor 2
+    400098: GFloor Pillars
+    400100: //RootNode
+    400102: Roof
+    400104: Roof2
+    2100000: 'Material #9559'
+    2300000: Door_F5_00
+    2300002: Door_F5_001
+    2300004: Door_F5_002
+    2300006: Door_F5_003
+    2300008: Door_F5_004
+    2300010: Door_F5_005
+    2300012: Door_F5_006
+    2300014: Door_F5_007
+    2300016: Door_F5_008
+    2300018: Door_F5_009
+    2300020: Door_F5_010
+    2300022: Door_F5_011
+    2300024: Door_F5_012
+    2300026: Door_F5_013
+    2300028: Door_F5_014
+    2300030: Door_F5_015
+    2300032: Door_F5_016
+    2300034: Door_F5_017
+    2300036: Door_F5_018
+    2300038: Door_F5_019
+    2300040: Door_F5_020
+    2300042: Door_F5_021
+    2300044: Door_F5_022
+    2300046: Door_F5_023
+    2300048: Door_F5_024
+    2300050: Floor 2 Floor
+    2300052: Floor 2 Floor 2
+    2300054: Floor 2 Others 2
+    2300056: Floor 2 Units
+    2300058: Floor 2 Units 2
+    2300060: Floor 3 Floor
+    2300062: Floor 3 Floor 2
+    2300064: Floor 3 Others 2
+    2300066: Floor 3 Units
+    2300068: Floor 3 Units 2
+    2300070: Floor 4 Floor
+    2300072: Floor 4 Floor 2
+    2300074: Floor 4 Others 2
+    2300076: Floor 4 Units
+    2300078: Floor 4 Units 2
+    2300080: Floor 5 Floor
+    2300082: Floor 5 Units
+    2300084: Floor01 Pillars
+    2300086: Floor02 Others
+    2300088: Floor3 Others
+    2300090: Floor4 Others
+    2300092: Floor5 Others
+    2300094: GFloor
+    2300096: GFloor 2
+    2300098: GFloor Pillars
+    2300100: Roof
+    2300102: Roof2
+    3300000: Door_F5_00
+    3300002: Door_F5_001
+    3300004: Door_F5_002
+    3300006: Door_F5_003
+    3300008: Door_F5_004
+    3300010: Door_F5_005
+    3300012: Door_F5_006
+    3300014: Door_F5_007
+    3300016: Door_F5_008
+    3300018: Door_F5_009
+    3300020: Door_F5_010
+    3300022: Door_F5_011
+    3300024: Door_F5_012
+    3300026: Door_F5_013
+    3300028: Door_F5_014
+    3300030: Door_F5_015
+    3300032: Door_F5_016
+    3300034: Door_F5_017
+    3300036: Door_F5_018
+    3300038: Door_F5_019
+    3300040: Door_F5_020
+    3300042: Door_F5_021
+    3300044: Door_F5_022
+    3300046: Door_F5_023
+    3300048: Door_F5_024
+    3300050: Floor 2 Floor
+    3300052: Floor 2 Floor 2
+    3300054: Floor 2 Others 2
+    3300056: Floor 2 Units
+    3300058: Floor 2 Units 2
+    3300060: Floor 3 Floor
+    3300062: Floor 3 Floor 2
+    3300064: Floor 3 Others 2
+    3300066: Floor 3 Units
+    3300068: Floor 3 Units 2
+    3300070: Floor 4 Floor
+    3300072: Floor 4 Floor 2
+    3300074: Floor 4 Others 2
+    3300076: Floor 4 Units
+    3300078: Floor 4 Units 2
+    3300080: Floor 5 Floor
+    3300082: Floor 5 Units
+    3300084: Floor01 Pillars
+    3300086: Floor02 Others
+    3300088: Floor3 Others
+    3300090: Floor4 Others
+    3300092: Floor5 Others
+    3300094: GFloor
+    3300096: GFloor 2
+    3300098: GFloor Pillars
+    3300100: Roof
+    3300102: Roof2
+    4300000: Floor5 Others
+    4300002: Floor4 Others
+    4300004: Floor3 Others
+    4300006: Floor02 Others
+    4300008: Floor01 Pillars
+    4300010: GFloor
+    4300012: Roof
+    4300014: Door_F5_00
+    4300016: Door_F5_001
+    4300018: Door_F5_002
+    4300020: Door_F5_003
+    4300022: Door_F5_004
+    4300024: Door_F5_005
+    4300026: Door_F5_006
+    4300028: Door_F5_007
+    4300030: Door_F5_008
+    4300032: Door_F5_009
+    4300034: Door_F5_010
+    4300036: Door_F5_011
+    4300038: Door_F5_012
+    4300040: Door_F5_013
+    4300042: Door_F5_014
+    4300044: Door_F5_015
+    4300046: Floor 4 Others 2
+    4300048: Floor 3 Others 2
+    4300050: Floor 2 Others 2
+    4300052: Door_F5_016
+    4300054: Door_F5_017
+    4300056: Door_F5_018
+    4300058: Door_F5_019
+    4300060: Door_F5_020
+    4300062: Door_F5_021
+    4300064: Door_F5_022
+    4300066: Door_F5_023
+    4300068: Door_F5_024
+    4300070: GFloor 2
+    4300072: GFloor Pillars
+    4300074: Roof2
+    4300076: Floor 4 Units 2
+    4300078: Floor 4 Floor 2
+    4300080: Floor 3 Units 2
+    4300082: Floor 3 Floor 2
+    4300084: Floor 2 Units 2
+    4300086: Floor 2 Floor 2
+    4300088: Floor 5 Units
+    4300090: Floor 5 Floor
+    4300092: Floor 4 Units
+    4300094: Floor 4 Floor
+    4300096: Floor 3 Units
+    4300098: Floor 3 Floor
+    4300100: Floor 2 Units
+    4300102: Floor 2 Floor
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

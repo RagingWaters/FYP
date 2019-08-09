@@ -2,23 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class lastdoor : MonoBehaviour
+public class openeddoor : MonoBehaviour
 {
 
-    public GameObject lastdooropt;
+    public GameObject openedooropt;
     public PlayerControls Player;
-    public GameObject warning;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     void OnTriggerStay(Collider other)
@@ -27,7 +26,7 @@ public class lastdoor : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.K))
             {
-                lastdooropt.SetActive(true);
+                openedooropt.SetActive(true);
             }
         }
     }
@@ -36,8 +35,7 @@ public class lastdoor : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            lastdooropt.SetActive(false);
-            warning.SetActive(false);
+            openedooropt.SetActive(false);
         }
     }
 }

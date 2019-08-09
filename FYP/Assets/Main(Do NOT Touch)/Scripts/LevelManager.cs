@@ -32,8 +32,14 @@ public class LevelManager : MonoBehaviour
 
     public GameObject Door;
     public GameObject LastDoor;
-    public GameObject lastdoorr;
+    public GameObject torchdoor;
     public GameObject warning;
+    public GameObject warningwrong;
+    public GameObject Door1;
+
+    public GameObject o1;
+    public GameObject o2;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -104,17 +110,38 @@ public class LevelManager : MonoBehaviour
         LastDoor.SetActive(false);
     }
 
-    public void Openlastdoorr()
+    public void Opentorchdoorr()
     {
-        if (currentKey == 1 && currentCross == 1)
+        if (currentKey == 1)
         {
-            lastdoorr.SetActive(false);
+            torchdoor.SetActive(false);
+            o1.SetActive(false);
         }
         else
         {
             warning.SetActive(true);
         }
     }
+
+    public void Openwrongdoor()
+    {
+        if (currentKey ==1)
+        {
+            warningwrong.SetActive(true);
+        }
+
+        else
+        {
+            warning.SetActive(true);
+        }
+    }
+
+    public void Openopendoors()
+    {
+        Door1.SetActive(false);
+        o2.SetActive(false);
+    }
+
 
     public void Respawn()
     {
