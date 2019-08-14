@@ -7,6 +7,8 @@ public class Radio : MonoBehaviour
     public AudioClip sound;
     public float volume;
     AudioSource audioSource;
+    public bool alreadyPlayed = false;
+
 
     // Start is called before the first frame update
     void Start()
@@ -21,14 +23,15 @@ public class Radio : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Player" && !alreadyPlayed)
         {
-            audioSource.Play();
+            audioSource.PlayOneShot(sound,volume);
+            alreadyPlayed = true;
 
         }
         else
         {
-            audioSource.Pause();
+            //audioSource.Pause();
         }
     }
 }
