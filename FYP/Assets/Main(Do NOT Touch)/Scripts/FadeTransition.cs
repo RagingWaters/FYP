@@ -14,8 +14,9 @@ public class FadeTransition : MonoBehaviour
     void Start()
     {
         Fade();        
-    }
 
+    }
+    
     void Fade()
     {
         fadeImage.SetActive(true);

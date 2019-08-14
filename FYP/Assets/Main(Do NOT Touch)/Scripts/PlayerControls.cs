@@ -13,7 +13,7 @@ public class PlayerControls : MonoBehaviour
     public float moveRunSpeed;
        
 
-    public float turnSpeed = 10;
+    public float turnSpeed = 50;
     public float horizontalInput, verticalInput;
     public float frameStorage;
     private float storedInputH, storedInputV;
@@ -76,14 +76,17 @@ public class PlayerControls : MonoBehaviour
             Movement();
         else rb.velocity = Vector3.up * rb.velocity.y;
         //  currentSpeed = 5;
-        rb.AddRelativeForce(Physics.gravity * 10, ForceMode.Acceleration);
+     
         if (Input.GetKeyDown(KeyCode.Space))
         {
             //rb.AddForce(Vector3.up * jumpForce, ForceMode.impluse);
         }
         enemies = FindObjectsOfType<enemyController>();
     }
-
+    private void LateUpdate()
+    {
+        rb.AddRelativeForce(Physics.gravity * 10, ForceMode.Acceleration);
+    }
     void Inputs()
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");

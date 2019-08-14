@@ -23,6 +23,7 @@ public class EnterRoom : MonoBehaviour
     {
         if (other.tag == "Player")
         {
+            print("HitPlyer");
             cam.SetActive(true);
             mainCam.SetActive(false);
             // StartCoroutine(BigBoy());  

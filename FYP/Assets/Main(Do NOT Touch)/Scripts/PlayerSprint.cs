@@ -13,8 +13,8 @@ public class PlayerSprint : MonoBehaviour
     private float staminaRegenRate;
     public int staminaRegenMult;
 
-    PlayerControls playerControls;
-    private int currentSpeed;
+    public PlayerControls playerControls;
+    // private int currentSpeed;
 
     bool startCountdown = false;
     bool countDownActivated;
@@ -35,16 +35,16 @@ public class PlayerSprint : MonoBehaviour
         currentCountTime = countDownTime;
         countDownActivated = false;
 
-        playerControls = GetComponent<PlayerControls>();
+        //    playerControls = GetComponent<PlayerControls>();
     }
 
     // Update is called once per frame
     void Update()
     {
         if ((playerControls.isMoving = true && Input.GetKey(KeyCode.LeftShift) && countDownActivated == false) || (playerControls.isMoving = true && Input.GetButton("Sprint") && countDownActivated == false))     // When player is moving and left shift is pressed, sprint is activated.
-            {
+        {
             staminaSlider.value -= Time.deltaTime / staminaFallRate * staminaFallMult;
-            playerControls.currentSpeed = playerControls.moveRunSpeed;                       
+            playerControls.currentSpeed = playerControls.moveRunSpeed;
         }
 
         if (Input.GetButtonUp("Left Shift (Sprint)"))
@@ -53,27 +53,27 @@ public class PlayerSprint : MonoBehaviour
             playerControls.currentSpeed = playerControls.moveSpeedNorm;
         }
 
-        if (startCountdown == true)            
+        if (startCountdown == true)
         {
             countDownActivated = true;
-            currentCountTime -= Time.deltaTime;            
+            currentCountTime -= Time.deltaTime;
         }
 
-        if (currentCountTime < 0) 
+        if (currentCountTime < 0)
         {
-            startCountdown = false;            
+            startCountdown = false;
             currentCountTime = countDownTime;
-            countDownActivated = false;            
+            countDownActivated = false;
         }
 
-        if (countDownActivated == false)        
+        if (countDownActivated == false)
             staminaSlider.value += Time.deltaTime / staminaRegenRate * staminaRegenMult;
-        
 
-        
+
+
 
         Debug.Log(currentCountTime);
-        Debug.Log(startCountdown); 
+        Debug.Log(startCountdown);
 
         if (staminaSlider.value >= maxStamina)
         {
@@ -82,8 +82,6 @@ public class PlayerSprint : MonoBehaviour
 
         else if (staminaSlider.value <= 0)
         {
-           // staminaSlider.value = 0;
-            //currentSpeed = 5;
 
             playerControls.currentSpeed = playerControls.moveSpeedNorm;
         }

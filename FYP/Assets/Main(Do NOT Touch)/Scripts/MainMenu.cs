@@ -13,7 +13,7 @@ public class MainMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Time.timeScale = 1;
     }
 
     // Update is called once per frame
@@ -22,9 +22,14 @@ public class MainMenu : MonoBehaviour
         
     }
 
+    public void loadScene(string sceneToLoad)
+    {
+        SceneManager.LoadScene(sceneToLoad);
+    }
+
     public void MainMenuLoad()
     {
-        SceneManager.LoadScene("Main New");
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void Restart()
@@ -39,7 +44,7 @@ public class MainMenu : MonoBehaviour
 
     public void Play()
     {
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadScene("Tutorial");
     }
 
     public void LeaveGame()
