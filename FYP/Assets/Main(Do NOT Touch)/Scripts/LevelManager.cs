@@ -23,6 +23,8 @@ public class LevelManager : MonoBehaviour
    [SerializeField] private int currentScore;
    [SerializeField] private int currentCross;
    [SerializeField] public int currentKey;
+   [SerializeField] public int currentShovel;
+    [SerializeField] public int currentCigg;
 
     public GameObject gameOverScreen;
     public GameObject option;
@@ -39,11 +41,21 @@ public class LevelManager : MonoBehaviour
 
     public GameObject o1;
     public GameObject o2;
-    
+
+    public GameObject keypotopt;
+    public GameObject foundkey;
+    public GameObject warning0shovel;
+    public GameObject keyy;
+    public GameObject warningnth;
+    public GameObject cigg;
+    public GameObject foundcigg;
+    public GameObject randompotopt;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        //keyy.SetActive(false);
         //theScore = 0;
         //newspaperText.GetComponent<Text>().text = "Pieces : " + currentScore + " / 4";
     }
@@ -110,7 +122,20 @@ public class LevelManager : MonoBehaviour
         LastDoor.SetActive(false);
     }
 
-    public void Opentorchdoorr()
+    //public void Opentorchdoorr()
+    //{
+    //    if (currentKey == 1)
+    //    {
+    //        torchdoor.SetActive(false);
+    //        o1.SetActive(false);
+    //    }
+    //    else
+    //    {
+    //        warning.SetActive(true);
+    //    }
+    //}
+
+    public void OpenAnyDoor(GameObject warning)
     {
         if (currentKey == 1)
         {
@@ -122,7 +147,6 @@ public class LevelManager : MonoBehaviour
             warning.SetActive(true);
         }
     }
-
     public void Openwrongdoor()
     {
         if (currentKey ==1)
@@ -142,6 +166,47 @@ public class LevelManager : MonoBehaviour
         o2.SetActive(false);
     }
 
+    public void digpot()
+    {
+        if (currentShovel == 1)
+        {
+            foundkey.SetActive(true);
+            keyy.SetActive(true);
+            keypotopt.SetActive(true);
+            
+        }
+        else
+        {
+            warning0shovel.SetActive(true);
+        }
+    }
+
+    public void digrandompot()
+    {
+        if (currentShovel == 1)
+        {
+            foundcigg.SetActive(true);
+            cigg.SetActive(true);
+            randompotopt.SetActive(false);
+            
+        }
+        else
+        {
+            warning0shovel.SetActive(true);
+        }
+    }
+
+    public void digemptypot()
+    {
+        if (currentShovel == 1)
+        {
+            warningnth.SetActive(true);
+        }
+        else
+        {
+            warning0shovel.SetActive(true);
+        }
+    }
 
     public void Respawn()
     {
@@ -177,6 +242,18 @@ public class LevelManager : MonoBehaviour
     public void AddKey(int KeyToAdd)
     {
         currentKey += KeyToAdd;
+    }
+
+    public void AddShovel(int ShovelToAdd)
+    {
+        currentShovel += ShovelToAdd;
+
+    }
+
+    public void AddCigg(int ciggToAdd)
+    {
+        currentCigg += ciggToAdd;
+
     }
 
     public void AddArticle(int ArticleToAdd)
