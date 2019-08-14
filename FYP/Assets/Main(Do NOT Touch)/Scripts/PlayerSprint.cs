@@ -29,7 +29,7 @@ public class PlayerSprint : MonoBehaviour
 
         // The higher the number, the slower the regen rate of the Stamina
         staminaFallRate = 0.5f;
-        staminaRegenRate = 3;
+        staminaRegenRate = 3f;
 
         countDownTime = 5f;
         currentCountTime = countDownTime;
@@ -50,6 +50,7 @@ public class PlayerSprint : MonoBehaviour
         if (Input.GetButtonUp("Left Shift (Sprint)"))
         {
             startCountdown = true;
+            playerControls.currentSpeed = playerControls.moveSpeedNorm;
         }
 
         if (startCountdown == true)            

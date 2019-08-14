@@ -5,10 +5,11 @@ using UnityEngine;
 public class Throw : MonoBehaviour
 {
     public Transform player;
-    public float throwForce = 10f;
+    public float throwForce = 1000f;
     bool hasPlayer = false;
     bool beingCarried = false;
     private bool touched = false;
+    public GameObject winscreen;
     [SerializeField] Rigidbody rb;
     // Start is called before the first frame update
     void Start()
@@ -20,7 +21,7 @@ public class Throw : MonoBehaviour
     void Update()
     {
         float dist = Vector3.Distance(gameObject.transform.position, player.position);
-        if (dist <= 1.5f)
+        if (dist <= 69f)
         {
             hasPlayer = true;
             Debug.Log("in range");
@@ -40,7 +41,8 @@ public class Throw : MonoBehaviour
         }
         if (beingCarried)
         {
-            if (touched)
+            Win();
+            /*if (touched)
             {
                 rb.constraints = RigidbodyConstraints.None;
                 transform.parent = null;
@@ -51,9 +53,14 @@ public class Throw : MonoBehaviour
             {
                 rb.constraints = RigidbodyConstraints.None;
                 transform.parent = null;
-                rb.AddForce(player.transform.forward * throwForce);
+                rb.AddForce(player.transform.forward * throwForce * 10f);
                 Debug.Log("thrown");
-            }
+            }*/
         }
+    }
+
+    void Win()
+    {
+        winscreen.SetActive(true);
     }
 }
