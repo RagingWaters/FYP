@@ -24,6 +24,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Test.unity
     guid: caea0c0e8ed58824688bbc32fdcec91c
   - enabled: 1
-    path: Assets/Ghenel/Tutorial.unity
+    path: Assets/Prototype/Ghenel/Ghenel/Tutorial.unity
     guid: 7ab92c63438998e44b81f6f03d11d0dc
   m_configObjects: {}
