@@ -4667,6 +4667,7 @@ MonoBehaviour:
   currentKey: 0
   currentShovel: 0
   currentCigg: 0
+  currentTorch: 0
   gameOverScreen: {fileID: 282953925}
   option: {fileID: 475669096}
   tasklistbtn: {fileID: 1509271553}

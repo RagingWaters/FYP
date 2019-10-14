@@ -10,13 +10,13 @@ public class enter : MonoBehaviour
 
     public AudioClip soundtoPlay;
     public float volume;
-    AudioSource audio;
+   // AudioSource audio;
     public bool alreadyPlayed = false;
 
 
     void Start()
     {
-        audio = GetComponent<AudioSource>();
+   //     audio = GetComponent<AudioSource>();
     }
 
 
@@ -29,10 +29,10 @@ public class enter : MonoBehaviour
         Level1Spawner1.SetActive(true);
         Level1Spawner2.SetActive(true);
 
-       if (!alreadyPlayed)
-        {
-            audio.PlayOneShot(soundtoPlay, volume);
-           alreadyPlayed = true;
-        }
+      // if (!alreadyPlayed)
+       // {
+        //    audio.PlayOneShot(soundtoPlay, volume);
+        //   alreadyPlayed = true;
+       // }
     }
 }

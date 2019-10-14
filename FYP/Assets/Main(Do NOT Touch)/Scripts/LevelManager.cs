@@ -24,7 +24,8 @@ public class LevelManager : MonoBehaviour
    [SerializeField] private int currentCross;
    [SerializeField] public int currentKey;
    [SerializeField] public int currentShovel;
-    [SerializeField] public int currentCigg;
+   [SerializeField] public int currentCigg;
+   [SerializeField] public int currentTorch;
 
     public GameObject gameOverScreen;
     public GameObject option;
@@ -171,8 +172,9 @@ public class LevelManager : MonoBehaviour
         if (currentShovel == 1)
         {
             foundkey.SetActive(true);
-            keyy.SetActive(true);
             keypotopt.SetActive(true);
+            keyy.SetActive(true);
+            
             
         }
         else
@@ -180,6 +182,14 @@ public class LevelManager : MonoBehaviour
             warning0shovel.SetActive(true);
         }
     }
+
+    //public void gottorchspawnenemy()
+    //{
+    //    if (currentTorch ==1 )
+    //    {
+    //        enemySpawner.startSpawn = true;
+    //    }
+    //}
 
     public void digrandompot()
     {
@@ -242,6 +252,11 @@ public class LevelManager : MonoBehaviour
     public void AddKey(int KeyToAdd)
     {
         currentKey += KeyToAdd;
+    }
+
+    public void AddTorch(int TorchtoAdd)
+    {
+        currentTorch += TorchtoAdd;
     }
 
     public void AddShovel(int ShovelToAdd)
