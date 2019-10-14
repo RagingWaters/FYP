@@ -35,7 +35,13 @@ public class enemyController : MonoBehaviour
                 //print("ter");
             }
         }
+
+        else
+        {
+            agent.ResetPath();
+        }
         if (enemySpawner.startSpawn == false) Destroy(gameObject);
+        print(agent.destination);
     }
 
     void FaceTarget ()
