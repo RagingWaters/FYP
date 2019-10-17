@@ -36,7 +36,7 @@ public class collectg : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                theLevelManager.AddArticle(articleValue);
+              //  theLevelManager.AddArticle(articleValue);
                 print("added");
                 Destroy(gameObject);
                 GetComponent<MeshRenderer>().enabled = false;

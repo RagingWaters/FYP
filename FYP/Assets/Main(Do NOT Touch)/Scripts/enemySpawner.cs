@@ -36,13 +36,20 @@ public class enemySpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        startSpawn = false;
 
         if (spawnPoints.Length == 0)
         {
             Debug.LogError("No spawn points referrenced");
         }
 
-        waveCountdown = timeBetweenWaves;
+        
+
+      //  waveCountdown = timeBetweenWaves;
+
+
+
+
     }
 
     // Update is called once per frame

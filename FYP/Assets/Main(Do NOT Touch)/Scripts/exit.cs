@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class exit : MonoBehaviour
 {
+    public LevelManager theLevelmanager;
     public GameObject CurrentLevelSpawner1;
     public GameObject CurrentLevelSpawner2;
 
@@ -15,7 +16,9 @@ public class exit : MonoBehaviour
         CurrentLevelSpawner1.SetActive(false);
         CurrentLevelSpawner2.SetActive(false);
         enemySpawner.startSpawn = false;
-       // light1.SetActive(false);
+        theLevelmanager.Win();
+
+        // light1.SetActive(false);
         // if (other.gameObject.tag.Equals("Enemy"));
         // {
         //   Destroy(other.gameObject);

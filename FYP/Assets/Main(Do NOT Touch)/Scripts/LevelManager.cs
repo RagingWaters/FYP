@@ -53,9 +53,13 @@ public class LevelManager : MonoBehaviour
     public GameObject randompotopt;
 
 
+
+
     // Start is called before the first frame update
     void Start()
     {
+
+
         //keyy.SetActive(false);
         //theScore = 0;
         //newspaperText.GetComponent<Text>().text = "Pieces : " + currentScore + " / 4";
@@ -64,77 +68,30 @@ public class LevelManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //currentScore = Collectible.theScore;
-        // currentScore = collectg.theScore;
 
-        /*
-        if (currentScore <= 0)
-            currentScore = 0;
-        else
-            currentScore = 0;
-        */
-
-       if (currentScore == 4)
-        {
-            newspaperText.SetActive(true);
-            //Win();
-            OpenDoor();
-        }
-
-        if (currentKey == 1 && currentCross == 1)
-        {
-            Debug.Log("1 key 1 cross");
-            Openlastdoor();
-        }
     }
 
-    void Win()
+    public void Win()
     {
-        //if (currentKey == 1 && currentCross == 1)
-       // {
-       //     Debug.Log("1 key 1 cross");
-       //     Destroy(LastDoor);
-           // Openlastdoor();
-       // }
-
-        //winscreen.SetActive(true);
-        /*Current = 0;
-        Collectible.theScore = Current;*/
+        if (currentKey == 1 && currentShovel == 1 && currentTorch == 1)
+        {
+            Debug.Log("1 key 1 torch in utitlity room");
+            winscreen.SetActive(true);
+            /*Current = 0;
+            Collectible.theScore = Current;*/
+        }
     }
 
-    void gameOver()
+    public void gameOver()
     {
         option.SetActive(false);
 
-        newspaperText.SetActive(false);
-        tasklistbtn.SetActive(false);
+       // newspaperText.SetActive(false);
+       // tasklistbtn.SetActive(false);
         gameOverScreen.SetActive(true);
         staminaSlider.gameObject.SetActive(false);
-
+        Player.gameObject.SetActive(false);
     }
-
-    void OpenDoor()
-    {
-        Door.SetActive(false);
-    }
-
-    void Openlastdoor()
-    {
-        LastDoor.SetActive(false);
-    }
-
-    //public void Opentorchdoorr()
-    //{
-    //    if (currentKey == 1)
-    //    {
-    //        torchdoor.SetActive(false);
-    //        o1.SetActive(false);
-    //    }
-    //    else
-    //    {
-    //        warning.SetActive(true);
-    //    }
-    //}
 
     public void OpenAnyDoor(GameObject warning)
     {
@@ -154,7 +111,6 @@ public class LevelManager : MonoBehaviour
         {
             warningwrong.SetActive(true);
         }
-
         else
         {
             warning.SetActive(true);
@@ -173,9 +129,7 @@ public class LevelManager : MonoBehaviour
         {
             foundkey.SetActive(true);
             keypotopt.SetActive(true);
-            keyy.SetActive(true);
-            
-            
+            keyy.SetActive(true);         
         }
         else
         {
@@ -183,13 +137,17 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    //public void gottorchspawnenemy()
-    //{
-    //    if (currentTorch ==1 )
-    //    {
-    //        enemySpawner.startSpawn = true;
-    //    }
-    //}
+    public void gottorchspawnenemy()
+    {
+        if (currentTorch == 1)
+        {
+            enemySpawner.startSpawn = true;
+        }
+        else
+        {
+            enemySpawner.startSpawn = false;
+        }
+    }
 
     public void digrandompot()
     {
@@ -218,31 +176,6 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    public void Respawn()
-    {
-        if (currentScore > -1)
-        {
-            StartCoroutine("RespawnCo");
-        }
-        else
-        {
-            newspaperText.SetActive(false);
-            Player.gameObject.SetActive(false);
-           gameOver();
-       }
-    }
-
-    public IEnumerator RespawnCo()
-    {
-        Player.gameObject.SetActive(false);  //Deactivate the player in the world
-
-        yield return new WaitForSeconds(waitToRespawn); //How many second we want the game to wait for
-
-        Player.transform.position = PlayerspawnPoints[Random.Range(0, 3)].position;
-
-         
-        Player.gameObject.SetActive(true); //Reactivate the player in the world.
-    }
 
     public void AddCross(int CrossToAdd)
     {
@@ -271,40 +204,112 @@ public class LevelManager : MonoBehaviour
 
     }
 
-    public void AddArticle(int ArticleToAdd)
+        public IEnumerator RespawnCo()
     {
-        currentScore += ArticleToAdd;
-        StartCoroutine(TextAnimation());
+        Player.gameObject.SetActive(false);  //Deactivate the player in the world
+
+        yield return new WaitForSeconds(waitToRespawn); //How many second we want the game to wait for
+
+        Player.transform.position = PlayerspawnPoints[Random.Range(0, 3)].position;
+
+         
+        Player.gameObject.SetActive(true); //Reactivate the player in the world.
     }
 
-    public void MinusArticle(int ArticleToMinus)
-    {
-        if (currentScore > -1)
-        {
-            currentScore -= ArticleToMinus;
-            StartCoroutine(TextAnimation());
-        }
 
-        else
-        {
 
-            Player.gameObject.SetActive(false);
-            gameOver();
+}   
+    //void OpenDoor()
+    //{
+    //    Door.SetActive(false);
+    //}
+
+    //void Openlastdoor()
+    //{
+    //    LastDoor.SetActive(false);
+    //}
+
+    //IEnumerator TextAnimation()
+    //{
+    //    newspaperText.SetActive(true);
+    //    anim = newspaperText.GetComponent<Animation>();
+    //    // theScore--++;
+    //    newspaperText.GetComponent<Text>().text = "Pieces : " + currentScore + " / 4";
+    //    yield return new WaitUntil(() => !anim.isPlaying);
+    //    Debug.Log("Article Count Update");
+    //    newspaperText.SetActive(false);
+    //}
+
+    //public void AddArticle(int ArticleToAdd)
+    //{
+    //    currentScore += ArticleToAdd;
+    //    StartCoroutine(TextAnimation());
+    //}
+
+    //public void MinusArticle(int ArticleToMinus)
+    //{
+    //    if (currentScore > -1)
+    //    {
+    //        currentScore -= ArticleToMinus;
+    //        StartCoroutine(TextAnimation());
+    //    }
+
+    //    else
+    //    {
+
+    //        Player.gameObject.SetActive(false);
+    //        gameOver();
             
 
-        }
-    }
+    //    }
+    //}
 
-    IEnumerator TextAnimation()
-    {
-        newspaperText.SetActive(true);
-        anim = newspaperText.GetComponent<Animation>();
-        // theScore--++;
-        newspaperText.GetComponent<Text>().text = "Pieces : " + currentScore + " / 4";
-        yield return new WaitUntil(() => !anim.isPlaying);
-        Debug.Log("Article Count Update");
-        newspaperText.SetActive(false);
-    }
+    //public void Respawn()
+    //{
+    //    if (currentScore > -1)
+    //    {
+    //        StartCoroutine("RespawnCo");
+    //    }
+    //    else
+    //    {
+    //        newspaperText.SetActive(false);
+    //        Player.gameObject.SetActive(false);
+    //       gameOver();
+    //   }
+    //}
 
-}
+    //public void Opentorchdoorr()
+    //{
+    //    if (currentKey == 1)
+    //    {
+    //        torchdoor.SetActive(false);
+    //        o1.SetActive(false);
+    //    }
+    //    else
+    //    {
+    //        warning.SetActive(true);
+    //    }
+    //}
+    
+    //currentScore = Collectible.theScore;
+       // // currentScore = collectg.theScore;
 
+       // /*
+       // if (currentScore <= 0)
+       //     currentScore = 0;
+       // else
+       //     currentScore = 0;
+       // */
+
+       //if (currentScore == 4)
+       // {
+       //     newspaperText.SetActive(true);
+       //     //Win();
+       //     OpenDoor();
+       // }
+
+       // if (currentKey == 1 && currentCross == 1)
+       // {
+       //     Debug.Log("1 key 1 cross");
+       //     Openlastdoor();
+       // }

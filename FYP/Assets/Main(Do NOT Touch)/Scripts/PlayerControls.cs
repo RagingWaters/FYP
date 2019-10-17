@@ -36,6 +36,7 @@ public class PlayerControls : MonoBehaviour
     public GameObject[] players;
 
     public enemyController[] enemies;
+   
 
 
 
@@ -138,9 +139,8 @@ public class PlayerControls : MonoBehaviour
         if (collision.gameObject.tag == "Enemy")
         {
             Debug.Log("Collision Detected");
-            theLevelmanager.MinusArticle(articleValue);
-            theLevelmanager.Respawn();
-
+            theLevelmanager.gameOver();
+             //theLevelmanager.MinusArticle(articleValue);
         }
 
     }

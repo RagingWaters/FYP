@@ -72,8 +72,8 @@ public class PlayerSprint : MonoBehaviour
 
 
 
-        Debug.Log(currentCountTime);
-        Debug.Log(startCountdown);
+        //Debug.Log(currentCountTime);
+        //Debug.Log(startCountdown);
 
         if (staminaSlider.value >= maxStamina)
         {

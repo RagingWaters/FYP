@@ -41,7 +41,7 @@ public class enemyController : MonoBehaviour
             agent.ResetPath();
         }
         if (enemySpawner.startSpawn == false) Destroy(gameObject);
-        print(agent.destination);
+        //print(agent.destination);
     }
 
     void FaceTarget ()

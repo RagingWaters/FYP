@@ -6638,7 +6638,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 198517361}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d326d658faa9b24d9a04447e902acf8, type: 3}
   m_Name: 
@@ -18066,7 +18066,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 543360284}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d326d658faa9b24d9a04447e902acf8, type: 3}
   m_Name: 
@@ -24130,6 +24130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02224ab9d7b98f14fa64217394023826, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  theLevelmanager: {fileID: 0}
   CurrentLevelSpawner1: {fileID: 3030177050575195022}
   CurrentLevelSpawner2: {fileID: 209367050537402245}
 --- !u!1 &733159754
@@ -37217,8 +37218,8 @@ Transform:
   - {fileID: 1994146071}
   - {fileID: 649936997}
   - {fileID: 260617119}
-  - {fileID: 1291879663}
   - {fileID: 298282424}
+  - {fileID: 1291879663}
   - {fileID: 135659619}
   - {fileID: 472357733}
   - {fileID: 1212371567}
@@ -37628,6 +37629,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02224ab9d7b98f14fa64217394023826, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  theLevelmanager: {fileID: 0}
   CurrentLevelSpawner1: {fileID: 4226251012782283544}
   CurrentLevelSpawner2: {fileID: 7242721690234143552}
 --- !u!65 &882784073
@@ -45208,6 +45210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02224ab9d7b98f14fa64217394023826, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  theLevelmanager: {fileID: 0}
   CurrentLevelSpawner1: {fileID: 1625791170748055568}
   CurrentLevelSpawner2: {fileID: 5642532550702102192}
 --- !u!1 &1127822175
@@ -48020,7 +48023,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1227762265
 Transform:
   m_ObjectHideFlags: 0
@@ -48029,7 +48032,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1227762264}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4218.9, y: 372.5, z: 607.9}
+  m_LocalPosition: {x: -4218.9, y: -383, z: -418}
   m_LocalScale: {x: 70, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 2040266138}
@@ -48312,6 +48315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02224ab9d7b98f14fa64217394023826, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  theLevelmanager: {fileID: 0}
   CurrentLevelSpawner1: {fileID: 4226251012782283544}
   CurrentLevelSpawner2: {fileID: 7242721690234143552}
 --- !u!1001 &1231100307
@@ -52204,7 +52208,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1321527109}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d326d658faa9b24d9a04447e902acf8, type: 3}
   m_Name: 
@@ -52864,6 +52868,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02224ab9d7b98f14fa64217394023826, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  theLevelmanager: {fileID: 0}
   CurrentLevelSpawner1: {fileID: 3030177050575195022}
   CurrentLevelSpawner2: {fileID: 209367050537402245}
 --- !u!65 &1338688205
@@ -53240,6 +53245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02224ab9d7b98f14fa64217394023826, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  theLevelmanager: {fileID: 0}
   CurrentLevelSpawner1: {fileID: 1625791170748055568}
   CurrentLevelSpawner2: {fileID: 5642532550702102192}
 --- !u!65 &1354734688
@@ -54573,6 +54579,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02224ab9d7b98f14fa64217394023826, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  theLevelmanager: {fileID: 0}
   CurrentLevelSpawner1: {fileID: 1539136085073349331}
   CurrentLevelSpawner2: {fileID: 2366671665119637127}
 --- !u!65 &1399116132
@@ -57985,7 +57992,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 160454233291356538}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d326d658faa9b24d9a04447e902acf8, type: 3}
   m_Name: 
@@ -60185,15 +60192,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4266466412616060, guid: 2a27348fb4e5c684dad4bc6845fbba94, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4743
+      value: -4814
       objectReference: {fileID: 0}
     - target: {fileID: 4266466412616060, guid: 2a27348fb4e5c684dad4bc6845fbba94, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 114
+      value: 164
       objectReference: {fileID: 0}
     - target: {fileID: 4266466412616060, guid: 2a27348fb4e5c684dad4bc6845fbba94, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 12
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 4266466412616060, guid: 2a27348fb4e5c684dad4bc6845fbba94, type: 3}
       propertyPath: m_LocalRotation.x
@@ -72303,6 +72310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02224ab9d7b98f14fa64217394023826, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  theLevelmanager: {fileID: 1404134822}
   CurrentLevelSpawner1: {fileID: 1539136085073349331}
   CurrentLevelSpawner2: {fileID: 2366671665119637127}
 --- !u!1 &2052107738 stripped
@@ -75733,7 +75741,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &3608251818962227100
 MeshRenderer:
   m_ObjectHideFlags: 0

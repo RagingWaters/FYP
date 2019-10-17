@@ -16,7 +16,9 @@ public class enter : MonoBehaviour
 
     void Start()
     {
-   //     audio = GetComponent<AudioSource>();
+        Level1Spawner1.SetActive(false);
+        Level1Spawner2.SetActive(false);
+        //     audio = GetComponent<AudioSource>();
     }
 
 
@@ -25,7 +27,7 @@ public class enter : MonoBehaviour
     {
         enemySpawner.currentLevel = setLevel;
         enemySpawner.maxLevel = setMax;
-        enemySpawner.startSpawn = true;
+       // enemySpawner.startSpawn = true;
         Level1Spawner1.SetActive(true);
         Level1Spawner2.SetActive(true);
 
