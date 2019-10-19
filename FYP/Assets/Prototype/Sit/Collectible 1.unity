@@ -1077,6 +1077,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1788506516}
   throwForce: 1000
+  winscreen: {fileID: 0}
   rb: {fileID: 0}
 --- !u!65 &1827156288
 BoxCollider:
