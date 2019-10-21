@@ -4027,6 +4027,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lookRadius: 500
   target: {fileID: 0}
+  newTarget: {fileID: 5193839996060631065, guid: f174aede42b05c04c96c6cb0b3a904da,
+    type: 3}
+  decoyTarget: {fileID: 5193839996060631526, guid: f174aede42b05c04c96c6cb0b3a904da,
+    type: 3}
 --- !u!195 &1624341873945121862
 NavMeshAgent:
   m_ObjectHideFlags: 0

@@ -11,6 +11,7 @@ public class Throw : MonoBehaviour
     private bool touched = false;
     public GameObject winscreen;
     [SerializeField] Rigidbody rb;
+    public PlayerController pc;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +22,7 @@ public class Throw : MonoBehaviour
     void Update()
     {
         float dist = Vector3.Distance(gameObject.transform.position, player.position);
-        if (dist <= 10f)
+        if (dist <= 5f)
         {
             hasPlayer = true;
             Debug.Log("in range");
@@ -36,25 +37,26 @@ public class Throw : MonoBehaviour
             rb.constraints = RigidbodyConstraints.FreezeAll;
             transform.parent = player;
             beingCarried = true;
+                pc.Speed = 0;
             Debug.Log("picked");
         }
         if (beingCarried)
         {
             //Win();
-            if (touched)
+            /*if (touched)
             {
                 rb.constraints = RigidbodyConstraints.None;
                 transform.parent = null;
                 beingCarried = false;
                 touched = false;
-            }
-            /*if ((Input.GetKeyDown(KeyCode.T)) || Input.GetButtonDown("Throw"))
+            }*/
+            if ((Input.GetKeyDown(KeyCode.T)) || Input.GetButtonDown("Throw"))
             {
                 rb.constraints = RigidbodyConstraints.None;
                 transform.parent = null;
-                rb.AddForce(player.transform.forward * throwForce * 10f);
+                
                 Debug.Log("thrown");
-            }*/
+            }
         }
     }
 

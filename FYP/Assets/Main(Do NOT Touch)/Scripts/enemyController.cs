@@ -9,7 +9,11 @@ public class enemyController : MonoBehaviour
     public float lookRadius = 10f;
 
     public Transform target;
+   
+    
     NavMeshAgent agent;
+    //public GameObject decoyTarget;
+
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +22,8 @@ public class enemyController : MonoBehaviour
 
         target = PlayerControls.instance.transform;
         agent = GetComponent<NavMeshAgent>();
+        
+        
     }
 
     // Update is called once per frame
@@ -34,6 +40,7 @@ public class enemyController : MonoBehaviour
                 FaceTarget();
                 //print("ter");
             }
+            
         }
 
         else
@@ -59,5 +66,7 @@ public class enemyController : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, lookRadius);
     }
+    
+   
 
 }
