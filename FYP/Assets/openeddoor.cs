@@ -7,6 +7,7 @@ public class openeddoor : MonoBehaviour
 
     public GameObject openedooropt;
     public PlayerControls Player;
+    public GameObject disableDoor;
 
     // Start is called before the first frame update
     void Start()
@@ -24,9 +25,11 @@ public class openeddoor : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            if (Input.GetKeyDown(KeyCode.K))
+            openedooropt.SetActive(true);
+            if (Input.GetKeyDown(KeyCode.P))
             {
-                openedooropt.SetActive(true);
+                disableDoor.SetActive(false);
+                openedooropt.SetActive(false);
             }
         }
     }

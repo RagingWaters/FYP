@@ -26,10 +26,7 @@ public class wrongdoor : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            if (Input.GetKeyDown(KeyCode.K))
-            {
-                wrongdooropt.SetActive(true);
-            }
+            wrongdooropt.SetActive(true);
         }
     }
 

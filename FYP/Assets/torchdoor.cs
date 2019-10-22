@@ -8,6 +8,8 @@ public class torchdoor : MonoBehaviour
     public GameObject torchdooropt;
     public PlayerControls Player;
     public GameObject warning;
+    public GameObject disabledDoor;
+    public LevelManager lm;
 
     // Start is called before the first frame update
     void Start()
@@ -25,9 +27,15 @@ public class torchdoor : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            if (Input.GetKeyDown(KeyCode.K))
+            torchdooropt.SetActive(true);
+            if (Input.GetKeyDown(KeyCode.P) && lm.currentKey == 1)
             {
-                torchdooropt.SetActive(true);
+                disabledDoor.SetActive(false);
+                torchdooropt.SetActive(false);
+            }
+            else
+            {
+                warning.SetActive(true);
             }
         }
     }

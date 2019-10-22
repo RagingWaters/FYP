@@ -9,7 +9,7 @@ public class Throw : MonoBehaviour
     bool hasPlayer = false;
     bool beingCarried = false;
     private bool touched = false;
-    public GameObject winscreen;
+    //public GameObject winscreen;
     [SerializeField] Rigidbody rb;
     public PlayerControls pc;
     // Start is called before the first frame update
@@ -62,8 +62,8 @@ public class Throw : MonoBehaviour
         }
     }
 
-    void Win()
+    /*void Win()
     {
         winscreen.SetActive(true);
-    }
+    }*/
 }

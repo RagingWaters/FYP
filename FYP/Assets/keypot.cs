@@ -9,6 +9,7 @@ public class keypot : MonoBehaviour
     public PlayerControls Player;
     public GameObject warning;
     public GameObject foundkey;
+    public LevelManager lm;
 
     // Start is called before the first frame update
     void Start()
@@ -26,9 +27,17 @@ public class keypot : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            if (Input.GetKeyDown(KeyCode.K))
+            shovelopt.SetActive(true);
+            if (lm.currentShovel == 1 && Input.GetKeyDown(KeyCode.P))
             {
-                shovelopt.SetActive(true);
+                shovelopt.SetActive(false);
+                foundkey.SetActive(true);
+                lm.keypotopt.SetActive(true);
+                lm.keyy.SetActive(true);
+            }
+            else if(lm.currentShovel == 0)
+            {
+                lm.warning0shovel.SetActive(true);
             }
         }
     }
