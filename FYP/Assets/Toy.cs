@@ -6,13 +6,18 @@ public class Toy : MonoBehaviour
 {
 
     public GameObject Activation;
-    //public AudioClip otherClip;
+    public GameObject toytoDestroy;
+    public AudioSource audioSource;
+    public AudioClip wakeUp;
+    public LevelManager lm;
+    public float volume;
     protected bool letPlay = true;
+    [SerializeField] public int ToyActive;
 
     // Start is called before the first frame update
     void Start()
     {
-        //AudioSource audio = GetComponent<AudioSource>();
+        ToyActive = 0;
     }
 
     // Update is called once per frame
@@ -37,23 +42,28 @@ public class Toy : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == "Player" /*&& Input.GetKeyDown(KeyCode.K)*/)
+        if (other.gameObject.tag == "Player" && ToyActive == 0)
         {
             Debug.Log("Toy Activated");
-            //letPlay = !letPlay;
-            Activation.SetActive(true);
-            enemySpawner.startSpawn = true;
             //audio.Play();
-            StartCoroutine(ActivatedToy());
-            
+            ToyActive = 1;
+            StartCoroutine(ActivatedToy());  
         }
 
+        if (other.gameObject.tag == "Player" && ToyActive == 1 && Input.GetKeyDown(KeyCode.Space))
+        {
+            lm.currentToy = 1;
+            Destroy(toytoDestroy);
+            Destroy(Activation);
+        }
     }
 
     IEnumerator ActivatedToy()
     {
+        Activation.SetActive(true);
+        audioSource.PlayOneShot(wakeUp, volume);
+        enemySpawner.startSpawn = true;
         yield return new WaitForSeconds(10f);
         Activation.SetActive(false);
-        //Destroy(this.gameObject);
     }
 }

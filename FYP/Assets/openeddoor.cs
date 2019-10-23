@@ -26,7 +26,7 @@ public class openeddoor : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             openedooropt.SetActive(true);
-            if (Input.GetKeyDown(KeyCode.P))
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 disableDoor.SetActive(false);
                 openedooropt.SetActive(false);

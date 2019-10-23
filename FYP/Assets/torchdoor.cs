@@ -28,7 +28,7 @@ public class torchdoor : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             torchdooropt.SetActive(true);
-            if (Input.GetKeyDown(KeyCode.P) && lm.currentKey == 1)
+            if (Input.GetKeyDown(KeyCode.Space) && lm.currentKey == 1)
             {
                 disabledDoor.SetActive(false);
                 torchdooropt.SetActive(false);

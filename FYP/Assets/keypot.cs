@@ -28,7 +28,7 @@ public class keypot : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             shovelopt.SetActive(true);
-            if (lm.currentShovel == 1 && Input.GetKeyDown(KeyCode.P))
+            if (lm.currentShovel == 1 && Input.GetKeyDown(KeyCode.Space))
             {
                 shovelopt.SetActive(false);
                 foundkey.SetActive(true);
