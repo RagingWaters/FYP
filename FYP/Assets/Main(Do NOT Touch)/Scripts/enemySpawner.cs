@@ -87,7 +87,7 @@ public class enemySpawner : MonoBehaviour
         }
     }
 
-    void waveCompleted()
+   public void waveCompleted()
     {
         Debug.Log("Wave Completed");
 

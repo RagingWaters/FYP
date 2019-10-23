@@ -26,6 +26,8 @@ public class LevelManager : MonoBehaviour
    [SerializeField] public int currentShovel;
    [SerializeField] public int currentCigg;
    [SerializeField] public int currentTorch;
+   [SerializeField] public int currentJournal;
+   [SerializeField] public int currentToy;
 
     public GameObject gameOverScreen;
     public GameObject option;
@@ -51,6 +53,7 @@ public class LevelManager : MonoBehaviour
     public GameObject cigg;
     public GameObject foundcigg;
     public GameObject randompotopt;
+   
 
 
 
@@ -202,6 +205,16 @@ public class LevelManager : MonoBehaviour
     {
         currentCigg += ciggToAdd;
 
+    }
+
+    public void AddJournal( int JournalToAdd)
+    {
+        currentJournal += JournalToAdd;
+    }
+
+    public void AddToy(int ToyToAdd)
+    {
+        currentToy += ToyToAdd;
     }
 
         public IEnumerator RespawnCo()
