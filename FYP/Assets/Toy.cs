@@ -47,7 +47,6 @@ public class Toy : MonoBehaviour
         if (other.gameObject.tag == "Player" && ToyActive == 0)
         {
             Debug.Log("Toy Activated");
-            //audio.Play();
             ToyActive = 1;
             originalSpawn.transform.position = newSpawnEnemy.position;
             StartCoroutine(ActivatedToy());  
