@@ -63,7 +63,7 @@ public class Toy : MonoBehaviour
         Activation.SetActive(true);
         audioSource.PlayOneShot(wakeUp, volume);
         enemySpawner.startSpawn = true;
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(4f);
         Activation.SetActive(false);
     }
 }
