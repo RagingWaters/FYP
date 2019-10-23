@@ -32,7 +32,7 @@ public class Throw : MonoBehaviour
         else
         {
             hasPlayer = false;
-            rb.constraints = RigidbodyConstraints.None;
+            rb.constraints = RigidbodyConstraints.FreezeAll;
         }
         if ((hasPlayer && Input.GetKeyDown(KeyCode.R)) || (hasPlayer && Input.GetButtonDown("PickUp")))
         {
