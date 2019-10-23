@@ -66021,7 +66021,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4266466412616060, guid: 2a27348fb4e5c684dad4bc6845fbba94, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1044
+      value: 726
       objectReference: {fileID: 0}
     - target: {fileID: 4266466412616060, guid: 2a27348fb4e5c684dad4bc6845fbba94, type: 3}
       propertyPath: m_LocalPosition.z
@@ -74931,6 +74931,8 @@ MonoBehaviour:
   audioSource: {fileID: 1925771079}
   wakeUp: {fileID: 8300000, guid: 845e89b4966d7eb4d9a8f329134369ba, type: 3}
   lm: {fileID: 1404134822}
+  originalSpawn: {fileID: 1539136085073349331}
+  newSpawnEnemy: {fileID: 1700896598684702796}
   volume: 5
   ToyActive: 0
 --- !u!65 &1925771074
@@ -75019,7 +75021,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -81919,7 +81921,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3030177050575195022}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 71.32677, y: 16.91529, z: 2.6938639}
+  m_LocalPosition: {x: -4565, y: 737, z: 235}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4839132722208538943}
@@ -82387,7 +82389,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 209367050537402245}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 121.22676, y: 16.96529, z: 2.6938639}
+  m_LocalPosition: {x: -4860, y: 697, z: 65}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4839132722208538943}

@@ -10,6 +10,8 @@ public class Toy : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip wakeUp;
     public LevelManager lm;
+    public GameObject originalSpawn;
+    public Transform newSpawnEnemy;
     public float volume;
     protected bool letPlay = true;
     [SerializeField] public int ToyActive;
@@ -47,6 +49,7 @@ public class Toy : MonoBehaviour
             Debug.Log("Toy Activated");
             //audio.Play();
             ToyActive = 1;
+            originalSpawn.transform.position = newSpawnEnemy.position;
             StartCoroutine(ActivatedToy());  
         }
 
