@@ -16,7 +16,7 @@ public class exit : MonoBehaviour
         CurrentLevelSpawner1.SetActive(false);
         CurrentLevelSpawner2.SetActive(false);
         enemySpawner.startSpawn = false;
-        theLevelmanager.Win();
+        Debug.Log("ghost dieded");
 
         // light1.SetActive(false);
         // if (other.gameObject.tag.Equals("Enemy"));

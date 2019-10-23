@@ -6,10 +6,7 @@ public class Journal : MonoBehaviour
 {
     public LevelManager lm;
     public int journalValue;
-    public GameObject currentSpawner1;
-    public GameObject currentSpawner2;
-    public GameObject currentSpawner3;
-    public GameObject currentSpawner4;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -28,10 +25,7 @@ public class Journal : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                currentSpawner1.SetActive(false);
-                currentSpawner2.SetActive(false);
-                currentSpawner3.SetActive(true);
-                currentSpawner4.SetActive(true);
+              
                 lm.AddJournal(journalValue);
                 print("added journal, spawning ghost");
                 Destroy(gameObject);
