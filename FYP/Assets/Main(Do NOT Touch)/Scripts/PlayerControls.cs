@@ -108,7 +108,7 @@ public class PlayerControls : MonoBehaviour
             storedInputV = verticalInput;
         }
     }
-    void Movement()
+    public void Movement()
     {
         Vector3 forward = mainCam.transform.forward;
         Vector3 right = mainCam.transform.right;

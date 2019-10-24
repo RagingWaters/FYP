@@ -28,6 +28,7 @@ public class LevelManager : MonoBehaviour
    [SerializeField] public int currentTorch;
    [SerializeField] public int currentJournal;
    [SerializeField] public int currentToy;
+    [SerializeField] public int currentPages;
 
     public GameObject gameOverScreen;
     public GameObject option;
@@ -215,6 +216,11 @@ public class LevelManager : MonoBehaviour
     public void AddToy(int ToyToAdd)
     {
         currentToy += ToyToAdd;
+    }
+
+    public void AddPage(int PageToAdd)
+    {
+        currentPages += PageToAdd;
     }
 
         public IEnumerator RespawnCo()
