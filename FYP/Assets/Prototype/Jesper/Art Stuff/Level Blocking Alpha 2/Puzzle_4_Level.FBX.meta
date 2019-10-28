@@ -1,0 +1,178 @@
+fileFormatVersion: 2
+guid: c64d66675eac514479c72fcecd2e8ddb
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Floor_ Middle
+    100002: Floor_Left
+    100004: Floor_Right
+    100006: Puzle_Door
+    100008: //RootNode
+    100010: Puzzle_Door_Handle
+    100012: Puzzle_Wall
+    100014: Rail_Pillars
+    100016: Unit_101
+    100018: Unit_102
+    100020: Unit_103
+    100022: Unit_104
+    100024: Unit_105
+    100026: Unit_106
+    100028: Unit_107
+    400000: Floor_ Middle
+    400002: Floor_Left
+    400004: Floor_Right
+    400006: Puzle_Door
+    400008: //RootNode
+    400010: Puzzle_Door_Handle
+    400012: Puzzle_Wall
+    400014: Rail_Pillars
+    400016: Unit_101
+    400018: Unit_102
+    400020: Unit_103
+    400022: Unit_104
+    400024: Unit_105
+    400026: Unit_106
+    400028: Unit_107
+    2100000: No Name
+    2300000: Floor_ Middle
+    2300002: Floor_Left
+    2300004: Floor_Right
+    2300006: Puzle_Door
+    2300008: Puzzle_Door_Handle
+    2300010: Puzzle_Wall
+    2300012: Rail_Pillars
+    2300014: Unit_101
+    2300016: Unit_102
+    2300018: Unit_103
+    2300020: Unit_104
+    2300022: Unit_105
+    2300024: Unit_106
+    2300026: Unit_107
+    3300000: Floor_ Middle
+    3300002: Floor_Left
+    3300004: Floor_Right
+    3300006: Puzle_Door
+    3300008: Puzzle_Door_Handle
+    3300010: Puzzle_Wall
+    3300012: Rail_Pillars
+    3300014: Unit_101
+    3300016: Unit_102
+    3300018: Unit_103
+    3300020: Unit_104
+    3300022: Unit_105
+    3300024: Unit_106
+    3300026: Unit_107
+    4300000: Puzzle_Wall
+    4300002: Puzle_Door
+    4300004: Puzzle_Door_Handle
+    4300006: Rail_Pillars
+    4300008: Floor_ Middle
+    4300010: Floor_Right
+    4300012: Floor_Left
+    4300014: Unit_103
+    4300016: Unit_104
+    4300018: Unit_105
+    4300020: Unit_106
+    4300022: Unit_102
+    4300024: Unit_101
+    4300026: Unit_107
+    6400000: Floor_ Middle
+    6400002: Floor_Left
+    6400004: Floor_Right
+    6400006: Puzle_Door
+    6400008: Puzzle_Door_Handle
+    6400010: Puzzle_Wall
+    6400012: Rail_Pillars
+    6400014: Unit_101
+    6400016: Unit_102
+    6400018: Unit_103
+    6400020: Unit_104
+    6400022: Unit_105
+    6400024: Unit_106
+    6400026: Unit_107
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
