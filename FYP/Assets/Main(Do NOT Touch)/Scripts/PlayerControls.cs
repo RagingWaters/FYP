@@ -13,7 +13,7 @@ public class PlayerControls : MonoBehaviour
     public float moveRunSpeed;
        
 
-    public float turnSpeed = 50;
+    public float turnSpeed = 15;
     public float horizontalInput, verticalInput;
     public float frameStorage;
     private float storedInputH, storedInputV;
@@ -53,7 +53,7 @@ public class PlayerControls : MonoBehaviour
         col = GetComponent<SphereCollider>();
 
 
-        currentSpeed = 200;
+        currentSpeed = 5;
 
         respawnPosition = transform.position;
 

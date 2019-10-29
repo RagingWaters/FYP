@@ -39,7 +39,7 @@ public class Throw : MonoBehaviour
             rb.constraints = RigidbodyConstraints.FreezeAll;
             transform.parent = player;
             beingCarried = true;
-                pc.currentSpeed = 100;
+            pc.currentSpeed = 100;
             Debug.Log("picked");
         }
         if (beingCarried)
