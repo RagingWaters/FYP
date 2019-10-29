@@ -15266,7 +15266,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 17447e8f807b9e249ae411bce27f355d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 17447e8f807b9e249ae411bce27f355d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18734,7 +18734,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 086e3d361e09da64e860f85fc9c23c1b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 086e3d361e09da64e860f85fc9c23c1b, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -23289,7 +23289,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 086e3d361e09da64e860f85fc9c23c1b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 086e3d361e09da64e860f85fc9c23c1b, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -31998,15 +31998,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a51635afb7a177b43b25ad546143b58c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4403
+      value: -40.823
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a51635afb7a177b43b25ad546143b58c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 118.6
+      value: -8.625
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a51635afb7a177b43b25ad546143b58c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -82.7
+      value: -16.632
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a51635afb7a177b43b25ad546143b58c, type: 3}
       propertyPath: m_LocalRotation.x
@@ -32042,11 +32042,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a51635afb7a177b43b25ad546143b58c, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.76
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a51635afb7a177b43b25ad546143b58c, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.77000093
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a51635afb7a177b43b25ad546143b58c, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a51635afb7a177b43b25ad546143b58c, type: 3}
@@ -32087,8 +32091,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 39.629883, y: 40.33879, z: 1.0464838}
-  m_Center: {x: 2.4526367, y: -5.5976105, z: 0.00003272295}
+  m_Size: {x: 44.909756, y: 54.90703, z: 1.0464838}
+  m_Center: {x: 5.0925775, y: -0.4324615, z: 0.00003273599}
 --- !u!108 &1772541142
 Light:
   m_ObjectHideFlags: 0
@@ -32101,7 +32105,7 @@ Light:
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 5
-  m_Range: 4.1834106
+  m_Range: 0.7352543
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -38302,7 +38306,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: c64d66675eac514479c72fcecd2e8ddb, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: c64d66675eac514479c72fcecd2e8ddb, type: 3}
       propertyPath: m_StaticEditorFlags
