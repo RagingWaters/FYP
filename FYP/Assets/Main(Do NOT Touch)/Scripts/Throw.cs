@@ -25,7 +25,7 @@ public class Throw : MonoBehaviour
         if (dist <= 250f)
         {
             hasPlayer = true;
-            Debug.Log("in range");
+            //Debug.Log("in range");
             /*rb.constraints = RigidbodyConstraints.FreezePositionX;
             rb.constraints = RigidbodyConstraints.FreezePositionZ;*/
         }
