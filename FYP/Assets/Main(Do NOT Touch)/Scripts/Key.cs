@@ -8,6 +8,8 @@ public class Key : MonoBehaviour
 
     public LevelManager theLevelManager;
     public int keyValue;
+    public GameObject keyy;
+
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +32,7 @@ public class Key : MonoBehaviour
                 theLevelManager.AddKey(keyValue);
                 print("added key");
                 Destroy(gameObject);
+                keyy.SetActive(false);
             }
         }
     }

@@ -45,7 +45,7 @@ public class enemyController : MonoBehaviour
 
         else
         {
-            agent.ResetPath();
+        //    agent.ResetPath();
         }
         if (enemySpawner.startSpawn == false) Destroy(gameObject);
         //print(agent.destination);

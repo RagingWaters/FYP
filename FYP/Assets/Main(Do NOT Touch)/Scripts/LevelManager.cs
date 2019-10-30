@@ -36,8 +36,8 @@ public class LevelManager : MonoBehaviour
 
     public Slider staminaSlider;
 
-    public GameObject Door;
-    public GameObject LastDoor;
+   // public GameObject Door;
+   // public GameObject LastDoor;
     public GameObject torchdoor;
     public GameObject warning;
     public GameObject warningwrong;
