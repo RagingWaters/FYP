@@ -5,7 +5,7 @@ using UnityEngine;
 public class Pages : MonoBehaviour
 {
     public GameObject page;
-    bool paused = false;
+    
     public PlayerControls pc;
     public LevelManager lm;
     public int pageValue;
@@ -31,7 +31,7 @@ public class Pages : MonoBehaviour
                 page.SetActive(true);
                 pc.enabled = false;
                 Time.timeScale = 0;
-                paused = true;
+                
                 lm.AddPage(pageValue);
                 Debug.Log("Page Added");
                 
@@ -41,7 +41,7 @@ public class Pages : MonoBehaviour
 
             else
             {
-                paused = false;
+                
             }
         }
     }
@@ -51,7 +51,6 @@ public class Pages : MonoBehaviour
         Time.timeScale = 1;
         pc.enabled = true;
         page.SetActive(false);
-        paused = false;
         Destroy(gameObject);
     }
 
