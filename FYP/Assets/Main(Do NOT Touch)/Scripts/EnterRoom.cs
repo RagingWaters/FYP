@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class EnterRoom : MonoBehaviour
 {
-    public GameObject cam;
-    public GameObject mainCam;
+    public GameObject Activecam;
+    public GameObject DisableCam;
 
     // Start is called before the first frame update
     void Start()
@@ -24,8 +24,8 @@ public class EnterRoom : MonoBehaviour
         if (other.tag == "Player")
         {
             print("HitPlyer");
-            cam.SetActive(true);
-            mainCam.SetActive(false);
+            Activecam.SetActive(true);
+            DisableCam.SetActive(false);
             // StartCoroutine(BigBoy());  
         }
     }
