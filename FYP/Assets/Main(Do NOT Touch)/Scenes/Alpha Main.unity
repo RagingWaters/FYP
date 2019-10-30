@@ -7086,7 +7086,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 391380431}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 865, y: 682.4, z: -26.7}
+  m_LocalPosition: {x: 55.5, y: 10.02, z: -29.47}
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_Children: []
   m_Father: {fileID: 255017240}
@@ -15018,7 +15018,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   randomshovelopt: {fileID: 866094047}
-  Player: {fileID: 0}
+  Player: {fileID: 470958073}
   warning: {fileID: 268598170}
   foundcig: {fileID: 1054931819}
 --- !u!65 &611070280
@@ -15317,7 +15317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   emptyshovelopt: {fileID: 2064770508}
-  Player: {fileID: 0}
+  Player: {fileID: 470958073}
   warning: {fileID: 268598170}
 --- !u!65 &628169593
 BoxCollider:
@@ -30443,8 +30443,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1611733221}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -4861.8, y: 136, z: 31.5}
-  m_LocalScale: {x: 7, y: 7, z: 7}
+  m_LocalPosition: {x: 58.31, y: 7.315, z: -28.4}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 2011456905}
   - {fileID: 881594913}
@@ -32816,6 +32816,7 @@ MonoBehaviour:
   openedooropt: {fileID: 117772205}
   Player: {fileID: 470958073}
   disableDoor: {fileID: 1793073640}
+  anim: {fileID: 0}
 --- !u!65 &1793073646
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35995,6 +35996,7 @@ MonoBehaviour:
   warning: {fileID: 1552683898}
   disabledDoor: {fileID: 1938773907}
   lm: {fileID: 1589620665}
+  anim: {fileID: 0}
 --- !u!65 &1938773913
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36035,7 +36037,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1940383079}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1424.5, y: 412.5, z: -75.8}
+  m_LocalPosition: {x: 68.518, y: 10.02, z: -27.45}
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_Children: []
   m_Father: {fileID: 255017240}
