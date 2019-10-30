@@ -8,11 +8,12 @@ public class openeddoor : MonoBehaviour
     public GameObject openedooropt;
     public PlayerControls Player;
     public GameObject disableDoor;
+    public Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -28,8 +29,11 @@ public class openeddoor : MonoBehaviour
             openedooropt.SetActive(true);
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                disableDoor.SetActive(false);
+                anim.Play("NoKeyDoorAnimation");
+                Debug.Log("dooropen");
+                //disableDoor.SetActive(false);
                 openedooropt.SetActive(false);
+                
             }
         }
     }
