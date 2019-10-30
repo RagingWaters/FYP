@@ -3987,7 +3987,7 @@ Transform:
   m_GameObject: {fileID: 1639474159608922915}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
   m_LocalPosition: {x: -4861.8, y: 114.7, z: 31.5}
-  m_LocalScale: {x: 7, y: 7, z: 7}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 1639474159608897281}
   - {fileID: 1639474159608897287}
@@ -4025,12 +4025,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5e51f914c918004f8cb17d8be120c07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lookRadius: 500
+  lookRadius: 10
   target: {fileID: 0}
-  newTarget: {fileID: 5193839996060631065, guid: f174aede42b05c04c96c6cb0b3a904da,
-    type: 3}
-  decoyTarget: {fileID: 5193839996060631526, guid: f174aede42b05c04c96c6cb0b3a904da,
-    type: 3}
 --- !u!195 &1624341873945121862
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -4041,10 +4037,10 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 3
-  m_Speed: 200
-  m_Acceleration: 100
+  m_Speed: 5
+  m_Acceleration: 2
   avoidancePriority: 50
-  m_AngularSpeed: 200
+  m_AngularSpeed: 5
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
