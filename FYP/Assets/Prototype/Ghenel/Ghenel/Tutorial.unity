@@ -26804,6 +26804,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   theLevelManager: {fileID: 1404134822}
   keyValue: 1
+  keyy: {fileID: 0}
 --- !u!65 &775102750
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -49107,7 +49108,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1227762265
 Transform:
   m_ObjectHideFlags: 0
@@ -49116,7 +49117,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1227762264}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4218.9, y: -383, z: -418}
+  m_LocalPosition: {x: -4218.9, y: -178, z: -418}
   m_LocalScale: {x: 70, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 2040266138}
@@ -49142,7 +49143,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1227762264}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -60880,12 +60881,11 @@ MonoBehaviour:
   currentTorch: 0
   currentJournal: 0
   currentToy: 0
+  currentPages: 0
   gameOverScreen: {fileID: 901748809}
   option: {fileID: 610982787}
   tasklistbtn: {fileID: 614205670}
   staminaSlider: {fileID: 1771853777}
-  Door: {fileID: 1712628817}
-  LastDoor: {fileID: 501869895}
   torchdoor: {fileID: 1223799406}
   warning: {fileID: 2072852963}
   warningwrong: {fileID: 741644885}
@@ -83159,6 +83159,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   theLevelManager: {fileID: 1404134822}
   keyValue: 1
+  keyy: {fileID: 0}
 --- !u!65 &7518859180550977209
 BoxCollider:
   m_ObjectHideFlags: 0

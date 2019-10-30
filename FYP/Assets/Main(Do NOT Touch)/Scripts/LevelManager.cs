@@ -141,17 +141,17 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    public void gottorchspawnenemy()
-    {
-        if (currentTorch == 1)
-        {
-            enemySpawner.startSpawn = true;
-        }
-        else
-        {
-            enemySpawner.startSpawn = false;
-        }
-    }
+    //public void gottorchspawnenemy()
+    //{
+    //    if (currentTorch == 1)
+    //    {
+    //        enemySpawner.startSpawn = true;
+    //    }
+    //    else
+    //    {
+    //        enemySpawner.startSpawn = false;
+    //    }
+    //}
 
     public void digrandompot()
     {
