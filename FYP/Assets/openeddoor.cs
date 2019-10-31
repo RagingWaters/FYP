@@ -29,9 +29,9 @@ public class openeddoor : MonoBehaviour
             openedooropt.SetActive(true);
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                anim.Play("NoKeyDoorAnimation");
+                //anim.Play("NoKeyDoorAnimation");
                 Debug.Log("dooropen");
-                //disableDoor.SetActive(false);
+                disableDoor.SetActive(false);
                 openedooropt.SetActive(false);
                 
             }

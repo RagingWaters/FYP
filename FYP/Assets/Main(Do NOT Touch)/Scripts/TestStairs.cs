@@ -7,36 +7,32 @@ public class TestStairs : MonoBehaviour
 
     public GameObject player;
     public Transform Target;
-    public Transform Target2;
+    private bool cd;
 
     void Start()
     {
-        player = FindObjectOfType<PlayerControls>().gameObject;
+        cd = false;
     }
 
-    void Teleport()
-    {
-        player.transform.position = Target.transform.position;
-    }
-
-    void Teleport2()
-    {
-        player.transform.position = Target2.transform.position;
-    }
 
     void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.tag == "Player" )
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.Space) && cd == false)
             {
-                Teleport();
-            }
 
-            else if (Input.GetKeyDown(KeyCode.F))
-            {
-                Teleport2();
+                cd = true;
+                StartCoroutine(Teleport());
             }
         }
     }
+
+    IEnumerator Teleport()
+    {
+        player.transform.position = Target.transform.position;
+        yield return new WaitForSeconds(2f);
+        cd = false;
+    }
+
 }

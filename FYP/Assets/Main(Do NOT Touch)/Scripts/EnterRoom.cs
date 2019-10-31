@@ -21,7 +21,7 @@ public class EnterRoom : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.gameObject.tag == "Player")
         {
             print("HitPlyer");
             Activecam.SetActive(true);

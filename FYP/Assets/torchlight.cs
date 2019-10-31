@@ -26,7 +26,7 @@ public class torchlight : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                enemySpawner.startSpawn = true;
+                enemySpawner.startSpawn = true; 
                 theLevelManager.AddTorch(torchValue);
                 print("added torch, spawning ghost");
                 Destroy(gameObject);
