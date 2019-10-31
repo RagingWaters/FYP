@@ -27,7 +27,7 @@ public class Journal : MonoBehaviour
             {
               
                 lm.AddJournal(journalValue);
-                print("added journal, spawning ghost");
+                print("added journal");
                 Destroy(gameObject);
             }
         }

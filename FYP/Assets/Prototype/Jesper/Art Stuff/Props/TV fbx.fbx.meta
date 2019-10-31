@@ -122,6 +122,29 @@ ModelImporter:
     4300040: Ssphere004
     4300042: Ssphere005
     4300044: Bbox007
+    6400000: Bbox001
+    6400002: Bbox002
+    6400004: Bbox003
+    6400006: Bbox004
+    6400008: Bbox005
+    6400010: Bbox006
+    6400012: Bbox007
+    6400014: Ccylinder003
+    6400016: Ccylinder004
+    6400018: Ccylinder005
+    6400020: Ccylinder006
+    6400022: Ccylinder007
+    6400024: Ccylinder008
+    6400026: Ccylinder009
+    6400028: Ccylinder010
+    6400030: Cones
+    6400032: Cones1
+    6400034: Cones2
+    6400036: Cones4
+    6400038: screen
+    6400040: Ssphere002
+    6400042: Ssphere004
+    6400044: Ssphere005
     7400000: Take 001
     9500000: //RootNode
   externalObjects: {}
@@ -157,7 +180,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
