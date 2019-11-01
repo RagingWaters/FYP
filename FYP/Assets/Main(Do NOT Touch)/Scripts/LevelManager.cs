@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour
 {
-    public GameObject winscreen;
+    //public GameObject winscreen;
     private static int Current;
 
     public float waitToRespawn;
@@ -28,7 +28,8 @@ public class LevelManager : MonoBehaviour
    [SerializeField] public int currentTorch;
    [SerializeField] public int currentJournal;
    [SerializeField] public int currentClock;
-    [SerializeField] public int currentPages;
+   [SerializeField] public int currentPages;
+   [SerializeField] public int currentTalisman;
 
     public GameObject gameOverScreen;
     public GameObject option;
@@ -75,16 +76,16 @@ public class LevelManager : MonoBehaviour
 
     }
 
-    public void Win()
-    {
-        if (currentKey == 1 && currentShovel == 1 && currentTorch == 1)
-        {
-            Debug.Log("1 key 1 torch in utitlity room");
-            winscreen.SetActive(true);
-            /*Current = 0;
-            Collectible.theScore = Current;*/
-        }
-    }
+    //public void Win()
+    //{
+    //    if (currentTalisman == 1)
+    //    {
+    //        Debug.Log("1 Talismamn");
+    //        winscreen.SetActive(true);
+    //        /*Current = 0;
+    //        Collectible.theScore = Current;*/
+    //    }
+    //}
 
     public void gameOver()
     {
@@ -217,6 +218,12 @@ public class LevelManager : MonoBehaviour
     {
         currentClock += ToyToAdd;
     }
+
+    public void AddTalisman(int TalismanToAdd)
+    {
+        currentTalisman += TalismanToAdd;
+    }
+
 
     public void AddPage(int PageToAdd)
     {
