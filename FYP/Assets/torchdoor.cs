@@ -26,16 +26,16 @@ public class torchdoor : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player" && Input.GetKeyDown(KeyCode.Space))
         {
             torchdooropt.SetActive(true);
-            if (Input.GetKeyDown(KeyCode.Space) && lm.currentKey == 1)
+            if (lm.currentKey == 1)
             {
                 //anim.Play("GotKeyDoorAnimation");
                 disabledDoor.SetActive(false);
                 torchdooropt.SetActive(false);
             }
-            else
+            else if (lm.currentKey == 0)
             {
                 warning.SetActive(true);
             }
