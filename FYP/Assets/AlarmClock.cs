@@ -19,7 +19,7 @@ public class AlarmClock : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       if (lm.currentJournal == 1 && lm.currentToy ==1)
+       if (lm.currentJournal == 1 && lm.currentClock ==1)
         {
             audioSource.PlayOneShot(wakeUp, volume);
             alreadyPlayed = true;

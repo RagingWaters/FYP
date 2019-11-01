@@ -25,8 +25,8 @@ public class ToySit : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 
-                lm.AddToy(toyValue);
-                print("added toy, spawning ghost");
+                lm.AddClock(toyValue);
+                print("added Clock, spawning ghost");
                 Destroy(gameObject);
                
                 enemySpawner.startSpawn = true;

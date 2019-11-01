@@ -54,7 +54,7 @@ public class Toy : MonoBehaviour
 
         if (other.gameObject.tag == "Player" && ToyActive == 1 && Input.GetKeyDown(KeyCode.Space))
         {
-            lm.currentToy = 1;
+            lm.currentClock = 1;
             Destroy(toytoDestroy);
             Destroy(Activation);
         }

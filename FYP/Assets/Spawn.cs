@@ -23,7 +23,7 @@ public class Spawn : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            print("entrance");
+            print("entrance of floor2");
             enemySpawner.startSpawn = true;
             spawnActive.SetActive(false);
         }

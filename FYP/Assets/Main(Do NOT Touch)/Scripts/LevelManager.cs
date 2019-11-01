@@ -27,7 +27,7 @@ public class LevelManager : MonoBehaviour
    [SerializeField] public int currentCigg;
    [SerializeField] public int currentTorch;
    [SerializeField] public int currentJournal;
-   [SerializeField] public int currentToy;
+   [SerializeField] public int currentClock;
     [SerializeField] public int currentPages;
 
     public GameObject gameOverScreen;
@@ -213,9 +213,9 @@ public class LevelManager : MonoBehaviour
         currentJournal += JournalToAdd;
     }
 
-    public void AddToy(int ToyToAdd)
+    public void AddClock(int ToyToAdd)
     {
-        currentToy += ToyToAdd;
+        currentClock += ToyToAdd;
     }
 
     public void AddPage(int PageToAdd)

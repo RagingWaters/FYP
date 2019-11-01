@@ -30,7 +30,7 @@ public class EnterRoom : MonoBehaviour
         if (other.gameObject.tag == "Player")
 
         {
-            print("HitPlyer");
+            print("In room");
             ChangeCamPos();
             //Activecam.SetActive(true);
             //DisableCam.SetActive(false);
