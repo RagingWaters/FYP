@@ -5,8 +5,9 @@ using UnityEngine.UI;
 
 public class PlayerControls : MonoBehaviour
 {
-    public Camera mainCam;
+    public Camera referenceCam;
     Rigidbody rb;
+
 
     public float currentSpeed;
     public float moveSpeedNorm;
@@ -29,6 +30,7 @@ public class PlayerControls : MonoBehaviour
 
     public LevelManager theLevelmanager;
 
+    // this is so that other scripts can access its components
     public static PlayerControls instance;
 
     public int articleValue;
@@ -48,7 +50,7 @@ public class PlayerControls : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        mainCam = Camera.main;
+        referenceCam = Camera.main;
         rb = GetComponent<Rigidbody>();
         col = GetComponent<SphereCollider>();
 
@@ -110,8 +112,8 @@ public class PlayerControls : MonoBehaviour
     }
     public void Movement()
     {
-        Vector3 forward = mainCam.transform.forward;
-        Vector3 right = mainCam.transform.right;
+        Vector3 forward = referenceCam.transform.forward;
+        Vector3 right = referenceCam.transform.right;
         forward.y = 0;
         right.y = 0;
         Vector3 moveDirection = (forward * verticalInput + right * horizontalInput).normalized * currentSpeed;

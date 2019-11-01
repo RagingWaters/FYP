@@ -10,7 +10,7 @@ public class torchdoor : MonoBehaviour
     public GameObject warning;
     public GameObject disabledDoor;
     public LevelManager lm;
-    public Animator anim;
+    //public Animator anim;
 
     // Start is called before the first frame update
     void Start()
@@ -31,8 +31,8 @@ public class torchdoor : MonoBehaviour
             torchdooropt.SetActive(true);
             if (Input.GetKeyDown(KeyCode.Space) && lm.currentKey == 1)
             {
-                anim.Play("GotKeyDoorAnimation");
-                //disabledDoor.SetActive(false);
+                //anim.Play("GotKeyDoorAnimation");
+                disabledDoor.SetActive(false);
                 torchdooropt.SetActive(false);
             }
             else

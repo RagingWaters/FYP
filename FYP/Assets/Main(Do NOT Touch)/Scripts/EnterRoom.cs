@@ -5,8 +5,8 @@ using UnityEngine;
 public class EnterRoom : MonoBehaviour
 {
     public GameObject Activecam;
-    public GameObject DisableCam;
-
+    //public GameObject DisableCam;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -19,16 +19,26 @@ public class EnterRoom : MonoBehaviour
         
     }
 
+    void ChangeCamPos()
+    {
+        PlayerControls.instance.referenceCam.transform.position = Activecam.transform.position;
+        PlayerControls.instance.referenceCam.transform.rotation = Activecam.transform.rotation;
+    }
+
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
+
         {
             print("HitPlyer");
-            Activecam.SetActive(true);
-            DisableCam.SetActive(false);
+            ChangeCamPos();
+            //Activecam.SetActive(true);
+            //DisableCam.SetActive(false);
+            //PlayerControls.instance.referenceCam = Activecam.GetComponent<Camera>();
             // StartCoroutine(BigBoy());  
         }
     }
+
 
     //IEnumerator BigBoy()
     //{
