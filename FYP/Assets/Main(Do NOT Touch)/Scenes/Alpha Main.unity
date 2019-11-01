@@ -24621,7 +24621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61c9963c3ecdc6c4c953842a5a9738dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Activecam: {fileID: 854062174}
+  Activecam: {fileID: 926093706}
 --- !u!65 &594528414
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24633,8 +24633,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.7105865, y: 1, z: 1}
-  m_Center: {x: 0.06945801, y: 0, z: 0}
+  m_Size: {x: 1.7105865, y: 1, z: 1.7954254}
+  m_Center: {x: 0.06945801, y: 0, z: 0.3977127}
 --- !u!1001 &596942086
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32286,7 +32286,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &815753613
 Transform:
   m_ObjectHideFlags: 0
@@ -35416,7 +35416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61c9963c3ecdc6c4c953842a5a9738dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Activecam: {fileID: 1182051967}
+  Activecam: {fileID: 1846347248}
 --- !u!65 &907948114
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35428,8 +35428,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.0882645, y: 1, z: 1}
-  m_Center: {x: 0.0270195, y: 0, z: 0}
+  m_Size: {x: 2.0882645, y: 1, z: 1.79039}
+  m_Center: {x: 0.0270195, y: 0, z: 0.395195}
 --- !u!1 &909053596
 GameObject:
   m_ObjectHideFlags: 0
@@ -37915,7 +37915,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &981751874
 Transform:
   m_ObjectHideFlags: 0
@@ -39307,7 +39307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61c9963c3ecdc6c4c953842a5a9738dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Activecam: {fileID: 709579461}
+  Activecam: {fileID: 325990227}
 --- !u!65 &1026205898
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39319,8 +39319,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.847786, y: 1, z: 1}
-  m_Center: {x: 0.05072403, y: 0, z: 0}
+  m_Size: {x: 1.847786, y: 1.6097012, z: 1}
+  m_Center: {x: 0.05072403, y: -0.30485058, z: 0}
 --- !u!1 &1036313186
 GameObject:
   m_ObjectHideFlags: 0
@@ -42300,7 +42300,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1135403726
 Transform:
   m_ObjectHideFlags: 0
@@ -49940,8 +49940,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.507107, y: 1, z: 1.097826}
-  m_Center: {x: 2.2535534, y: 0, z: 0.053412437}
+  m_Size: {x: 5.962635, y: 1, z: 1.097826}
+  m_Center: {x: 2.4813175, y: 0, z: 0.053412437}
 --- !u!1 &1373360587
 GameObject:
   m_ObjectHideFlags: 0
@@ -51197,7 +51197,7 @@ GameObject:
   - component: {fileID: 1419157987}
   - component: {fileID: 1419157986}
   m_Layer: 0
-  m_Name: Aura Point Light (1) Weird Lighting
+  m_Name: Aura Point Light (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52349,8 +52349,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.37566, y: 1, z: 1.2891922}
-  m_Center: {x: 2.18783, y: 0, z: -0.04227066}
+  m_Size: {x: 5.835499, y: 1, z: 1.2891922}
+  m_Center: {x: 2.4177494, y: 0, z: -0.04227066}
 --- !u!1001 &1443449228
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58255,7 +58255,7 @@ GameObject:
   - component: {fileID: 1595663463}
   - component: {fileID: 1595663462}
   m_Layer: 0
-  m_Name: Aura Spot Light (1)
+  m_Name: Aura Spot Light (1) Weird Lighting
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58972,7 +58972,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1619326411
 Transform:
   m_ObjectHideFlags: 0
@@ -71500,8 +71500,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.656826, y: 1, z: 1.2252998}
-  m_Center: {x: 1.828413, y: 0, z: 0.11714935}
+  m_Size: {x: 5.6150246, y: 1, z: 1.2252998}
+  m_Center: {x: 2.3075123, y: 0, z: 0.11714935}
 --- !u!1 &1957897997
 GameObject:
   m_ObjectHideFlags: 0
@@ -74264,7 +74264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61c9963c3ecdc6c4c953842a5a9738dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Activecam: {fileID: 1615583169}
+  Activecam: {fileID: 16270078}
 --- !u!65 &2031756430
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -74276,8 +74276,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.1495132, y: 1, z: 1}
-  m_Center: {x: 0.11712265, y: 0, z: 0}
+  m_Size: {x: 2.1495132, y: 1, z: 1.8832474}
+  m_Center: {x: 0.11712265, y: 0, z: 0.4416237}
 --- !u!1 &2032651553
 GameObject:
   m_ObjectHideFlags: 0
