@@ -410,8 +410,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02224ab9d7b98f14fa64217394023826, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Level1Spawner1: {fileID: 1889248579}
-  Level1Spawner2: {fileID: 742597525}
+  theLevelmanager: {fileID: 0}
+  CurrentLevelSpawner1: {fileID: 0}
+  CurrentLevelSpawner2: {fileID: 0}
 --- !u!1 &517356121
 GameObject:
   m_ObjectHideFlags: 0
@@ -516,8 +517,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02224ab9d7b98f14fa64217394023826, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Level1Spawner1: {fileID: 91204493}
-  Level1Spawner2: {fileID: 135517351}
+  theLevelmanager: {fileID: 0}
+  CurrentLevelSpawner1: {fileID: 0}
+  CurrentLevelSpawner2: {fileID: 0}
 --- !u!1 &589197497
 GameObject:
   m_ObjectHideFlags: 0
@@ -749,6 +751,63 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1001 &1153059701
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 100000, guid: b6bd50c22fe24844db743f0d43ed0581, type: 3}
+      propertyPath: m_Name
+      value: GIRL CHARACTER
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b6bd50c22fe24844db743f0d43ed0581, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 17.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b6bd50c22fe24844db743f0d43ed0581, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b6bd50c22fe24844db743f0d43ed0581, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 15.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b6bd50c22fe24844db743f0d43ed0581, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b6bd50c22fe24844db743f0d43ed0581, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b6bd50c22fe24844db743f0d43ed0581, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b6bd50c22fe24844db743f0d43ed0581, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b6bd50c22fe24844db743f0d43ed0581, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b6bd50c22fe24844db743f0d43ed0581, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b6bd50c22fe24844db743f0d43ed0581, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b6bd50c22fe24844db743f0d43ed0581, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b6bd50c22fe24844db743f0d43ed0581, type: 3}
 --- !u!1 &1226955310
 GameObject:
   m_ObjectHideFlags: 0
@@ -857,6 +916,9 @@ MonoBehaviour:
   Level1Spawner2: {fileID: 135517351}
   setLevel: 0
   setMax: 1
+  soundtoPlay: {fileID: 0}
+  volume: 0
+  alreadyPlayed: 0
 --- !u!1 &1277727757
 GameObject:
   m_ObjectHideFlags: 0
@@ -1295,6 +1357,9 @@ MonoBehaviour:
   Level1Spawner2: {fileID: 742597525}
   setLevel: 2
   setMax: 3
+  soundtoPlay: {fileID: 0}
+  volume: 0
+  alreadyPlayed: 0
 --- !u!1 &1889248579 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3030177051167013544, guid: e77c7318501cd62499bf15dc9457fa05,

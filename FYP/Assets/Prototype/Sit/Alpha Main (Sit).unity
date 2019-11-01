@@ -597,7 +597,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Activecam: {fileID: 0}
-  DisableCam: {fileID: 0}
 --- !u!65 &47596035
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2974,7 +2973,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Activecam: {fileID: 0}
-  DisableCam: {fileID: 0}
 --- !u!65 &163954901
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6828,7 +6826,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Activecam: {fileID: 0}
-  DisableCam: {fileID: 0}
 --- !u!65 &374027817
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8636,7 +8633,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4266466412616060, guid: 2a27348fb4e5c684dad4bc6845fbba94, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 55.14
+      value: 29.13
       objectReference: {fileID: 0}
     - target: {fileID: 4266466412616060, guid: 2a27348fb4e5c684dad4bc6845fbba94, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8644,7 +8641,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4266466412616060, guid: 2a27348fb4e5c684dad4bc6845fbba94, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -28.16
+      value: -27.35
       objectReference: {fileID: 0}
     - target: {fileID: 4266466412616060, guid: 2a27348fb4e5c684dad4bc6845fbba94, type: 3}
       propertyPath: m_LocalRotation.x
@@ -8729,7 +8726,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad7c317c12a500b4fbeb744d58f1e4ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainCam: {fileID: 1480980672}
+  referenceCam: {fileID: 0}
   currentSpeed: 5
   moveSpeedNorm: 5
   moveRunSpeed: 7
@@ -19559,7 +19556,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Activecam: {fileID: 0}
-  DisableCam: {fileID: 0}
 --- !u!65 &921054431
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20293,7 +20289,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Activecam: {fileID: 0}
-  DisableCam: {fileID: 0}
 --- !u!65 &965106830
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21905,7 +21900,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Activecam: {fileID: 0}
-  DisableCam: {fileID: 0}
 --- !u!65 &1062278690
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25613,7 +25607,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Activecam: {fileID: 0}
-  DisableCam: {fileID: 0}
 --- !u!65 &1376869841
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26187,7 +26180,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Activecam: {fileID: 0}
-  DisableCam: {fileID: 0}
 --- !u!65 &1404965430
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32895,7 +32887,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Activecam: {fileID: 0}
-  DisableCam: {fileID: 0}
 --- !u!65 &1794582332
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36017,7 +36008,6 @@ MonoBehaviour:
   warning: {fileID: 1552683898}
   disabledDoor: {fileID: 1938773907}
   lm: {fileID: 1589620665}
-  anim: {fileID: 1938773914}
 --- !u!65 &1938773913
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36247,7 +36237,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Activecam: {fileID: 0}
-  DisableCam: {fileID: 0}
 --- !u!65 &1947131131
 BoxCollider:
   m_ObjectHideFlags: 0

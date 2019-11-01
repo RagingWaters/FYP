@@ -127,19 +127,19 @@ public class LevelManager : MonoBehaviour
         o2.SetActive(false);
     }
 
-    public void digpot()
-    {
-        if (currentShovel == 1)
-        {
-            foundkey.SetActive(true);
-            keypotopt.SetActive(true);
-            keyy.SetActive(true);         
-        }
-        else
-        {
-            warning0shovel.SetActive(true);
-        }
-    }
+    //public void digpot()
+    //{
+    //    if (currentShovel == 1)
+    //    {
+    //        foundkey.SetActive(true);
+    //        keypotopt.SetActive(true);
+    //        keyy.SetActive(true);         
+    //    }
+    //    else
+    //    {
+    //        warning0shovel.SetActive(true);
+    //    }
+    //}
 
     //public void gottorchspawnenemy()
     //{
