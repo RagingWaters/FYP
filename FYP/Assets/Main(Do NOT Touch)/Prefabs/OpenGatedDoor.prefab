@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 120902189253476321}
   - component: {fileID: 120902189253476323}
   - component: {fileID: 120902189253476322}
+  - component: {fileID: 1877601293}
   m_Layer: 0
   m_Name: Door_Frame
   m_TagString: Untagged
@@ -77,6 +78,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &1877601293
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120902189253476320}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: 5f6dca6a2ea982148bac1f133ded970e, type: 3}
 --- !u!1 &120902189489688676
 GameObject:
   m_ObjectHideFlags: 0
@@ -179,6 +194,11 @@ GameObject:
   - component: {fileID: 120902189603495527}
   - component: {fileID: 120902189603495521}
   - component: {fileID: 120902189603495520}
+  - component: {fileID: 961055238}
+  - component: {fileID: 961055241}
+  - component: {fileID: 961055242}
+  - component: {fileID: 961055236}
+  - component: {fileID: 961055240}
   m_Layer: 0
   m_Name: Door_Body_Knob
   m_TagString: Untagged
@@ -245,6 +265,80 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &961055238
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120902189603495526}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0368773, y: 3.5, z: 2.0162487}
+  m_Center: {x: 0.011776396, y: 0.054468848, z: -1.0081236}
+--- !u!65 &961055241
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120902189603495526}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9621989, y: 2.4251995, z: 1.77}
+  m_Center: {x: 0.08, y: 0.24337578, z: -0.25}
+--- !u!64 &961055242
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120902189603495526}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300002, guid: 5f6dca6a2ea982148bac1f133ded970e, type: 3}
+--- !u!95 &961055236
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120902189603495526}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dd83d36eae9fb2443a92e5bb982abff3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &961055240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120902189603495526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d068f470986a5b540a55674f6aac999a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openedooropt: {fileID: 0}
+  Player: {fileID: 0}
+  anim: {fileID: 961055236}
 --- !u!1 &120902189754711299
 GameObject:
   m_ObjectHideFlags: 0
@@ -256,6 +350,7 @@ GameObject:
   - component: {fileID: 120902189754711308}
   - component: {fileID: 120902189754711310}
   - component: {fileID: 120902189754711309}
+  - component: {fileID: 1513604063}
   m_Layer: 0
   m_Name: Gate_Unmovable
   m_TagString: Untagged
@@ -322,6 +417,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &1513604063
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120902189754711299}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300004, guid: 5f6dca6a2ea982148bac1f133ded970e, type: 3}
 --- !u!1 &120902190154464642
 GameObject:
   m_ObjectHideFlags: 0
@@ -331,7 +440,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 120902190154464643}
-  - component: {fileID: 120902190154464652}
   m_Layer: 0
   m_Name: OpenGatedDoor
   m_TagString: Untagged
@@ -357,16 +465,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
---- !u!65 &120902190154464652
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 120902190154464642}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.61, y: 2.53, z: 0.37}
-  m_Center: {x: 0.59, y: 0.22, z: 0}

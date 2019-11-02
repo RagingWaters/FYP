@@ -2,14 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class openeddoor : MonoBehaviour
+public class PuzzleDoor : MonoBehaviour
 {
-
-    public GameObject openedooropt;
-    public PlayerControls Player;
-   // public GameObject disableDoor;
+    public GameObject opendoorOpt;
+    public PlayerControls pc;
     public Animator anim;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -19,21 +16,20 @@ public class openeddoor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
-
     void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
-            openedooropt.SetActive(true);
+            opendoorOpt.SetActive(true);
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                anim.Play("GateDoorOpen");
+                anim.Play("PuzzleDoorOpen");
                 Debug.Log("dooropen");
                 //disableDoor.SetActive(false);
-                openedooropt.SetActive(false);
-                
+                opendoorOpt.SetActive(false);
+
             }
         }
     }
@@ -42,7 +38,7 @@ public class openeddoor : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            openedooropt.SetActive(false);
+            opendoorOpt.SetActive(false);
         }
     }
 }

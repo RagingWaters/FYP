@@ -11102,7 +11102,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openedooropt: {fileID: 117772205}
   Player: {fileID: 470958073}
-  disableDoor: {fileID: 0}
   anim: {fileID: 287065589}
 --- !u!95 &287065589
 Animator:
@@ -11247,6 +11246,7 @@ MonoBehaviour:
   throwForce: 1000
   rb: {fileID: 0}
   pc: {fileID: 0}
+  playerrb: {fileID: 0}
 --- !u!114 &287645850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13446,7 +13446,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openedooropt: {fileID: 117772205}
   Player: {fileID: 470958073}
-  disableDoor: {fileID: 0}
   anim: {fileID: 358798698}
 --- !u!95 &358798698
 Animator:
@@ -16229,7 +16228,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openedooropt: {fileID: 117772205}
   Player: {fileID: 470958073}
-  disableDoor: {fileID: 0}
   anim: {fileID: 419296739}
 --- !u!95 &419296739
 Animator:
@@ -28057,7 +28055,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openedooropt: {fileID: 117772205}
   Player: {fileID: 470958073}
-  disableDoor: {fileID: 0}
   anim: {fileID: 601637149}
 --- !u!95 &601637149
 Animator:
@@ -33688,7 +33685,6 @@ Transform:
   - {fileID: 80222825}
   - {fileID: 105086070}
   - {fileID: 1327222110}
-  - {fileID: 1375086239}
   m_Father: {fileID: 1602946623}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -36342,7 +36338,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openedooropt: {fileID: 117772205}
   Player: {fileID: 470958073}
-  disableDoor: {fileID: 0}
   anim: {fileID: 794273212}
 --- !u!95 &794273212
 Animator:
@@ -43879,7 +43874,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openedooropt: {fileID: 117772205}
   Player: {fileID: 470958073}
-  disableDoor: {fileID: 0}
   anim: {fileID: 967063144}
 --- !u!95 &967063144
 Animator:
@@ -44565,7 +44559,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &983420048
 RectTransform:
   m_ObjectHideFlags: 0
@@ -46046,7 +46040,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -125}
+  m_AnchoredPosition: {x: 0, y: -120.2}
   m_SizeDelta: {x: -640, y: -278}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1024538674
@@ -47557,7 +47551,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openedooropt: {fileID: 117772205}
   Player: {fileID: 470958073}
-  disableDoor: {fileID: 0}
   anim: {fileID: 1063291380}
 --- !u!95 &1063291380
 Animator:
@@ -59141,100 +59134,6 @@ Transform:
   m_Father: {fileID: 426385159}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1375086238
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 745364532}
-    m_Modifications:
-    - target: {fileID: 100012, guid: e39e981950a5ce44d93699f66ee6a0ac, type: 3}
-      propertyPath: m_Name
-      value: Sofa FBX (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 400012, guid: e39e981950a5ce44d93699f66ee6a0ac, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 10.29
-      objectReference: {fileID: 0}
-    - target: {fileID: 400012, guid: e39e981950a5ce44d93699f66ee6a0ac, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -6.04
-      objectReference: {fileID: 0}
-    - target: {fileID: 400012, guid: e39e981950a5ce44d93699f66ee6a0ac, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -23.09
-      objectReference: {fileID: 0}
-    - target: {fileID: 400012, guid: e39e981950a5ce44d93699f66ee6a0ac, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400012, guid: e39e981950a5ce44d93699f66ee6a0ac, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400012, guid: e39e981950a5ce44d93699f66ee6a0ac, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400012, guid: e39e981950a5ce44d93699f66ee6a0ac, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400012, guid: e39e981950a5ce44d93699f66ee6a0ac, type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 400012, guid: e39e981950a5ce44d93699f66ee6a0ac, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400012, guid: e39e981950a5ce44d93699f66ee6a0ac, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 360
-      objectReference: {fileID: 0}
-    - target: {fileID: 400012, guid: e39e981950a5ce44d93699f66ee6a0ac, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400012, guid: e39e981950a5ce44d93699f66ee6a0ac, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.17733021
-      objectReference: {fileID: 0}
-    - target: {fileID: 400012, guid: e39e981950a5ce44d93699f66ee6a0ac, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.17733
-      objectReference: {fileID: 0}
-    - target: {fileID: 400012, guid: e39e981950a5ce44d93699f66ee6a0ac, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.17733021
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e39e981950a5ce44d93699f66ee6a0ac, type: 3}
---- !u!4 &1375086239 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400012, guid: e39e981950a5ce44d93699f66ee6a0ac,
-    type: 3}
-  m_PrefabInstance: {fileID: 1375086238}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1375086240 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100012, guid: e39e981950a5ce44d93699f66ee6a0ac,
-    type: 3}
-  m_PrefabInstance: {fileID: 1375086238}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1375086241
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1375086240}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 19.2, y: 5.88, z: 8.28}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1375159231
 GameObject:
   m_ObjectHideFlags: 0
@@ -59516,7 +59415,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openedooropt: {fileID: 117772205}
   Player: {fileID: 470958073}
-  disableDoor: {fileID: 0}
   anim: {fileID: 1380954071}
 --- !u!95 &1380954071
 Animator:
@@ -68543,7 +68441,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a24058a69083a934bb4497be674b8480, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winscreen: {fileID: 1936339934}
   waitToRespawn: 2
   Player: {fileID: 950050993}
   PlayerspawnPoints:
@@ -68559,8 +68456,9 @@ MonoBehaviour:
   currentCigg: 0
   currentTorch: 0
   currentJournal: 0
-  currentToy: 0
+  currentClock: 0
   currentPages: 0
+  currentTalisman: 0
   gameOverScreen: {fileID: 108365369}
   option: {fileID: 914868697}
   tasklistbtn: {fileID: 127572674}
@@ -68579,6 +68477,9 @@ MonoBehaviour:
   cigg: {fileID: 628541953}
   foundcigg: {fileID: 1054931819}
   randompotopt: {fileID: 866094047}
+  L2blocker: {fileID: 0}
+  L3blocker: {fileID: 0}
+  L4blocker: {fileID: 0}
 --- !u!4 &1589620666
 Transform:
   m_ObjectHideFlags: 0
@@ -73601,7 +73502,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openedooropt: {fileID: 117772205}
   Player: {fileID: 470958073}
-  disableDoor: {fileID: 0}
   anim: {fileID: 1712564713}
 --- !u!1 &1712705106
 GameObject:
@@ -76858,7 +76758,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openedooropt: {fileID: 117772205}
   Player: {fileID: 470958073}
-  disableDoor: {fileID: 1793073640}
   anim: {fileID: 1793073647}
 --- !u!65 &1793073646
 BoxCollider:
@@ -77735,7 +77634,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openedooropt: {fileID: 117772205}
   Player: {fileID: 470958073}
-  disableDoor: {fileID: 0}
   anim: {fileID: 1818896824}
 --- !u!95 &1818896824
 Animator:
@@ -90632,7 +90530,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openedooropt: {fileID: 117772205}
   Player: {fileID: 470958073}
-  disableDoor: {fileID: 0}
   anim: {fileID: 2087588482}
 --- !u!95 &2087588482
 Animator:
@@ -93438,21 +93335,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4998235269382466752, guid: 9d130a43c55a4d140ac7fe7054fe4642,
-        type: 3}
-      propertyPath: m_Center.y
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4998235269382466759, guid: 9d130a43c55a4d140ac7fe7054fe4642,
-        type: 3}
-      propertyPath: pc
-      value: 
-      objectReference: {fileID: 950050993}
     - target: {fileID: 4998235269382466759, guid: 9d130a43c55a4d140ac7fe7054fe4642,
         type: 3}
       propertyPath: page
       value: 
       objectReference: {fileID: 983420047}
+    - target: {fileID: 4998235269382466759, guid: 9d130a43c55a4d140ac7fe7054fe4642,
+        type: 3}
+      propertyPath: pc
+      value: 
+      objectReference: {fileID: 950050993}
     - target: {fileID: 4998235269382466759, guid: 9d130a43c55a4d140ac7fe7054fe4642,
         type: 3}
       propertyPath: lm

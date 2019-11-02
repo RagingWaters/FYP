@@ -32,7 +32,7 @@ public class torchdoor : MonoBehaviour
             torchdooropt.SetActive(true);
             if (lm.currentKey == 1)
             {
-                anim.Play("GotKeyDoorAnimation");
+                anim.Play("GateDoorOpen");
                 //disabledDoor.SetActive(false);
                 torchdooropt.SetActive(false);
             }

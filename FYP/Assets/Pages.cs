@@ -9,6 +9,7 @@ public class Pages : MonoBehaviour
     public PlayerControls pc;
     public LevelManager lm;
     public int pageValue;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +34,7 @@ public class Pages : MonoBehaviour
                 Time.timeScale = 0;
                 
                 lm.AddPage(pageValue);
+                
                 Debug.Log("Page Added");
                 
                 
@@ -51,7 +53,8 @@ public class Pages : MonoBehaviour
         Time.timeScale = 1;
         pc.enabled = true;
         page.SetActive(false);
-        Destroy(gameObject);
+        
+        
     }
 
 
