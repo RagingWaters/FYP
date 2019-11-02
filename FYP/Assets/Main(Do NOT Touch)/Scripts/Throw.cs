@@ -12,6 +12,7 @@ public class Throw : MonoBehaviour
     //public GameObject winscreen;
     [SerializeField] Rigidbody rb;
     public PlayerControls pc;
+    public Rigidbody playerrb;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +23,7 @@ public class Throw : MonoBehaviour
     void Update()
     {
         float dist = Vector3.Distance(gameObject.transform.position, player.position);
-        if (dist <= 250f)
+        if (dist <= 2f)
         {
             hasPlayer = true;
             //Debug.Log("in range");
@@ -37,9 +38,10 @@ public class Throw : MonoBehaviour
         if ((hasPlayer && Input.GetKeyDown(KeyCode.R)) || (hasPlayer && Input.GetButtonDown("PickUp")))
         {
             rb.constraints = RigidbodyConstraints.FreezeAll;
+            playerrb.constraints = RigidbodyConstraints.FreezeRotation;
             transform.parent = player;
             beingCarried = true;
-            pc.currentSpeed = 100;
+            pc.currentSpeed = 3;
             Debug.Log("picked");
         }
         if (beingCarried)
@@ -55,8 +57,9 @@ public class Throw : MonoBehaviour
             if ((Input.GetKeyDown(KeyCode.T)) || Input.GetButtonDown("Throw"))
             {
                 rb.constraints = RigidbodyConstraints.FreezeAll;
+                playerrb.constraints = RigidbodyConstraints.FreezeRotation;
                 transform.parent = null;
-                pc.currentSpeed = 200;
+                pc.currentSpeed = 5;
                 Debug.Log("thrown");
             }
         }
