@@ -44,7 +44,7 @@ public class MainMenu : MonoBehaviour
 
     public void Play()
     {
-        SceneManager.LoadScene("Tutorial");
+        SceneManager.LoadScene("Alpha Main");
     }
 
     public void LeaveGame()
