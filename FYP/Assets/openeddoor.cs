@@ -7,7 +7,7 @@ public class openeddoor : MonoBehaviour
 
     public GameObject openedooropt;
     public PlayerControls Player;
-    public GameObject disableDoor;
+   // public GameObject disableDoor;
     public Animator anim;
 
     // Start is called before the first frame update
