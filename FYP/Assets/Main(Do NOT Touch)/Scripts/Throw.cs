@@ -42,6 +42,7 @@ public class Throw : MonoBehaviour
             transform.parent = player;
             beingCarried = true;
             pc.currentSpeed = 3;
+            pc.turnSpeed = 0.3f;
             Debug.Log("picked");
         }
         if (beingCarried)
@@ -60,6 +61,7 @@ public class Throw : MonoBehaviour
                 playerrb.constraints = RigidbodyConstraints.FreezeRotation;
                 transform.parent = null;
                 pc.currentSpeed = 5;
+                pc.turnSpeed = 2f;
                 Debug.Log("thrown");
             }
         }
