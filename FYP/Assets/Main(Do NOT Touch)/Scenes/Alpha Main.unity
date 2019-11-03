@@ -52,7 +52,7 @@ LightmapSettings:
     m_AlbedoBoost: 1
     m_EnvironmentLightingMode: 0
     m_EnableBakedLightmaps: 1
-    m_EnableRealtimeLightmaps: 1
+    m_EnableRealtimeLightmaps: 0
   m_LightmapEditorSettings:
     serializedVersion: 10
     m_Resolution: 2
@@ -52556,7 +52556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61c9963c3ecdc6c4c953842a5a9738dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Activecam: {fileID: 0}
+  Activecam: {fileID: 1016754602}
 --- !u!1 &924945332
 GameObject:
   m_ObjectHideFlags: 0
@@ -76070,7 +76070,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61c9963c3ecdc6c4c953842a5a9738dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Activecam: {fileID: 651438819}
+  Activecam: {fileID: 2070709203}
 --- !u!65 &1400478073
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -96527,13 +96527,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1768429708}
-  m_LocalRotation: {x: 0.055589717, y: 0.60464925, z: -0.04825644, w: 0.7930829}
-  m_LocalPosition: {x: 49.385, y: 10.618, z: -32.298}
+  m_LocalRotation: {x: 0.03711117, y: 0.58692753, z: -0.00048532162, w: 0.80878836}
+  m_LocalPosition: {x: 49.457, y: 10.775, z: -31.363}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1525999997}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 8.426001, y: 74.604004, z: -0.54}
+  m_LocalEulerAnglesHint: {x: 3.4740002, y: 72.01, z: 2.456}
 --- !u!81 &1768429710
 AudioListener:
   m_ObjectHideFlags: 0
