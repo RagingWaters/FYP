@@ -29,6 +29,7 @@ public class torchdoor : MonoBehaviour
     void OnTriggerStay(Collider other)
     {
         torchdooropt.SetActive(true);
+
         if (other.gameObject.tag == "Player" && Input.GetKeyDown(KeyCode.Space))
         {
            // torchdooropt.SetActive(true);

@@ -8,6 +8,9 @@ public class emptypot : MonoBehaviour
     public GameObject emptyshovelopt;
     public PlayerControls Player;
     public GameObject warning;
+    public LevelManager lm;
+    public GameObject NTH;
+    public GameObject dig;
 
     // Start is called before the first frame update
     void Start()
@@ -23,11 +26,20 @@ public class emptypot : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        emptyshovelopt.SetActive(true);
+
+        if (other.gameObject.tag == "Player" && Input.GetKeyDown(KeyCode.Space))
         {
-            if (Input.GetKeyDown(KeyCode.K))
+            if (lm.currentShovel == 1)
             {
-                emptyshovelopt.SetActive(true);
+                dig.SetActive(false);
+                 warning.SetActive(false);
+                NTH.SetActive(true);
+            }
+            else if (lm.currentShovel == 0)
+            {
+                warning.SetActive(true);
+                dig.SetActive(false);
             }
         }
     }
@@ -38,6 +50,7 @@ public class emptypot : MonoBehaviour
         {
             emptyshovelopt.SetActive(false);
             warning.SetActive(false);
+            NTH.SetActive(false);
         }
     }
 }

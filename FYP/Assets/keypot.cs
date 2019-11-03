@@ -10,6 +10,7 @@ public class keypot : MonoBehaviour
     public GameObject warning;
     public GameObject foundkey;
     public LevelManager lm;
+    public GameObject dig;
 
     // Start is called before the first frame update
     void Start()
@@ -25,22 +26,27 @@ public class keypot : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        shovelopt.SetActive(true);
+
+        if (other.gameObject.tag == "Player" && Input.GetKeyDown(KeyCode.Space))
         {
-            shovelopt.SetActive(true);
-            if (lm.currentShovel == 1 && Input.GetKeyDown(KeyCode.Space))
+            if (lm.currentShovel == 1)
             {
-                shovelopt.SetActive(false);
+                lm.keyy.SetActive(true);
+                dig.SetActive(false);
+                warning.SetActive(false);
                 foundkey.SetActive(true);
                 lm.keypotopt.SetActive(true);
-                lm.keyy.SetActive(true);
+
             }
-            else if(lm.currentShovel == 0)
+            else if (lm.currentShovel == 0)
             {
-                lm.warning0shovel.SetActive(true);
+                warning.SetActive(true);
+                dig.SetActive(false);
             }
         }
     }
+    
 
     void OnTriggerExit(Collider other)
     {
@@ -49,6 +55,7 @@ public class keypot : MonoBehaviour
             shovelopt.SetActive(false);
             warning.SetActive(false);
             foundkey.SetActive(false);
+
         }
     }
 }
