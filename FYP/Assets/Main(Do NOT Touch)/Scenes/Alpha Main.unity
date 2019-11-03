@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.06966325, g: 0.06369489, b: 0.06440569, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -14835,6 +14835,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   theLevelManager: {fileID: 1589620665}
   torchValue: 1
+  dialogue: {fileID: 0}
+  dgameObject: {fileID: 0}
 --- !u!65 &287645851
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55244,10 +55246,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   referenceCam: {fileID: 0}
-  currentSpeed: 5
-  moveSpeedNorm: 5
-  moveRunSpeed: 7
-  turnSpeed: 2
+  currentSpeed: 7
+  moveSpeedNorm: 7
+  moveRunSpeed: 10
+  turnSpeed: 4
   horizontalInput: 0
   verticalInput: 0
   frameStorage: 0
@@ -85461,6 +85463,8 @@ MonoBehaviour:
   newSpawnEnemy: {fileID: 132318039}
   volume: 5
   ToyActive: 0
+  dialogue: {fileID: 0}
+  dgameObject: {fileID: 0}
 --- !u!65 &1529269553
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -99588,6 +99592,7 @@ MonoBehaviour:
   theLevelManager: {fileID: 1589620665}
   keyValue: 1
   keyy: {fileID: 1772541139}
+  dialogue: {fileID: 0}
 --- !u!65 &1772541141
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -102119,6 +102124,7 @@ MonoBehaviour:
   lm: {fileID: 1589620665}
   anim: {fileID: 1825368139}
   unlock: {fileID: 836636941}
+  dialogue: {fileID: 0}
 --- !u!1001 &1826489388
 PrefabInstance:
   m_ObjectHideFlags: 0
