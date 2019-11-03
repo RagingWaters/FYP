@@ -7,6 +7,7 @@ public class wrongdoor : MonoBehaviour
 
     public GameObject wrongdooropt;
     public PlayerControls Player;
+    
     //public GameObject warning;
     //public GameObject warning1;
 
@@ -27,6 +28,7 @@ public class wrongdoor : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             wrongdooropt.SetActive(true);
+           
         }
     }
 
@@ -35,6 +37,7 @@ public class wrongdoor : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             wrongdooropt.SetActive(false);
+            
             //warning.SetActive(false);
             //warning1.SetActive(false);
         }

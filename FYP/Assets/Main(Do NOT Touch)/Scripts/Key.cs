@@ -9,7 +9,7 @@ public class Key : MonoBehaviour
     public LevelManager theLevelManager;
     public int keyValue;
     public GameObject keyy;
-
+    public GameObject dialogue;
 
     // Start is called before the first frame update
     void Start()
@@ -33,7 +33,15 @@ public class Key : MonoBehaviour
                 print("added key");
                 Destroy(gameObject);
                 keyy.SetActive(false);
+                dialogue.SetActive(true);
             }
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            dialogue.SetActive(false);
         }
     }
 }

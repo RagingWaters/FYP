@@ -6,7 +6,8 @@ public class Journal : MonoBehaviour
 {
     public LevelManager lm;
     public int journalValue;
-    
+    public GameObject dialogue;
+    public GameObject dgameObject;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +28,8 @@ public class Journal : MonoBehaviour
             {
               
                 lm.AddJournal(journalValue);
+                dialogue.SetActive(true);
+                dgameObject.SetActive(true);
                 print("added journal");
                 Destroy(gameObject);
             }
