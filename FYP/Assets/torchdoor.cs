@@ -8,9 +8,10 @@ public class torchdoor : MonoBehaviour
     public GameObject torchdooropt;
     public PlayerControls Player;
     public GameObject warning;
-    public GameObject disabledDoor;
+    //public GameObject disabledDoor;
     public LevelManager lm;
     public Animator anim;
+    public GameObject unlock;
     //public Animator anim;
 
     // Start is called before the first frame update
@@ -22,14 +23,15 @@ public class torchdoor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
     void OnTriggerStay(Collider other)
     {
+        torchdooropt.SetActive(true);
         if (other.gameObject.tag == "Player" && Input.GetKeyDown(KeyCode.Space))
         {
-            torchdooropt.SetActive(true);
+           // torchdooropt.SetActive(true);
             if (lm.currentKey == 1)
             {
                 anim.Play("GateDoorOpen");
@@ -38,6 +40,7 @@ public class torchdoor : MonoBehaviour
             }
             else if (lm.currentKey == 0)
             {
+                unlock.SetActive(false);
                 warning.SetActive(true);
             }
         }
@@ -49,6 +52,7 @@ public class torchdoor : MonoBehaviour
         {
             torchdooropt.SetActive(false);
             warning.SetActive(false);
+            unlock.SetActive(true);
         }
     }
 }
