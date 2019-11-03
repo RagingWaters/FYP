@@ -8,9 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main New.unity
     guid: f96d53c9300a23548a91dbfcd404ef92
-  - enabled: 0
-    path: Assets/Prototype/Ghenel/Ghenel/Tutorial.unity
-    guid: 7ab92c63438998e44b81f6f03d11d0dc
   - enabled: 1
     path: Assets/Scenes/Win.unity
     guid: 57b00f8743e8fb04abf8c27e9e23b04f
@@ -20,13 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Settings.unity
     guid: bbbce7e27585e534fbcdd87a4b2c58ea
-  - enabled: 0
-    path: Assets/Scenes/Test.unity
-    guid: caea0c0e8ed58824688bbc32fdcec91c
   - enabled: 1
     path: Assets/Main(Do NOT Touch)/Scenes/Alpha Main.unity
     guid: 9289341a2b011fd4db14609b1021771d
-  - enabled: 0
-    path: Assets/Main(Do NOT Touch)/Scenes/Main.unity
-    guid: 1e404136f63bc5d458c6e10bd2a0b830
   m_configObjects: {}
