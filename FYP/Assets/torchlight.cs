@@ -7,8 +7,9 @@ public class torchlight : MonoBehaviour
 
     public LevelManager theLevelManager;
     public int torchValue;
-    //public GameObject dialogue;
-    //public GameObject dgameObject;
+    public GameObject dialogue;
+    public GameObject dgameObject;
+    public LightAdjuster lightAdjust;
 
     // Start is called before the first frame update
     void Start()
@@ -30,8 +31,9 @@ public class torchlight : MonoBehaviour
             {
                 //enemySpawner.startSpawn = true; 
                 theLevelManager.AddTorch(torchValue);
-                //dialogue.SetActive(true);
-                //dgameObject.SetActive(true);
+                dialogue.SetActive(true);
+                dgameObject.SetActive(true);
+                lightAdjust.Range();
                 print("added torch, spawning ghost");
                 Destroy(gameObject);
             }

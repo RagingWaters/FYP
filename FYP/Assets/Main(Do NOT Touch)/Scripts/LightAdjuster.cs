@@ -50,7 +50,7 @@ public class LightAdjuster : MonoBehaviour
     {
         if (changeRange)
         {
-            myLight.range = rangeSpeed += 4.0f;
+            myLight.range = rangeSpeed += 2.0f;
             if (myLight.range >= maxRange)
             {
                 changeRange = false;
@@ -70,6 +70,22 @@ public class LightAdjuster : MonoBehaviour
             if (myLight.intensity >= maxIntensity)
             {
                 changeIntensity = false;
+            }
+
+
+
+
+
+        }
+    }
+    public void MinusRange()
+    {
+        if (changeRange)
+        {
+            myLight.range = rangeSpeed -= 2.0f;
+            if (myLight.range >= maxRange)
+            {
+                changeRange = false;
             }
 
 

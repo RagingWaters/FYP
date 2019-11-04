@@ -12,7 +12,7 @@ public class torchdoor : MonoBehaviour
     public LevelManager lm;
     public Animator anim;
     public GameObject unlock;
-    //public GameObject dialogue;
+    public GameObject dialogue;
     //public Animator anim;
 
     // Start is called before the first frame update
@@ -44,7 +44,7 @@ public class torchdoor : MonoBehaviour
             {
                 unlock.SetActive(false);
                 warning.SetActive(true);
-                //dialogue.SetActive(true);
+                dialogue.SetActive(true);
             }
         }
     }
@@ -56,7 +56,7 @@ public class torchdoor : MonoBehaviour
             torchdooropt.SetActive(false);
             warning.SetActive(false);
             unlock.SetActive(true);
-            //dialogue.SetActive(false);
+            dialogue.SetActive(false);
            
         }
     }

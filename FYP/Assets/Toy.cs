@@ -15,9 +15,9 @@ public class Toy : MonoBehaviour
     public float volume;
     protected bool letPlay = true;
     [SerializeField] public int ToyActive;
-    //public GameObject dialogue;
-    //public GameObject dgameObject;
-   
+    public GameObject dialogue;
+    public GameObject dgameObject;
+    public LightAdjuster lightAdjust;
 
     // Start is called before the first frame update
     void Start()
@@ -53,14 +53,15 @@ public class Toy : MonoBehaviour
             ToyActive = 1;
             originalSpawn.transform.position = newSpawnEnemy.position;
             StartCoroutine(ActivatedToy());
-            //dialogue.SetActive(true);
-            //dgameObject.SetActive(true);
+            dialogue.SetActive(true);
+            dgameObject.SetActive(true);
             
         }
 
         if (other.gameObject.tag == "Player" && ToyActive == 1 && Input.GetKeyDown(KeyCode.Space))
         {
             lm.currentClock = 1;
+            lightAdjust.Range();
             Destroy(toytoDestroy);
             Destroy(Activation);
         }
