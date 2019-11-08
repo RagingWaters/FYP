@@ -67,6 +67,18 @@ ModelImporter:
     4300018: Cubes
     4300020: Cylinder.001
     4300022: Cylinders
+    6400000: Cube.001
+    6400002: Cube.002
+    6400004: Cube.003
+    6400006: Cube.004
+    6400008: Cube.005
+    6400010: Cube.006
+    6400012: Cube.007
+    6400014: Cube.008
+    6400016: Cube.009
+    6400018: Cubes
+    6400020: Cylinder.001
+    6400022: Cylinders
     7400000: Take 001
     9500000: //RootNode
   externalObjects: {}
@@ -102,7 +114,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1

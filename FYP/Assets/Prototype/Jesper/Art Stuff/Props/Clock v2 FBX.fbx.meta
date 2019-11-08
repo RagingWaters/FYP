@@ -65,6 +65,15 @@ ModelImporter:
     4300012: Body
     4300014: Leg_Left
     4300016: Leg_Right
+    6400000: Bell
+    6400002: Bell_2
+    6400004: Body
+    6400006: Bridge
+    6400008: Face
+    6400010: Leg_Left
+    6400012: Leg_Right
+    6400014: Post_6
+    6400016: Post_7
     7400000: Take 001
     9500000: //RootNode
   externalObjects: {}
@@ -100,7 +109,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1

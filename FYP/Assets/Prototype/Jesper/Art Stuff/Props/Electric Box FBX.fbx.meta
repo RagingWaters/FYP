@@ -129,6 +129,26 @@ ModelImporter:
     4300034: fuse009
     4300036: Boox001
     4300038: box cover
+    6400000: Boox001
+    6400002: box cover
+    6400004: fuse
+    6400006: fuse switch
+    6400008: fuse switch001
+    6400010: fuse switch002
+    6400012: fuse switch003
+    6400014: fuse switch004
+    6400016: fuse switch005
+    6400018: fuse switch006
+    6400020: fuse switch007
+    6400022: fuse001
+    6400024: fuse002
+    6400026: fuse003
+    6400028: fuse004
+    6400030: fuse005
+    6400032: fuse006
+    6400034: fuse007
+    6400036: fuse008
+    6400038: fuse009
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -162,7 +182,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1

@@ -108,6 +108,22 @@ ModelImporter:
     4300026: Kugel.001
     4300028: Kugel
     4300030: Zylinder
+    6400000: Bolt
+    6400002: Bolt.001
+    6400004: Kreis
+    6400006: Kreis.001
+    6400008: Kugel
+    6400010: Kugel.001
+    6400012: Kugel.002
+    6400014: Kugel.003
+    6400016: NurbsPath
+    6400018: "W\xFCrfel"
+    6400020: Zylinder
+    6400022: Zylinder.001
+    6400024: Zylinder.002
+    6400026: Zylinder.003
+    6400028: Zylinder.004
+    6400030: Zylinder.005
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -141,7 +157,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1

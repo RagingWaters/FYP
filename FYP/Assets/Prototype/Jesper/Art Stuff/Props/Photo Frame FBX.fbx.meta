@@ -44,6 +44,13 @@ ModelImporter:
     4300008: Boxx001
     4300010: Box006
     4300012: PlaneCrash
+    6400000: Box006
+    6400002: Boxx001
+    6400004: Boxx002
+    6400006: Boxx003
+    6400008: Boxx004
+    6400010: Boxx007
+    6400012: PlaneCrash
     7400000: Take 001
     9500000: //RootNode
   externalObjects: {}
@@ -79,7 +86,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1

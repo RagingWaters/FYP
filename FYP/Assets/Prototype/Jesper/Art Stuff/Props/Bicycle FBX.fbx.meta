@@ -181,6 +181,11 @@ ModelImporter:
     4300004: pCube2
     4300006: pTorus4
     4300008: pCylinder34
+    6400000: pCube1
+    6400002: pCube2
+    6400004: pCylinder34
+    6400006: pTorus3
+    6400008: pTorus4
     7400000: Take 001
     9500000: //RootNode
   externalObjects: {}
@@ -216,7 +221,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1

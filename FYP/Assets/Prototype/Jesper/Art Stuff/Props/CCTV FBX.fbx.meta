@@ -14,6 +14,8 @@ ModelImporter:
     3300002: CCTV1:Hinge
     4300000: CCTV1:CCTV_Camera
     4300002: CCTV1:Hinge
+    6400000: //RootNode
+    6400002: CCTV1:Hinge
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -47,7 +49,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1

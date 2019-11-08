@@ -54,6 +54,15 @@ ModelImporter:
     4300012: Line017
     4300014: Line018
     4300016: Base
+    6400000: Base
+    6400002: Line013
+    6400004: Line014
+    6400006: Line015
+    6400008: Line016
+    6400010: Line017
+    6400012: Line018
+    6400014: Line03
+    6400016: Line04
     7400000: Take 001
     9500000: //RootNode
   externalObjects: {}
@@ -89,7 +98,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1

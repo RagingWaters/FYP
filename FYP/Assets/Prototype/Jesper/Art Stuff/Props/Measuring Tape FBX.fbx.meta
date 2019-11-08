@@ -31,6 +31,11 @@ ModelImporter:
     4300004: SliderLock
     4300006: Label
     4300008: Based
+    6400000: Based
+    6400002: Label
+    6400004: MetalEnd
+    6400006: Ruler
+    6400008: SliderLock
     7400000: Take 001
     9500000: //RootNode
   externalObjects: {}
@@ -66,7 +71,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1

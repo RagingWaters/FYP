@@ -148,6 +148,34 @@ ModelImporter:
     4300050: Box01
     4300052: Cylinder01
     4300054: Box02.Box04
+    6400000: Box01
+    6400002: Box02
+    6400004: Box02.Box04
+    6400006: Cylinder01
+    6400008: Cylinder017
+    6400010: Cylinder02
+    6400012: Cylinder03
+    6400014: Cylinder04
+    6400016: Cylinder05
+    6400018: Cylinder06
+    6400020: Cylinder07
+    6400022: Cylinder08
+    6400024: Cylinder09
+    6400026: Cylinder09.Cylinder25
+    6400028: Cylinder10
+    6400030: Cylinder10.Cylinder26
+    6400032: Cylinder11
+    6400034: Cylinder11.Cylinder27
+    6400036: Cylinder12
+    6400038: Cylinder12.Cylinder28
+    6400040: Cylinder13
+    6400042: Cylinder13.Cylinder29
+    6400044: Cylinder14
+    6400046: Cylinder14.Cylinder30
+    6400048: Cylinder15
+    6400050: Cylinder15.Cylinder31
+    6400052: Cylinder16
+    6400054: Cylinder16.Cylinder32
     7400000: Take 001
     9500000: //RootNode
   externalObjects: {}
@@ -183,7 +211,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1

@@ -31,6 +31,11 @@ ModelImporter:
     4300004: Leggings
     4300006: Stoll top support
     4300008: Top of stool
+    6400000: Leggings
+    6400002: Stoll top support
+    6400004: Top of stool
+    6400006: Truss abc
+    6400008: truss bcd
     7400000: Take 001
     9500000: //RootNode
   externalObjects: {}
@@ -66,7 +71,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1

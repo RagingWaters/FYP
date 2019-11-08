@@ -97,6 +97,24 @@ ModelImporter:
     4300030: Cube_0_009
     4300032: Cube_1_008
     4300034: Cube_1_009
+    6400000: Cube_007
+    6400002: Cube_008
+    6400004: Cube_009
+    6400006: Cube_0_006
+    6400008: Cube_0_007
+    6400010: Cube_0_008
+    6400012: Cube_0_009
+    6400014: Cube_1_006
+    6400016: Cube_1_007
+    6400018: Cube_1_008
+    6400020: Cube_1_009
+    6400022: Cube_2_003
+    6400024: Cube_3_003
+    6400026: Cube_4_003
+    6400028: Cube_5_003
+    6400030: slat__supports_003
+    6400032: slat__supports_004
+    6400034: slat__supports_005
     7400000: Take 001
     9500000: //RootNode
   externalObjects: {}
@@ -132,7 +150,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1

@@ -152,6 +152,34 @@ ModelImporter:
     4300050: Box0097
     4300052: Box0098
     4300054: Box0099
+    6400000: Box0095
+    6400002: Box0096
+    6400004: Box0097
+    6400006: Box0098
+    6400008: Box0099
+    6400010: Box023
+    6400012: Box024
+    6400014: Box026
+    6400016: Box029
+    6400018: Box030
+    6400020: Box031
+    6400022: Box032
+    6400024: Box039
+    6400026: Box040
+    6400028: Box047
+    6400030: Box048
+    6400032: Box049
+    6400034: Box050
+    6400036: Box051
+    6400038: Box052
+    6400040: Box053
+    6400042: Box054
+    6400044: Box057
+    6400046: Box058
+    6400048: Box059
+    6400050: Box060
+    6400052: Box061
+    6400054: Box062
     7400000: Take 001
     9500000: //RootNode
   externalObjects: {}
@@ -187,7 +215,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
