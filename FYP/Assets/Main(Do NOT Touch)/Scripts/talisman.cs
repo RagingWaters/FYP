@@ -24,7 +24,7 @@ public class talisman : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player" || Input.GetButtonDown("Interact"))
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {

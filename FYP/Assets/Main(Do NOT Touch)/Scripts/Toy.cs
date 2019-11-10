@@ -58,7 +58,7 @@ public class Toy : MonoBehaviour
             
         }
 
-        if (other.gameObject.tag == "Player" && ToyActive == 1 && Input.GetKeyDown(KeyCode.Space))
+        if (other.gameObject.tag == "Player" && ToyActive == 1 && Input.GetKeyDown(KeyCode.Space) || other.gameObject.tag == "Player" && ToyActive == 1 && Input.GetButtonDown("Interact"))
         {
             lm.currentClock = 1;
             lightAdjust.Range();

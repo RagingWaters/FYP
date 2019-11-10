@@ -15,7 +15,7 @@ public class instructions : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("Interact"))
         {
             inst1.SetActive(false);
             inst2.SetActive(true);

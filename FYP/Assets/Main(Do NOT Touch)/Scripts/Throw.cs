@@ -8,7 +8,7 @@ public class Throw : MonoBehaviour
     public float throwForce = 10f;
     bool hasPlayer = false;
     bool beingCarried = false;
-    private bool touched = false;
+    //private bool touched = false;
     //public GameObject winscreen;
     [SerializeField] Rigidbody rb;
     public PlayerControls pc;

@@ -27,7 +27,7 @@ public class Pages : MonoBehaviour
         if (other.tag == "Player")
 
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("Interact"))
             {
                 page.SetActive(true);
                 pc.enabled = false;

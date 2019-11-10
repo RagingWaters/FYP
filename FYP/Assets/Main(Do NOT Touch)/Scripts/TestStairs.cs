@@ -19,7 +19,7 @@ public class TestStairs : MonoBehaviour
     {
         if (other.tag == "Player" )
         {
-            if (Input.GetKeyDown(KeyCode.Space) && cd == false)
+            if (Input.GetKeyDown(KeyCode.Space) && cd == false || Input.GetButtonDown("Interact") && cd == false)
             {
 
                 cd = true;

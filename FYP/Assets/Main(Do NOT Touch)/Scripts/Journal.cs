@@ -24,7 +24,7 @@ public class Journal : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("Interact"))
             {
               
                 lm.AddJournal(journalValue);
