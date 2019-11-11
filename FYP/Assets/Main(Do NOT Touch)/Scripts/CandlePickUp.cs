@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class talisman : MonoBehaviour
+public class CandlePickUp : MonoBehaviour
 {
 
     public LevelManager theLevelManager;
-    public int talismanValue;
-    public GameObject winscreen;
+    public int Candles;
+    public GameObject originalSpawn;
+    public Transform newSpawnEnemy;
 
 
     // Start is called before the first frame update
@@ -24,13 +25,14 @@ public class talisman : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == "Player" )
+        if (other.gameObject.tag == "Player")
         {
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("Interact"))
             {
-                theLevelManager.AddTalisman(talismanValue);
-                print("added Talisman");
-                winscreen.SetActive(true);
+                theLevelManager.AddCandles(Candles);
+                originalSpawn.transform.position = newSpawnEnemy.position;
+                enemySpawner.startSpawn = true;
+                print("added Candles");
                 Destroy(gameObject);
             }
         }

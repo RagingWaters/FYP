@@ -43,6 +43,7 @@ public class Throw : MonoBehaviour
             beingCarried = true;
             pc.currentSpeed = 3;
             pc.turnSpeed = 0.3f;
+            pc.freezeRotation = true;
             Debug.Log("picked");
         }
         if (beingCarried)
@@ -62,6 +63,7 @@ public class Throw : MonoBehaviour
                 transform.parent = null;
                 pc.currentSpeed = 5;
                 pc.turnSpeed = 2f;
+                pc.freezeRotation = false;
                 Debug.Log("thrown");
             }
         }

@@ -30,6 +30,7 @@ public class LevelManager : MonoBehaviour
    [SerializeField] public int currentClock;
    [SerializeField] public int currentPages;
    [SerializeField] public int currentTalisman;
+   [SerializeField] public int currentCandles;
 
     public GameObject gameOverScreen;
     public GameObject option;
@@ -250,6 +251,11 @@ public class LevelManager : MonoBehaviour
     public void AddTalisman(int TalismanToAdd)
     {
         currentTalisman += TalismanToAdd;
+    }
+
+    public void AddCandles(int CandlesToAdd)
+    {
+        currentTalisman += CandlesToAdd;
     }
 
 

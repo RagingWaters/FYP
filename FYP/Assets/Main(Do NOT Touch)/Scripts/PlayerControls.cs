@@ -38,7 +38,9 @@ public class PlayerControls : MonoBehaviour
     public GameObject[] players;
 
     public enemyController[] enemies;
-   
+
+    // to stop rotation
+    public bool freezeRotation;
 
 
 
@@ -131,9 +133,9 @@ public class PlayerControls : MonoBehaviour
 
             float hlInput = horizontalInput == 0 ? storedInputH : horizontalInput;
             float vInput = verticalInput == 0 ? storedInputV : verticalInput;
-            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(forward * vInput + right * hlInput).normalized, .2f);
+          if(!freezeRotation)  transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(forward * vInput + right * hlInput).normalized, .2f);
         }
-        else if (frameStorage <= 0) transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(moveDirection), .2f);
+        else if (frameStorage <= 0 &&  (!freezeRotation)) transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(moveDirection), .2f);
     }
 
     void OnCollisionEnter(Collision collision)
