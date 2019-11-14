@@ -10,6 +10,7 @@ public class openeddoor : MonoBehaviour
    // public GameObject disableDoor;
     public Animator anim;
     public GameObject open;
+    public bool opendoor = false;
 
     // Start is called before the first frame update
     void Start()
@@ -25,21 +26,25 @@ public class openeddoor : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
-        openedooropt.SetActive(true);
-        if (other.gameObject.tag == "Player")
+        if(opendoor == false)
         {
-           //openedooropt.SetActive(true);
-            if (Input.GetKeyDown(KeyCode.Space))
+            openedooropt.SetActive(true);
+            if (other.gameObject.tag == "Player")
             {
-                anim.Play("GateDoorOpen");
-                Debug.Log("dooropen");
-                //disableDoor.SetActive(false);
+                //openedooropt.SetActive(true);
+                if (Input.GetKeyDown(KeyCode.Space))
+                {
+                    anim.Play("GateDoorOpen");
+                    Debug.Log("dooropen");
+                    //disableDoor.SetActive(false);
 
-                openedooropt.SetActive(false);
-                open.SetActive(false);
-                
+                    openedooropt.SetActive(false);
+                    open.SetActive(false);
+                    opendoor = true;
+                }
             }
-        }
+        } 
+       
     }
 
     void OnTriggerExit(Collider other)

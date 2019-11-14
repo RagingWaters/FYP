@@ -4686,6 +4686,7 @@ MonoBehaviour:
   Player: {fileID: 950050993}
   anim: {fileID: 91618770}
   open: {fileID: 865487786}
+  opendoor: 0
 --- !u!95 &91618770
 Animator:
   serializedVersion: 3
@@ -109400,6 +109401,7 @@ MonoBehaviour:
   anim: {fileID: 1825368139}
   unlock: {fileID: 836636941}
   dialogue: {fileID: 1166930994}
+  open: 0
 --- !u!1001 &1826489388
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -111495,15 +111497,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 53b6c1749b253fc4497a72fc43fce5d8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 75.88
+      value: 52.3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 53b6c1749b253fc4497a72fc43fce5d8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.93
+      value: 7.46
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 53b6c1749b253fc4497a72fc43fce5d8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -24.67
+      value: -27.12
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 53b6c1749b253fc4497a72fc43fce5d8, type: 3}
       propertyPath: m_LocalRotation.x
