@@ -33,7 +33,7 @@ public class torchdoor : MonoBehaviour
         if(open == false)
         {
             torchdooropt.SetActive(true);
-            if (other.gameObject.tag == "Player" && Input.GetKeyDown(KeyCode.Space))
+            if (other.gameObject.tag == "Player" && Input.GetKeyDown(KeyCode.Space) || other.gameObject.tag == "Player" && Input.GetButtonDown("Interact"))
             {
                 // torchdooropt.SetActive(true);
                 if (lm.currentKey == 1)

@@ -28,7 +28,7 @@ public class keypot : MonoBehaviour
     {
         shovelopt.SetActive(true);
 
-        if (other.gameObject.tag == "Player" && Input.GetKeyDown(KeyCode.Space))
+        if (other.gameObject.tag == "Player" && Input.GetKeyDown(KeyCode.Space) || other.gameObject.tag == "Player" && Input.GetButtonDown("Interact"))
         {
             if (lm.currentShovel == 1)
             {

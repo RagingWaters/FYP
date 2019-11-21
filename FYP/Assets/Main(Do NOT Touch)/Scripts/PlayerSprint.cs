@@ -47,7 +47,7 @@ public class PlayerSprint : MonoBehaviour
             playerControls.currentSpeed = playerControls.moveRunSpeed;
         }
 
-        if (Input.GetButtonUp("Left Shift (Sprint)") || (staminaSlider.value == 0))
+        if (Input.GetButtonUp("Left Shift (Sprint)") || (staminaSlider.value == 0) || Input.GetButtonUp("Sprint"))
         {
             startCountdown = true;
             playerControls.currentSpeed = playerControls.moveSpeedNorm;

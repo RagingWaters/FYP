@@ -32,7 +32,7 @@ public class openeddoor : MonoBehaviour
             if (other.gameObject.tag == "Player")
             {
                 //openedooropt.SetActive(true);
-                if (Input.GetKeyDown(KeyCode.Space))
+                if (Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("Interact"))
                 {
                     anim.Play("GateDoorOpen");
                     Debug.Log("dooropen");
