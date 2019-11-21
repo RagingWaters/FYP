@@ -1,14 +1,32 @@
 fileFormatVersion: 2
-guid: 3b7be0dbf43cd1a44b891034d425511b
+guid: c0ac4b09c0b36d74ca36641dd785386a
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Lift_Buttons
+    100004: Lift_Door001
+    100006: Lift_Floor_Display
+    100008: Lift_Wall
     400000: //RootNode
+    400002: Lift_Buttons
+    400004: Lift_Door001
+    400006: Lift_Floor_Display
+    400008: Lift_Wall
     2100000: No Name
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Pillar_T2
+    2300000: Lift_Buttons
+    2300002: Lift_Door001
+    2300004: Lift_Floor_Display
+    2300006: Lift_Wall
+    3300000: Lift_Buttons
+    3300002: Lift_Door001
+    3300004: Lift_Floor_Display
+    3300006: Lift_Wall
+    4300000: Lift_Wall
+    4300002: Lift_Buttons
+    4300004: Lift_Floor_Display
+    4300006: Lift_Door001
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 53b31799534c7024794aa38ce4630f1b
+guid: 2c73aae2d4fe06d4698abe9334bd489f
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -8,8 +8,7 @@ ModelImporter:
     2100000: No Name
     2300000: //RootNode
     3300000: //RootNode
-    4300000: AC_Wire_Cover_02
-    6400000: //RootNode
+    4300000: Corridor_Light
   externalObjects: {}
   materials:
     importMaterials: 1

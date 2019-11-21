@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bcf15b2dd9c193548ac051509cd11b74
+guid: 9c8aa85f1b9464f4d8b4f658fabea859
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -8,8 +8,7 @@ ModelImporter:
     2100000: No Name
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Stairs_Wall
-    6400000: //RootNode
+    4300000: Floor_Unit
   externalObjects: {}
   materials:
     importMaterials: 1

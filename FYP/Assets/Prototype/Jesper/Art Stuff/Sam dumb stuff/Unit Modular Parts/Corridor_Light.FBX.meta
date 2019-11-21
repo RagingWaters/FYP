@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3b7be0dbf43cd1a44b891034d425511b
+guid: 44297d0c861edaa4eae6470e0afb5afd
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -8,7 +8,7 @@ ModelImporter:
     2100000: No Name
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Pillar_T2
+    4300000: Corridor_Light
   externalObjects: {}
   materials:
     importMaterials: 1

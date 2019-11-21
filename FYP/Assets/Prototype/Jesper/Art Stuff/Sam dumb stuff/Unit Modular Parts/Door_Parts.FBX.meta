@@ -1,15 +1,23 @@
 fileFormatVersion: 2
-guid: 9f4809befb876ec48a4a4636dc323ed1
+guid: a5d8829039be1d542869a0346b515522
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Room_Door001
+    100004: Room_Door_Frame001
     400000: //RootNode
+    400002: Room_Door001
+    400004: Room_Door_Frame001
     2100000: No Name
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Wire_Cover_02
-    6400000: //RootNode
+    2300000: Room_Door001
+    2300002: Room_Door_Frame001
+    3300000: Room_Door001
+    3300002: Room_Door_Frame001
+    4300000: Room_Door001
+    4300002: Room_Door_Frame001
+    7400000: Take 001
+    9500000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -63,7 +71,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -90,7 +98,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

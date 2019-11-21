@@ -1,14 +1,33 @@
 fileFormatVersion: 2
-guid: 3b7be0dbf43cd1a44b891034d425511b
+guid: b443bc70ad1c65649bf78645412bc290
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
+    100000: Door_Body_Knob
+    100002: Door_Frame
+    100004: Gate_Moveable
+    100006: Gate_Unmovable
+    100008: //RootNode
+    400000: Door_Body_Knob
+    400002: Door_Frame
+    400004: Gate_Moveable
+    400006: Gate_Unmovable
+    400008: //RootNode
     2100000: No Name
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Pillar_T2
+    2300000: Door_Body_Knob
+    2300002: Door_Frame
+    2300004: Gate_Moveable
+    2300006: Gate_Unmovable
+    3300000: Door_Body_Knob
+    3300002: Door_Frame
+    3300004: Gate_Moveable
+    3300006: Gate_Unmovable
+    4300000: Door_Frame
+    4300002: Door_Body_Knob
+    4300004: Gate_Unmovable
+    4300006: Gate_Moveable
+    7400000: Take 001
+    9500000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -62,7 +81,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -89,7 +108,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
