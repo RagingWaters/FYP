@@ -13,12 +13,13 @@ public class torchdoor : MonoBehaviour
     public Animator anim;
     public GameObject unlock;
     public GameObject dialogue;
+    public bool open = false;
     //public Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -29,22 +30,25 @@ public class torchdoor : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
-        torchdooropt.SetActive(true);
-
-        if (other.gameObject.tag == "Player" && Input.GetKeyDown(KeyCode.Space))
+        if(open == false)
         {
-           // torchdooropt.SetActive(true);
-            if (lm.currentKey == 1)
+            torchdooropt.SetActive(true);
+            if (other.gameObject.tag == "Player" && Input.GetKeyDown(KeyCode.Space) || other.gameObject.tag == "Player" && Input.GetButtonDown("Interact"))
             {
-                anim.Play("GateDoorOpen");
-                //disabledDoor.SetActive(false);
-                torchdooropt.SetActive(false);
-            }
-            else if (lm.currentKey == 0)
-            {
-                unlock.SetActive(false);
-                warning.SetActive(true);
-                dialogue.SetActive(true);
+                // torchdooropt.SetActive(true);
+                if (lm.currentKey == 1)
+                {
+                    anim.Play("GateDoorOpen");
+                    //disabledDoor.SetActive(false);
+                    torchdooropt.SetActive(false);
+                    open = true;
+                }
+                else if (lm.currentKey == 0)
+                {
+                    unlock.SetActive(false);
+                    warning.SetActive(true);
+                    dialogue.SetActive(true);
+                }
             }
         }
     }
@@ -57,7 +61,6 @@ public class torchdoor : MonoBehaviour
             warning.SetActive(false);
             unlock.SetActive(true);
             dialogue.SetActive(false);
-           
         }
     }
 }
