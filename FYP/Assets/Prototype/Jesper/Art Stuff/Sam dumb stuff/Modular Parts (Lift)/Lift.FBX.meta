@@ -26,6 +26,10 @@ ModelImporter:
     4300002: Lift_Buttons
     4300004: Lift_Floor_Display
     4300006: Lift_Door001
+    6400000: Lift_Buttons
+    6400002: Lift_Door001
+    6400004: Lift_Floor_Display
+    6400006: Lift_Wall
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
@@ -60,7 +64,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
