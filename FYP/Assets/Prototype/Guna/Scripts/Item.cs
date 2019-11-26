@@ -7,11 +7,14 @@ public class Item : ScriptableObject
     new public string name = "New Item";
     public Sprite icon = null;
     public bool isDefaultItem = false;
+    public GameObject prefabToSpawn;
+    Inventory inv;
 
-    public virtual void Use()
+    public virtual void Use(Transform t)
     {
-        //Use the item
-        //Something happens
+        GameObject g = Instantiate(prefabToSpawn, t.position, Quaternion.identity);
+        //Destroy(g.GetComponent<ItemPickup>());
+        Inventory.instance.Remove(this);
 
         Debug.Log("Using" + name);
     }

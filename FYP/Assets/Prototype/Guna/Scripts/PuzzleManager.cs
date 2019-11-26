@@ -19,12 +19,22 @@ public class PuzzleManager : MonoBehaviour
     {
         if(Correct1 == true)
         {
-            print("EZ Win");
+            print("1");
         }
 
-        else if(Correct2 == true)
+        if(Correct2 == true)
         {
-            print("GG lol");
+            print("2");
+        }
+
+        if (Correct2 == true)
+        {
+            print("3");
+        }
+
+        if (Correct1 == true && Correct2 == true && Correct3 == true)
+        {
+            print("Ez game boys");
         }
     }
 }

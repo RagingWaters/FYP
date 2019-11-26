@@ -27,7 +27,27 @@ public class InventorySlot : MonoBehaviour
     {
         if (item != null)
         {
-            item.Use();
+            Collider[] colliders = Physics.OverlapSphere(PlayerControls.instance.transform.position, 0.01f);
+
+            foreach(Collider c in colliders)
+            {
+                UsableItem usableItem = c.GetComponent<UsableItem>();
+                
+                if (!usableItem)
+                {
+                    continue;
+                }
+
+                foreach (Item i in usableItem.items)
+                {
+                    if (i == item)
+                    {
+                        item.Use(c.transform);
+                        break;
+                    }
+                }
+            }
+            
         }
     }
 }
