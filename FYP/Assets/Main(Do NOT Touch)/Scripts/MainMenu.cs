@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 
 public class MainMenu : MonoBehaviour
@@ -9,17 +10,25 @@ public class MainMenu : MonoBehaviour
 
     public GameObject winscreen;
     private static int Current2;
+    public EventSystem es;
+    private GameObject storedSelected;
 
     // Start is called before the first frame update
     void Start()
     {
         Time.timeScale = 1;
+        storedSelected = es.firstSelectedGameObject;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (es.currentSelectedGameObject != storedSelected)
+            if (es.currentSelectedGameObject == null)
+                es.SetSelectedGameObject(storedSelected);
+            else
+                storedSelected = es.currentSelectedGameObject;
+          
     }
 
     public void loadScene(string sceneToLoad)
