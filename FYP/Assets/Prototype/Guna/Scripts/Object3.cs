@@ -8,14 +8,14 @@ public class Object3 : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "3")
+        if (other.tag == "3")
         {
             pm.Correct3 = true;
         }
 
-        else
+        if (other.tag != "3")
         {
-            //this is in the wrong place message
+            pm.Correct3 = false;
         }
     }
 }

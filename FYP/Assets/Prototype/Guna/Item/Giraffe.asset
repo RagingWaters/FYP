@@ -15,5 +15,5 @@ MonoBehaviour:
   name: Giraffe
   icon: {fileID: 21300000, guid: 82f58db24f242f74e8f486d873a17191, type: 3}
   isDefaultItem: 0
-  prefabToSpawn: {fileID: 8781986928427366598, guid: 8e4e1200e9ae85146885dd0cb7833cc2,
+  prefabToSpawn: {fileID: 2328202159035514002, guid: ecdf32b18e058ab45a5c62651e41cb09,
     type: 3}
