@@ -5,6 +5,7 @@ using UnityEngine;
 public class DialogueTrigger : MonoBehaviour
 {
     public GameObject dialogue1;
+    public GameObject dialogue2;
     //public DialogueManager theDialogueManager;
 
     public void TriggerDialogue()
@@ -29,8 +30,16 @@ public class DialogueTrigger : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            dialogue1.SetActive(false);
+            //dialogue1.SetActive(false);
+            dialogue2.SetActive(false);
         }
+    }
+
+    public void Next()
+    {
+        dialogue1.SetActive(false);
+        dialogue2.SetActive(true);
+        
     }
     //void Start()
     //{
