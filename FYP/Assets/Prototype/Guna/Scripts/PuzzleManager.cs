@@ -7,6 +7,7 @@ public class PuzzleManager : MonoBehaviour
     public bool Correct1 = false;
     public bool Correct2 = false;
     public bool Correct3 = false;
+    LevelManager lm;
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +35,7 @@ public class PuzzleManager : MonoBehaviour
 
         if (Correct1 == true && Correct2 == true && Correct3 == true)
         {
+            lm.Win();
             print("Ez game boys");
         }
     }

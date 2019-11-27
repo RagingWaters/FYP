@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour
 {
-    //public GameObject winscreen;
+    public GameObject winscreen;
+    public GameObject inventory;
     private static int Current;
 
     public float waitToRespawn;
@@ -81,16 +82,14 @@ public class LevelManager : MonoBehaviour
 
     }
 
-    //public void Win()
-    //{
-    //    if (currentTalisman == 1)
-    //    {
-    //        Debug.Log("1 Talismamn");
-    //        winscreen.SetActive(true);
-    //        /*Current = 0;
-    //        Collectible.theScore = Current;*/
-    //    }
-    //}
+    public void Win()
+    {
+        inventory.SetActive(false);
+        option.SetActive(false);
+        winscreen.SetActive(true);
+        staminaSlider.gameObject.SetActive(false);
+        Player.gameObject.SetActive(false);
+    }
 
     public void gameOver()
     {
