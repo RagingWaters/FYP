@@ -23349,6 +23349,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 100.00003
       objectReference: {fileID: 0}
+    - target: {fileID: 961055241, guid: 2799435b02fc0dd438149e355f6d593e, type: 3}
+      propertyPath: m_Center.z
+      value: -0.43
+      objectReference: {fileID: 0}
     - target: {fileID: 961055240, guid: 2799435b02fc0dd438149e355f6d593e, type: 3}
       propertyPath: openedooropt
       value: 
@@ -23364,10 +23368,6 @@ PrefabInstance:
     - target: {fileID: 1513604063, guid: 2799435b02fc0dd438149e355f6d593e, type: 3}
       propertyPath: m_Enabled
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 961055241, guid: 2799435b02fc0dd438149e355f6d593e, type: 3}
-      propertyPath: m_Center.z
-      value: -0.43
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2799435b02fc0dd438149e355f6d593e, type: 3}
@@ -26872,6 +26872,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 17447e8f807b9e249ae411bce27f355d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 17447e8f807b9e249ae411bce27f355d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 17447e8f807b9e249ae411bce27f355d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 17447e8f807b9e249ae411bce27f355d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 14.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 17447e8f807b9e249ae411bce27f355d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.55
+      objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 17447e8f807b9e249ae411bce27f355d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -86.152
@@ -26927,26 +26947,6 @@ PrefabInstance:
     - target: {fileID: 400006, guid: 17447e8f807b9e249ae411bce27f355d, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 17447e8f807b9e249ae411bce27f355d, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 17447e8f807b9e249ae411bce27f355d, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 17447e8f807b9e249ae411bce27f355d, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 17447e8f807b9e249ae411bce27f355d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 14.98
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 17447e8f807b9e249ae411bce27f355d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.55
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17447e8f807b9e249ae411bce27f355d, type: 3}
@@ -85520,6 +85520,7 @@ MonoBehaviour:
   items:
   - {fileID: 11400000, guid: 73c83e3ebda35d644bbe13b705f05b70, type: 2}
   - {fileID: 11400000, guid: 5842fbd0474bd854b93152fcf39360f8, type: 2}
+  - {fileID: 11400000, guid: c9cbd0d1a72e99e4e9ac8b16bedd8d53, type: 2}
 --- !u!65 &1337109185
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -86307,6 +86308,18 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 961055238, guid: 2799435b02fc0dd438149e355f6d593e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 961055241, guid: 2799435b02fc0dd438149e355f6d593e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 961055241, guid: 2799435b02fc0dd438149e355f6d593e, type: 3}
+      propertyPath: m_Center.z
+      value: -0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 961055240, guid: 2799435b02fc0dd438149e355f6d593e, type: 3}
       propertyPath: openedooropt
       value: 
@@ -86322,18 +86335,6 @@ PrefabInstance:
     - target: {fileID: 1513604063, guid: 2799435b02fc0dd438149e355f6d593e, type: 3}
       propertyPath: m_Enabled
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 961055241, guid: 2799435b02fc0dd438149e355f6d593e, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 961055241, guid: 2799435b02fc0dd438149e355f6d593e, type: 3}
-      propertyPath: m_Center.z
-      value: -0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 961055238, guid: 2799435b02fc0dd438149e355f6d593e, type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2799435b02fc0dd438149e355f6d593e, type: 3}
@@ -131800,6 +131801,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 961055241, guid: 2799435b02fc0dd438149e355f6d593e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 961055241, guid: 2799435b02fc0dd438149e355f6d593e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 961055240, guid: 2799435b02fc0dd438149e355f6d593e, type: 3}
       propertyPath: openedooropt
       value: 
@@ -131809,14 +131818,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 638182270}
     - target: {fileID: 1513604063, guid: 2799435b02fc0dd438149e355f6d593e, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 961055241, guid: 2799435b02fc0dd438149e355f6d593e, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 961055241, guid: 2799435b02fc0dd438149e355f6d593e, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}

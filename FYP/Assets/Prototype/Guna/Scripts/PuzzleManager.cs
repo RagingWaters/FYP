@@ -27,7 +27,7 @@ public class PuzzleManager : MonoBehaviour
             print("2");
         }
 
-        if (Correct2 == true)
+        if (Correct3 == true)
         {
             print("3");
         }
