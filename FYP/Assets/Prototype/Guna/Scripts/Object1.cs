@@ -6,14 +6,17 @@ public class Object1 : MonoBehaviour
 {
     public PuzzleManager pm;
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerStay(Collider other)
     {
-        if (other.tag == "1")
+        if (other.gameObject.tag == "1")
         {
             pm.Correct1 = true;
         }
+    }
 
-        if (other.tag != "1")
+    void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "1")
         {
             pm.Correct1 = false;
         }
