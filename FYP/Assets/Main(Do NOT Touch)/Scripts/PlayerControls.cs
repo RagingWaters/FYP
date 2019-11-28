@@ -39,7 +39,7 @@ public class PlayerControls : MonoBehaviour
 
     public enemyController[] enemies;
 
-    // to stop rotation
+    // to stop rotation and movement
     public bool freezeRotation;
 
 
@@ -72,6 +72,7 @@ public class PlayerControls : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (DialogueTrigger.isTalking) return;
         //transform.Translate(currentSpeed * Input.GetAxis("Horizontal") * Time.deltaTime, 0f, currentSpeed * Input.GetAxis("Vertical") * Time.deltaTime);
         Inputs();
 
