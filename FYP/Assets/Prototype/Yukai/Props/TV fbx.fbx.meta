@@ -1,0 +1,222 @@
+fileFormatVersion: 2
+guid: f8f970fa607d3bc4dbc223c4533dad3c
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: ANTENA
+    100002: Bbox001
+    100004: Bbox002
+    100006: Bbox003
+    100008: Bbox004
+    100010: Bbox005
+    100012: Bbox006
+    100014: Bbox007
+    100016: BUTTON1
+    100018: BUTTON2
+    100020: Ccylinder003
+    100022: Ccylinder004
+    100024: Ccylinder005
+    100026: Ccylinder006
+    100028: Ccylinder007
+    100030: Ccylinder008
+    100032: Ccylinder009
+    100034: Ccylinder010
+    100036: Cones
+    100038: Cones 1
+    100040: Cones1
+    100042: Cones2
+    100044: Cones4
+    100046: SCREEN
+    100048: screen
+    100050: Ssphere002
+    100052: Ssphere004
+    100054: Ssphere005
+    100056: TV
+    100058: //RootNode
+    400000: ANTENA
+    400002: Bbox001
+    400004: Bbox002
+    400006: Bbox003
+    400008: Bbox004
+    400010: Bbox005
+    400012: Bbox006
+    400014: Bbox007
+    400016: BUTTON1
+    400018: BUTTON2
+    400020: Ccylinder003
+    400022: Ccylinder004
+    400024: Ccylinder005
+    400026: Ccylinder006
+    400028: Ccylinder007
+    400030: Ccylinder008
+    400032: Ccylinder009
+    400034: Ccylinder010
+    400036: Cones
+    400038: Cones 1
+    400040: Cones1
+    400042: Cones2
+    400044: Cones4
+    400046: SCREEN
+    400048: screen
+    400050: Ssphere002
+    400052: Ssphere004
+    400054: Ssphere005
+    400056: TV
+    400058: //RootNode
+    2100000: No Name
+    2100002: 02 - Default
+    2300000: Bbox001
+    2300002: Bbox002
+    2300004: Bbox003
+    2300006: Bbox004
+    2300008: Bbox005
+    2300010: Bbox006
+    2300012: Bbox007
+    2300014: Ccylinder003
+    2300016: Ccylinder004
+    2300018: Ccylinder005
+    2300020: Ccylinder006
+    2300022: Ccylinder007
+    2300024: Ccylinder008
+    2300026: Ccylinder009
+    2300028: Ccylinder010
+    2300030: Cones 1
+    2300032: Cones1
+    2300034: Cones2
+    2300036: Cones4
+    2300038: screen
+    2300040: Ssphere002
+    2300042: Ssphere004
+    2300044: Ssphere005
+    3300000: Bbox001
+    3300002: Bbox002
+    3300004: Bbox003
+    3300006: Bbox004
+    3300008: Bbox005
+    3300010: Bbox006
+    3300012: Bbox007
+    3300014: Ccylinder003
+    3300016: Ccylinder004
+    3300018: Ccylinder005
+    3300020: Ccylinder006
+    3300022: Ccylinder007
+    3300024: Ccylinder008
+    3300026: Ccylinder009
+    3300028: Ccylinder010
+    3300030: Cones 1
+    3300032: Cones1
+    3300034: Cones2
+    3300036: Cones4
+    3300038: screen
+    3300040: Ssphere002
+    3300042: Ssphere004
+    3300044: Ssphere005
+    4300000: Bbox007
+    4300002: Ccylinder007
+    4300004: Ccylinder008
+    4300006: Bbox005
+    4300008: Ccylinder006
+    4300010: Bbox004
+    4300012: Ccylinder005
+    4300014: Bbox002
+    4300016: Bbox001
+    4300018: Bbox003
+    4300020: Bbox006
+    4300022: Ccylinder010
+    4300024: Ccylinder009
+    4300026: Ssphere002
+    4300028: Ccylinder003
+    4300030: Ccylinder004
+    4300032: Ssphere004
+    4300034: Ssphere005
+    4300036: Cones2
+    4300038: Cones4
+    4300040: Cones1
+    4300042: Cones
+    4300044: screen
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
