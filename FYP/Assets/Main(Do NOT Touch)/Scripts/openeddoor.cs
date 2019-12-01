@@ -11,6 +11,7 @@ public class openeddoor : MonoBehaviour
     public Animator anim;
     public GameObject open;
     public bool opendoor = false;
+    public AudioManager am;
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +36,7 @@ public class openeddoor : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("Interact"))
                 {
                     anim.Play("GateDoorOpen");
+                    am.Door();
                     Debug.Log("dooropen");
                     //disableDoor.SetActive(false);
 
