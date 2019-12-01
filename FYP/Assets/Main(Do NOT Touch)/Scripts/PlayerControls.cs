@@ -41,6 +41,7 @@ public class PlayerControls : MonoBehaviour
 
     // to stop rotation and movement
     public bool freezeRotation;
+    public AudioSource source;
 
 
 
@@ -55,6 +56,7 @@ public class PlayerControls : MonoBehaviour
         referenceCam = Camera.main;
         rb = GetComponent<Rigidbody>();
         col = GetComponent<SphereCollider>();
+        source = GetComponent<AudioSource>();
 
 
         currentSpeed = 5;
@@ -121,6 +123,8 @@ public class PlayerControls : MonoBehaviour
         right.y = 0;
         Vector3 moveDirection = (forward * verticalInput + right * horizontalInput).normalized * currentSpeed;
         rb.velocity = new Vector3(moveDirection.x, rb.velocity.y, moveDirection.z);
+        
+        
 
 
         if (frameStorage <= 2 && frameStorage >= 0)
