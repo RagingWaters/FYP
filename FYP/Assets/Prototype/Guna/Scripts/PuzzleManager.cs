@@ -7,12 +7,13 @@ public class PuzzleManager : MonoBehaviour
     public bool Correct1 = false;
     public bool Correct2 = false;
     public bool Correct3 = false;
-    LevelManager lm;
+    public LevelManager lm;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        //lm = LevelManager.instance;
+        lm = FindObjectOfType<LevelManager>();
     }
 
     // Update is called once per frame

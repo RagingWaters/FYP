@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour
 {
+
     public GameObject winscreen;
     public GameObject inventory;
     private static int Current;
@@ -70,10 +71,9 @@ public class LevelManager : MonoBehaviour
     void Start()
     {
 
-
-        //keyy.SetActive(false);
+        keyy.SetActive(false);
         //theScore = 0;
-        //newspaperText.GetComponent<Text>().text = "Pieces : " + currentScore + " / 4";
+        newspaperText.GetComponent<Text>().text = "Pieces : " + currentScore + " / 4";
     }
 
     // Update is called once per frame
@@ -89,6 +89,7 @@ public class LevelManager : MonoBehaviour
         winscreen.SetActive(true);
         staminaSlider.gameObject.SetActive(false);
         Player.gameObject.SetActive(false);
+        print("print");
     }
 
     public void gameOver()
