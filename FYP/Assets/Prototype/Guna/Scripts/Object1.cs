@@ -5,12 +5,14 @@ using UnityEngine;
 public class Object1 : MonoBehaviour
 {
     public PuzzleManager pm;
+    public NormalPuzzleWin nw;
 
-    void OnTriggerStay(Collider other)
+    void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "1")
+        if (other.tag == "1")
         {
             pm.Correct1 = true;
+            nw.Correct1 = true;
         }
     }
 

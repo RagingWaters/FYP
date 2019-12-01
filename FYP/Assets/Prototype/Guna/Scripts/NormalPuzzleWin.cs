@@ -8,6 +8,7 @@ public class NormalPuzzleWin : MonoBehaviour
     public bool Correct2 = false;
     public bool Correct3 = false;
     public Item toyReward;
+    private bool reward = false;
 
     // Start is called before the first frame update
     void Start()
@@ -18,25 +19,11 @@ public class NormalPuzzleWin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Correct1 == true)
-        {
-            print("1");
-        }
-
-        if (Correct2 == true)
-        {
-            print("2");
-        }
-
-        if (Correct3 == true)
-        {
-            print("3");
-        }
-
-        if (Correct1 == true && Correct2 == true && Correct3 == true)
+        if (Correct1 == true && Correct2 == true && Correct3 == true && reward == false)
         {
             Inventory.instance.Add(toyReward);
             print("Ez game boys");
+            reward = true;
         }
     }
 }
