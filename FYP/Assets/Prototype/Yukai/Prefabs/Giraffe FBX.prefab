@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2865831879805190464}
   - component: {fileID: 2865831879808057696}
   - component: {fileID: 2865831879806960544}
+  - component: {fileID: 7114059072012843117}
   m_Layer: 0
   m_Name: Giraffe FBX
   m_TagString: Untagged
@@ -25,8 +26,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2865831879804771680}
-  m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: 2619.5767, y: 1860.5349, z: 1613.5204}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.723548, y: 0.65638417, z: -74.15198}
   m_LocalScale: {x: 0.03709, y: 0.03709, z: 0.03709}
   m_Children: []
   m_Father: {fileID: 0}
@@ -57,7 +58,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 69cbf03e3fba44a4bac057eba3d07c5a, type: 2}
+  - {fileID: 2100000, guid: 1f3ae97a615a517469084d4658674f5f, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -77,3 +78,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &7114059072012843117
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2865831879804771680}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.991025, y: 20.715006, z: 12.586803}
+  m_Center: {x: 0, y: 10.357503, z: 0.020007133}

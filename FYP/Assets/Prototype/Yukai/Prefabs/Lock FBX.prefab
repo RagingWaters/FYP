@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1830907908567888401}
   - component: {fileID: 1830907908568985809}
   - component: {fileID: 1830907908557561297}
+  - component: {fileID: 2585856911212528767}
   m_Layer: 0
   m_Name: Lock FBX
   m_TagString: Untagged
@@ -26,14 +27,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1830907908567051793}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 281.5278, y: 305.93265, z: 445.01147}
   m_LocalScale: {x: 5.938685, y: 5.938685, z: 5.938685}
   m_Children:
   - {fileID: 1830907908566561331}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 0}
 --- !u!33 &1830907908567888401
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -98,6 +99,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &2585856911212528767
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830907908567051793}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.226315, y: 0.944282, z: 2.5419457}
+  m_Center: {x: 0, y: 0, z: -0.34218886}
 --- !u!1 &1830907908567051795
 GameObject:
   m_ObjectHideFlags: 0

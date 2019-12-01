@@ -549,6 +549,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2553496516658135294}
   - component: {fileID: 2553496516648890130}
+  - component: {fileID: 2944556950457981501}
   m_Layer: 0
   m_Name: Photo Frame FBX
   m_TagString: Untagged
@@ -563,7 +564,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2553496516658240734}
-  m_LocalRotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
+  m_LocalRotation: {x: -0.5, y: 0.50000006, z: 0.50000006, w: 0.5}
   m_LocalPosition: {x: 1502.904, y: 1485.3553, z: 989.869}
   m_LocalScale: {x: 6.2415, y: 7.6951, z: 7.6951}
   m_Children:
@@ -576,7 +577,7 @@ Transform:
   - {fileID: 2553496516658135292}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 90.00001}
 --- !u!95 &2553496516648890130
 Animator:
   serializedVersion: 3
@@ -596,3 +597,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &2944556950457981501
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2553496516658240734}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}

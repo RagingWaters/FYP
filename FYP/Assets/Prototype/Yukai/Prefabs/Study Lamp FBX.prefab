@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2610194861329733129}
   - component: {fileID: 2610194861328602313}
   - component: {fileID: 2610194861340064201}
+  - component: {fileID: 742130139587934635}
   m_Layer: 0
   m_Name: Study Lamp FBX
   m_TagString: Untagged
@@ -26,13 +27,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2610194861330532873}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 1587.7056, y: 1562.1343, z: 1121.0881}
   m_LocalScale: {x: 8.078023, y: 8.078023, z: 8.078023}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 0}
 --- !u!33 &2610194861329733129
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -97,3 +98,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &742130139587934635
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2610194861330532873}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.1182747, y: 3.790557, z: 7.026291}
+  m_Center: {x: 0.9383362, y: 0.000015258789, z: 3.171995}

@@ -165,6 +165,7 @@ GameObject:
   m_Component:
   - component: {fileID: 847175237235773082}
   - component: {fileID: 847175237226520958}
+  - component: {fileID: 2878983725647333813}
   m_Layer: 0
   m_Name: Dustbin FBX
   m_TagString: Untagged
@@ -179,7 +180,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 847175237236003514}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 1051.1785, y: 770.88116, z: 413.2041}
   m_LocalScale: {x: 1.164475, y: 1.164475, z: 1.164475}
   m_Children:
@@ -188,7 +189,7 @@ Transform:
   - {fileID: 847175237235773080}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 0}
 --- !u!95 &847175237226520958
 Animator:
   serializedVersion: 3
@@ -208,6 +209,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &2878983725647333813
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847175237236003514}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &847175237236003516
 GameObject:
   m_ObjectHideFlags: 0

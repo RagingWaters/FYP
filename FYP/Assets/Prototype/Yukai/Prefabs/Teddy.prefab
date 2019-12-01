@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4901596167830888218}
   - component: {fileID: 4901596167827988282}
   - component: {fileID: 4901596167828987386}
+  - component: {fileID: 5293029202356787070}
   m_Layer: 0
   m_Name: Teddy
   m_TagString: Untagged
@@ -25,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4901596167831175994}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2228.6787, y: 1674.9979, z: 1460.0322}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -77,3 +78,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &5293029202356787070
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4901596167831175994}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.44056445, y: 0.7371231, z: 0.41690978}
+  m_Center: {x: 0, y: 0.36572602, z: -0.0026685894}

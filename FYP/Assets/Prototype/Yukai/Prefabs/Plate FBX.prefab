@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4846722762674620398}
   - component: {fileID: 4846722762675586350}
   - component: {fileID: 4846722762685278254}
+  - component: {fileID: 712648998369028655}
   m_Layer: 0
   m_Name: Plate FBX
   m_TagString: Untagged
@@ -26,13 +27,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4846722762677853166}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 1528.8783, y: 1506.8481, z: 1047.8895}
   m_LocalScale: {x: 30.08305, y: 30.08305, z: 30.08305}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 0}
 --- !u!33 &4846722762674620398
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -97,3 +98,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &712648998369028655
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4846722762677853166}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0511124, y: 2.051113, z: 0.20255584}
+  m_Center: {x: -0.0000039339066, y: 0.0000036358833, z: 0.013589931}

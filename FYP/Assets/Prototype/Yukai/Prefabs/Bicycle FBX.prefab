@@ -349,6 +349,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1337106862585489455}
   - component: {fileID: 1337106862594836431}
+  - component: {fileID: 4034154672966459753}
   m_Layer: 0
   m_Name: Bicycle FBX
   m_TagString: Untagged
@@ -363,7 +364,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1337106862585328655}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 74.2379, y: 27.698626, z: 10.568232}
   m_LocalScale: {x: 1.2780225, y: 1.2780225, z: 1.2780225}
   m_Children:
@@ -411,7 +412,7 @@ Transform:
   - {fileID: 1337106862585489531}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 0}
 --- !u!95 &1337106862594836431
 Animator:
   serializedVersion: 3
@@ -421,7 +422,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1337106862585328655}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: b610af95dfe81ab4fa13a0d6c0145b25, type: 3}
+  m_Avatar: {fileID: 9000000, guid: 5fd4e230f1c2db948bb9fd8c718f1f3c, type: 3}
   m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
@@ -431,6 +432,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &4034154672966459753
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337106862585328655}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1337106862585328657
 GameObject:
   m_ObjectHideFlags: 0

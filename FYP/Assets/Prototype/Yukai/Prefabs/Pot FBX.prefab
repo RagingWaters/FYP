@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5216836150848498335}
   - component: {fileID: 5216836150847400031}
   - component: {fileID: 5216836150838101343}
+  - component: {fileID: 1892403931200974589}
   m_Layer: 0
   m_Name: Pot FBX
   m_TagString: Untagged
@@ -26,13 +27,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5216836150845404831}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 2228.5786, y: 1857.3008, z: 1711.2959}
   m_LocalScale: {x: 12.43585, y: 12.43585, z: 12.43585}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 0}
 --- !u!33 &5216836150848498335
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -97,3 +98,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &1892403931200974589
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5216836150845404831}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.7679267, y: 3.7679276, z: 2.3946528}
+  m_Center: {x: 0.000000059604645, y: 0, z: 0}

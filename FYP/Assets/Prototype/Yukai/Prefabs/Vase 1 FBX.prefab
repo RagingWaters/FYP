@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 197534112705159178}
   - component: {fileID: 197534112704193226}
   - component: {fileID: 197534112699027402}
+  - component: {fileID: 8510915457673789919}
   m_Layer: 0
   m_Name: Vase 1 FBX
   m_TagString: Untagged
@@ -26,13 +27,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 197534112706460682}
-  m_LocalRotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
+  m_LocalRotation: {x: -0.5, y: 0.50000006, z: 0.50000006, w: 0.5}
   m_LocalPosition: {x: 2106.2158, y: 1760.0627, z: 1630.7762}
   m_LocalScale: {x: 4.366378, y: 4.366378, z: 4.366378}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 90.00001}
 --- !u!33 &197534112705159178
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -97,3 +98,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &8510915457673789919
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197534112706460682}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.8634353, y: 5.8634343, z: 10.444702}
+  m_Center: {x: 0, y: 0.00003015995, z: 5.222351}

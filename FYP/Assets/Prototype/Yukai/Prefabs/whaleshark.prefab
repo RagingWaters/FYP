@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4783920556645559456}
   - component: {fileID: 4783920556648459392}
   - component: {fileID: 4783920556647460416}
+  - component: {fileID: 2106196678969418041}
   m_Layer: 0
   m_Name: whaleshark
   m_TagString: Untagged
@@ -25,13 +26,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4783920556645527680}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 2086.2537, y: 1815.0657, z: 1673.6884}
   m_LocalScale: {x: 0.6777544, y: 1.6084889, z: 0.7173946}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 0}
 --- !u!33 &4783920556648459392
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -77,3 +78,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &2106196678969418041
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4783920556645527680}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.2090967, y: 2.266713, z: 1.3831762}
+  m_Center: {x: -0.00024414062, y: -0.34398958, z: -0.07955963}

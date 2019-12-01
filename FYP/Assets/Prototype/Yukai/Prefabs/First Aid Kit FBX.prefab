@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2285613401420049153}
   - component: {fileID: 2285613401423473441}
   - component: {fileID: 2285613401422342625}
+  - component: {fileID: 1631340067209680391}
   m_Layer: 0
   m_Name: First Aid Kit FBX
   m_TagString: Untagged
@@ -25,13 +26,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2285613401420085025}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 848.8881, y: 584.88776, z: 355.66077}
   m_LocalScale: {x: 833.43427, y: 833.43427, z: 833.43427}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 0}
 --- !u!33 &2285613401423473441
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -78,3 +79,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &1631340067209680391
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2285613401420085025}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0017313621, y: 0.0060856314, z: 0.004314144}
+  m_Center: {x: 0, y: 0, z: 0.00035878507}
