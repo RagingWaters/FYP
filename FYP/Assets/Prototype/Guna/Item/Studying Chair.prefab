@@ -129,7 +129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 8ef8c692f87a04f44a55c77dd94808c7, type: 2}
   clip: {fileID: 8300000, guid: 2de1d3f23e8956d4bac1cf2210a0d920, type: 3}
-  source: {fileID: 0}
+  source: {fileID: 7495214244201741548, guid: fa980816865f1e2429d97287e81cb322, type: 3}
 --- !u!1001 &996511461
 PrefabInstance:
   m_ObjectHideFlags: 0
