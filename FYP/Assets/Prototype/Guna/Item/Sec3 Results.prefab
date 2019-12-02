@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3795428992550949440}
   m_Layer: 0
   m_Name: Sec3 Results
-  m_TagString: 2
+  m_TagString: 3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -122,3 +122,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 992e49f9f3531404ea64219f3be46754, type: 2}
+  clip: {fileID: 0}
+  source: {fileID: 0}

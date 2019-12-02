@@ -169,7 +169,7 @@ GameObject:
   - component: {fileID: 5476176276307656245}
   m_Layer: 0
   m_Name: SecondDate
-  m_TagString: Untagged
+  m_TagString: 2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -243,6 +243,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 15b7bd56004475040ba58d44e30fa6e9, type: 2}
+  clip: {fileID: 0}
+  source: {fileID: 0}
 --- !u!65 &5476176276307656245
 BoxCollider:
   m_ObjectHideFlags: 0

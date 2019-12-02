@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Teddy Bear
   m_EditorClassIdentifier: 
   name: Teddy Bear
-  icon: {fileID: 21300000, guid: c6a64a0acb5dcfe40bbf153372af9a3b, type: 3}
+  icon: {fileID: 21300000, guid: a754f666235cfda4d980923c72839936, type: 3}
   isDefaultItem: 0
   prefabToSpawn: {fileID: 5007312233051351317, guid: 90618753768942a409bab70f7756faa8,
     type: 3}
