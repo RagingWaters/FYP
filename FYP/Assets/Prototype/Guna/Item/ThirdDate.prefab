@@ -243,7 +243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 15b7bd56004475040ba58d44e30fa6e9, type: 2}
-  clip: {fileID: 0}
+  clip: {fileID: 8300000, guid: 9f5f002d16a820b4eb3b7d8357494ba3, type: 3}
   source: {fileID: 0}
 --- !u!65 &1424039272755583541
 BoxCollider:

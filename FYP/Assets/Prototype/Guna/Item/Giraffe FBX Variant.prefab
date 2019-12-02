@@ -12,6 +12,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giraffe FBX Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 2865831879804771680, guid: 86c3ec1f986106b4cb0e604793b87b2c,
+        type: 3}
+      propertyPath: m_TagString
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2865831879805190464, guid: 86c3ec1f986106b4cb0e604793b87b2c,
         type: 3}
       propertyPath: m_LocalPosition.x

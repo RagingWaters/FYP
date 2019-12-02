@@ -15,5 +15,5 @@ MonoBehaviour:
   name: StudyingChair
   icon: {fileID: 21300000, guid: 457b61200c7d1f54890b94acf81b0b8b, type: 3}
   isDefaultItem: 0
-  prefabToSpawn: {fileID: 8024567616814756609, guid: 00cbfe01fde9eed4f894f150163b0155,
+  prefabToSpawn: {fileID: 8100091287761884362, guid: 8c68340f1602f174bbeda254e938cda3,
     type: 3}

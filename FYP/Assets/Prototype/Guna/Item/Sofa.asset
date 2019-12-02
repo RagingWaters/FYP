@@ -15,5 +15,5 @@ MonoBehaviour:
   name: Sofa
   icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
   isDefaultItem: 0
-  prefabToSpawn: {fileID: 4680376733814630266, guid: 86aec4575eaf44e4d818bba1336ba1aa,
+  prefabToSpawn: {fileID: 2160766000003173677, guid: a841b24b26ba7c544825e5761d390730,
     type: 3}
