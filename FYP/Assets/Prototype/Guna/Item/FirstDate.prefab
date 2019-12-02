@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 1732513643531804802}
   - component: {fileID: 8439068357426007072}
   m_Layer: 0
-  m_Name: Photo Frame FBX
-  m_TagString: Untagged
+  m_Name: FirstDate
+  m_TagString: 1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5021336782973413441}
   m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 21.024, y: 4.77, z: -61.01}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.07, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 5021336782973449325}
@@ -89,6 +89,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 15b7bd56004475040ba58d44e30fa6e9, type: 2}
+  clip: {fileID: 0}
+  source: {fileID: 0}
 --- !u!65 &8439068357426007072
 BoxCollider:
   m_ObjectHideFlags: 0

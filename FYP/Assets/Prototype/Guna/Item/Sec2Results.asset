@@ -15,5 +15,5 @@ MonoBehaviour:
   name: Sec2Results
   icon: {fileID: 21300000, guid: f81382c179fb84c4fa76ba0a5ec4adf2, type: 3}
   isDefaultItem: 0
-  prefabToSpawn: {fileID: 5786509415123499407, guid: 48b947d90676c8e439d4c9c058789d95,
+  prefabToSpawn: {fileID: 8633700909427234133, guid: a4eb49ed6d755c54daaa9ba3960280b3,
     type: 3}

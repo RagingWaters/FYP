@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Shark
   m_EditorClassIdentifier: 
   name: Shark
-  icon: {fileID: 21300000, guid: 457b61200c7d1f54890b94acf81b0b8b, type: 3}
+  icon: {fileID: 21300000, guid: 9006a8e8db9bd9840aade5888ee7296e, type: 3}
   isDefaultItem: 0
   prefabToSpawn: {fileID: 792566579244181526, guid: c5ff70f93a4871c459b0b4c312a8aa08,
     type: 3}
