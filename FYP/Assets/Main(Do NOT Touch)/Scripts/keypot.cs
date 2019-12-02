@@ -32,7 +32,7 @@ public class keypot : MonoBehaviour
         {
             if (lm.currentShovel == 1)
             {
-                lm.keyy.SetActive(true);
+                //lm.keyy.SetActive(true);
                 dig.SetActive(false);
                 warning.SetActive(false);
                 foundkey.SetActive(true);

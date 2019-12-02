@@ -53,7 +53,7 @@ public class LevelManager : MonoBehaviour
     public GameObject keypotopt;
     public GameObject foundkey;
     public GameObject warning0shovel;
-    public GameObject keyy;
+    //public GameObject keyy;
     public GameObject warningnth;
     public GameObject cigg;
     public GameObject foundcigg;
@@ -71,7 +71,7 @@ public class LevelManager : MonoBehaviour
     void Start()
     {
 
-        keyy.SetActive(false);
+        //keyy.SetActive(false);
         //theScore = 0;
         newspaperText.GetComponent<Text>().text = "Pieces : " + currentScore + " / 4";
     }
