@@ -9,6 +9,7 @@ public class NormalPuzzleWin : MonoBehaviour
     public bool Correct3 = false;
     public Item toyReward;
     private bool reward = false;
+    public GameObject correct;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,15 @@ public class NormalPuzzleWin : MonoBehaviour
             Inventory.instance.Add(toyReward);
             print("Ez game boys");
             reward = true;
+            StartCoroutine(StopDialogue());
         }
+
+    }
+    IEnumerator StopDialogue()
+    {
+
+        correct.SetActive(true);
+        yield return new WaitForSeconds(4f);
+        correct.SetActive(false);
     }
 }
