@@ -5,6 +5,7 @@ using UnityEngine;
 public class ItemPickup : MonoBehaviour
 {
     public Item item;
+    public GameObject promptopt;
     //public AudioClip clip;
     //public AudioSource source;
 
@@ -25,6 +26,7 @@ public class ItemPickup : MonoBehaviour
         if(wasPickedUp)
         {
             Destroy(gameObject);
+            promptopt.SetActive(false);
         }
     }
 }
