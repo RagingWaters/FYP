@@ -15,5 +15,5 @@ MonoBehaviour:
   name: New Item
   icon: {fileID: 21300000, guid: d730fd83f61e87c4c999f97d658869b3, type: 3}
   isDefaultItem: 0
-  prefabToSpawn: {fileID: 3795428992550949455, guid: dfb5a0f3551525c458fef1fb674014b4,
+  prefabToSpawn: {fileID: 657848663637719523, guid: 4372c70efc4898c439fbc0c4b3361ab6,
     type: 3}
