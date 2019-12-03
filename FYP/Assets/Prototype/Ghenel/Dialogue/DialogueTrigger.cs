@@ -9,6 +9,7 @@ public class DialogueTrigger : MonoBehaviour
     //public DialogueManager theDialogueManager;
     public static bool isTalking;
     PlayerControls pc;
+    public Radio radio;
 
 
     void OnTriggerStay(Collider other)
@@ -21,6 +22,7 @@ public class DialogueTrigger : MonoBehaviour
                 isTalking = true;
                 dialogue1.SetActive(true);
                 StartCoroutine(ContinueDialogue());
+                radio.audioSource.Pause();
                 //if (Input.GetKeyDown(KeyCode.Space) && isTalking == false || Input.GetButtonDown("Interact") && isTalking == false)
                 //{
                 //    dialogue1.SetActive(false);

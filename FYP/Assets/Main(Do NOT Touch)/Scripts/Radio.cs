@@ -6,7 +6,7 @@ public class Radio : MonoBehaviour
 {
     public AudioClip sound;
     public float volume;
-    AudioSource audioSource;
+    public AudioSource audioSource;
     public bool alreadyPlayed = false;
 
 
