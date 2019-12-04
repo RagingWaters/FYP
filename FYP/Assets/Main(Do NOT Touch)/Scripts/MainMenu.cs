@@ -53,13 +53,18 @@ public class MainMenu : MonoBehaviour
 
     public void Play()
     {
-        SceneManager.LoadScene("Alpha Main");
+        SceneManager.LoadScene("Pre Beta Main");
     }
 
     public void LeaveGame()
     {
         Application.Quit();
         Debug.Log("I QUIT !!");
+    }
+
+    public void ManuallySelectButton(GameObject buttonToSelect)
+    {
+        es.SetSelectedGameObject(buttonToSelect);
     }
 
     public void MainMenuGame()
