@@ -5,9 +5,14 @@ using UnityEngine;
 public class ItemPickup : MonoBehaviour
 {
     public Item item;
-    public GameObject promptopt;
+    //private Animator anim;
     //public AudioClip clip;
     //public AudioSource source;
+
+    void Start()
+    {
+        //anim = GetComponent<Animator>();
+    }
 
     void OnTriggerStay(Collider other)
     {
@@ -21,11 +26,13 @@ public class ItemPickup : MonoBehaviour
     void PickUp()
     {
         Debug.Log("Picking up " + item.name);
+        item.prompt = GetComponent<prompt>().promptopt;
         bool wasPickedUp = Inventory.instance.Add(item);
 
         if(wasPickedUp)
         {
-            promptopt.SetActive(false);
+            //anim.SetBool("wasPickedUp", true);
+            GetComponent<prompt>().promptopt.SetActive(false);
             Destroy(gameObject);
         }
     }

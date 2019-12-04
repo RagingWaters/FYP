@@ -42,6 +42,7 @@ public class PlayerControls : MonoBehaviour
     // to stop rotation and movement
     public bool freezeRotation;
     public AudioSource source;
+    public Animator anim;
 
 
 
@@ -57,6 +58,7 @@ public class PlayerControls : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         col = GetComponent<SphereCollider>();
         source = GetComponent<AudioSource>();
+        
 
 
         currentSpeed = 5;
@@ -81,9 +83,16 @@ public class PlayerControls : MonoBehaviour
         FrameStoring();
 
         if (isMoving)
+        {
+            anim.SetBool("isMoving", true);
             Movement();
-        else rb.velocity = Vector3.up * rb.velocity.y;
-        //  currentSpeed = 5;
+        }
+        else
+        {
+            rb.velocity = Vector3.up * rb.velocity.y;
+            anim.SetBool("isMoving", false);
+            //  currentSpeed = 5;
+        }
      
         if (Input.GetKeyDown(KeyCode.Space))
         {

@@ -167,6 +167,7 @@ GameObject:
   - component: {fileID: 7408167491191665964}
   - component: {fileID: 2803984726054654615}
   - component: {fileID: 5476176276307656245}
+  - component: {fileID: 2834150173882383428}
   m_Layer: 0
   m_Name: SecondDate
   m_TagString: 2
@@ -243,8 +244,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 15b7bd56004475040ba58d44e30fa6e9, type: 2}
-  clip: {fileID: 8300000, guid: 9f5f002d16a820b4eb3b7d8357494ba3, type: 3}
-  source: {fileID: 7495214244201741548, guid: fa980816865f1e2429d97287e81cb322, type: 3}
 --- !u!65 &5476176276307656245
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -258,6 +257,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 9, y: 5, z: 9}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2834150173882383428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8884900067389692500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 066612555f2fc064c948d7c9b3f293a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  promptopt: {fileID: 0}
 --- !u!1 &8884900067389692502
 GameObject:
   m_ObjectHideFlags: 0

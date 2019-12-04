@@ -59,9 +59,9 @@ public class LevelManager : MonoBehaviour
     public GameObject foundcigg;
     public GameObject randompotopt;
 
-    public GameObject L2blocker;
-    public GameObject L3blocker;
-    public GameObject L4blocker;
+    //public GameObject L2blocker;
+    //public GameObject L3blocker;
+    //public GameObject L4blocker;
 
 
 

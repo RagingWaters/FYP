@@ -53,7 +53,7 @@ public class MainMenu : MonoBehaviour
 
     public void Play()
     {
-        SceneManager.LoadScene("Pre Beta Main");
+        SceneManager.LoadScene("Pre-Beta Main");
     }
 
     public void LeaveGame()

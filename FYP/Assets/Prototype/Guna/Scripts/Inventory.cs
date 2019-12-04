@@ -7,6 +7,7 @@ public class Inventory : MonoBehaviour
     #region Singleton
 
     public static Inventory instance;
+    private Animator anim;
 
     void Awake()
     {
