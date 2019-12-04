@@ -1,0 +1,210 @@
+fileFormatVersion: 2
+guid: f160b61fda2bbf647b11f6fb813d1262
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Base Human
+    100002: Base HumanHead
+    100004: Base HumanHeadGizmo
+    100006: Base HumanLCalf
+    100008: Base HumanLCollarbone
+    100010: Base HumanLDigit11
+    100012: Base HumanLDigit11 1
+    100014: Base HumanLDigit12
+    100016: Base HumanLDigit13
+    100018: Base HumanLDigit21
+    100020: Base HumanLDigit22
+    100022: Base HumanLDigit23
+    100024: Base HumanLFoot
+    100026: Base HumanLForearm
+    100028: Base HumanLIKTarget
+    100030: Base HumanLPalm
+    100032: Base HumanLPalmGizmo
+    100034: Base HumanLPlatform
+    100036: Base HumanLThigh
+    100038: Base HumanLThighGizmo
+    100040: Base HumanLUpperarm
+    100042: Base HumanLUpperarmGizmo
+    100044: Base HumanLUpVectorNode
+    100046: Base HumanLUpVectorNode 1
+    100048: Base HumanNeck1
+    100050: Base HumanNeck2
+    100052: Base HumanPelvis
+    100054: Base HumanRCalf
+    100056: Base HumanRCollarbone
+    100058: Base HumanRDigit11
+    100060: Base HumanRDigit11 1
+    100062: Base HumanRDigit12
+    100064: Base HumanRDigit13
+    100066: Base HumanRDigit21
+    100068: Base HumanRDigit22
+    100070: Base HumanRDigit23
+    100072: Base HumanRFoot
+    100074: Base HumanRForearm
+    100076: Base HumanRibcage
+    100078: Base HumanRibcageGizmo
+    100080: Base HumanRIKTarget
+    100082: Base HumanRPalm
+    100084: Base HumanRPalmGizmo
+    100086: Base HumanRPlatform
+    100088: Base HumanRThigh
+    100090: Base HumanRThighGizmo
+    100092: Base HumanRUpperarm
+    100094: Base HumanRUpperarmGizmo
+    100096: Base HumanRUpVectorNode
+    100098: Base HumanRUpVectorNode 1
+    100100: Base HumanSpine1
+    100102: Base HumanSpine1Gizmo
+    100104: Base HumanSpine2
+    100106: Base HumanSpine3
+    100108: Base HumanSpine4
+    100110: jacket
+    100112: //RootNode
+    400000: Base Human
+    400002: Base HumanHead
+    400004: Base HumanHeadGizmo
+    400006: Base HumanLCalf
+    400008: Base HumanLCollarbone
+    400010: Base HumanLDigit11
+    400012: Base HumanLDigit11 1
+    400014: Base HumanLDigit12
+    400016: Base HumanLDigit13
+    400018: Base HumanLDigit21
+    400020: Base HumanLDigit22
+    400022: Base HumanLDigit23
+    400024: Base HumanLFoot
+    400026: Base HumanLForearm
+    400028: Base HumanLIKTarget
+    400030: Base HumanLPalm
+    400032: Base HumanLPalmGizmo
+    400034: Base HumanLPlatform
+    400036: Base HumanLThigh
+    400038: Base HumanLThighGizmo
+    400040: Base HumanLUpperarm
+    400042: Base HumanLUpperarmGizmo
+    400044: Base HumanLUpVectorNode
+    400046: Base HumanLUpVectorNode 1
+    400048: Base HumanNeck1
+    400050: Base HumanNeck2
+    400052: Base HumanPelvis
+    400054: Base HumanRCalf
+    400056: Base HumanRCollarbone
+    400058: Base HumanRDigit11
+    400060: Base HumanRDigit11 1
+    400062: Base HumanRDigit12
+    400064: Base HumanRDigit13
+    400066: Base HumanRDigit21
+    400068: Base HumanRDigit22
+    400070: Base HumanRDigit23
+    400072: Base HumanRFoot
+    400074: Base HumanRForearm
+    400076: Base HumanRibcage
+    400078: Base HumanRibcageGizmo
+    400080: Base HumanRIKTarget
+    400082: Base HumanRPalm
+    400084: Base HumanRPalmGizmo
+    400086: Base HumanRPlatform
+    400088: Base HumanRThigh
+    400090: Base HumanRThighGizmo
+    400092: Base HumanRUpperarm
+    400094: Base HumanRUpperarmGizmo
+    400096: Base HumanRUpVectorNode
+    400098: Base HumanRUpVectorNode 1
+    400100: Base HumanSpine1
+    400102: Base HumanSpine1Gizmo
+    400104: Base HumanSpine2
+    400106: Base HumanSpine3
+    400108: Base HumanSpine4
+    400110: jacket
+    400112: //RootNode
+    2100000: default
+    4300000: jacket
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: jacket
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
