@@ -25,8 +25,8 @@ public class ItemPickup : MonoBehaviour
 
         if(wasPickedUp)
         {
-            Destroy(gameObject);
             promptopt.SetActive(false);
+            Destroy(gameObject);
         }
     }
 }

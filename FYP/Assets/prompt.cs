@@ -19,9 +19,9 @@ public class prompt : MonoBehaviour
 
     }
 
-    void OnTriggerStay(Collider other)
+    void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.tag == "Player")
         {
             promptopt.SetActive(true);
         }
