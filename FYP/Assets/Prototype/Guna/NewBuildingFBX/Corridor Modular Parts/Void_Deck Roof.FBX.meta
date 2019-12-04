@@ -1,0 +1,479 @@
+fileFormatVersion: 2
+guid: 56d1b6cc0090e054aa10f2a1e4f31f9e
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: AC_Wire_Cover_01
+    100002: Barricade
+    100004: Corridor_Light
+    100006: Corridor_Light_Bulb
+    100008: Corridor_Pillar_01
+    100010: Corridor_Pillar_02
+    100012: Corridor_Unitx2(1)_FLOOR2
+    100014: Corridor_Unitx2_FLOOR1
+    100016: Corridor_Unitx3_FLOOR3
+    100018: Floor_Bedroom_006
+    100020: Floor_Bedroom_007
+    100022: Floor_Bedroom_008
+    100024: Floor_Bedroom_009
+    100026: Floor_Bedroom_010
+    100028: Floor_Bedroom_1
+    100030: Floor_Bedroom_1 1
+    100032: Floor_Bedroom_2
+    100034: Floor_Bedroom_2 1
+    100036: Floor_Bedroom_3
+    100038: Floor_Bedroom_3 1
+    100040: Floor_Bevel
+    100042: Floor_Kitchen
+    100044: Floor_Kitchen 1
+    100046: Floor_Living_Room
+    100048: Floor_LivingRoom
+    100050: Lift_Buttons
+    100052: Lift_Door001
+    100054: Lift_Floor_Display
+    100056: Lift_Wall
+    100058: Main_Door
+    100060: Main_Door_Frame
+    100062: Main_Door_Gate_01
+    100064: Main_Door_Gate_02
+    100066: Pillar_T1
+    100068: Pillar_T1 1
+    100070: Pillar_T2
+    100072: Pillar_T2 1
+    100074: Pillar_T3
+    100076: Reference
+    100078: Room_Door
+    100080: Room_Door_Frame
+    100082: Staircase_Set
+    100084: Stairs_Wall
+    100086: VD/RF
+    100088: //RootNode
+    100090: Wall_Aesthetic_01
+    100092: Wall_T1
+    100094: Wall_T1 1
+    100096: Wall_T10
+    100098: Wall_T10 1
+    100100: Wall_T11
+    100102: Wall_T2
+    100104: Wall_T2 1
+    100106: Wall_T3
+    100108: Wall_T3 1
+    100110: Wall_T3.1
+    100112: Wall_T4
+    100114: Wall_T4 1
+    100116: Wall_T5
+    100118: Wall_T5 1
+    100120: Wall_T6
+    100122: Wall_T6 1
+    100124: Wall_T7
+    100126: Wall_T7 1
+    100128: Wall_T8
+    100130: Wall_T8 1
+    100132: Wall_T9
+    100134: Wall_T9 1
+    100136: Wall_Window
+    100138: Wall_Window001
+    100140: Wall_Window002
+    100142: Wall_Window003
+    100144: Wall_Window004
+    100146: Wall_Window005
+    100148: Window
+    100150: Window_Frame001
+    100152: Wire_Cover_01
+    400000: AC_Wire_Cover_01
+    400002: Barricade
+    400004: Corridor_Light
+    400006: Corridor_Light_Bulb
+    400008: Corridor_Pillar_01
+    400010: Corridor_Pillar_02
+    400012: Corridor_Unitx2(1)_FLOOR2
+    400014: Corridor_Unitx2_FLOOR1
+    400016: Corridor_Unitx3_FLOOR3
+    400018: Floor_Bedroom_006
+    400020: Floor_Bedroom_007
+    400022: Floor_Bedroom_008
+    400024: Floor_Bedroom_009
+    400026: Floor_Bedroom_010
+    400028: Floor_Bedroom_1
+    400030: Floor_Bedroom_1 1
+    400032: Floor_Bedroom_2
+    400034: Floor_Bedroom_2 1
+    400036: Floor_Bedroom_3
+    400038: Floor_Bedroom_3 1
+    400040: Floor_Bevel
+    400042: Floor_Kitchen
+    400044: Floor_Kitchen 1
+    400046: Floor_Living_Room
+    400048: Floor_LivingRoom
+    400050: Lift_Buttons
+    400052: Lift_Door001
+    400054: Lift_Floor_Display
+    400056: Lift_Wall
+    400058: Main_Door
+    400060: Main_Door_Frame
+    400062: Main_Door_Gate_01
+    400064: Main_Door_Gate_02
+    400066: Pillar_T1
+    400068: Pillar_T1 1
+    400070: Pillar_T2
+    400072: Pillar_T2 1
+    400074: Pillar_T3
+    400076: Reference
+    400078: Room_Door
+    400080: Room_Door_Frame
+    400082: Staircase_Set
+    400084: Stairs_Wall
+    400086: VD/RF
+    400088: //RootNode
+    400090: Wall_Aesthetic_01
+    400092: Wall_T1
+    400094: Wall_T1 1
+    400096: Wall_T10
+    400098: Wall_T10 1
+    400100: Wall_T11
+    400102: Wall_T2
+    400104: Wall_T2 1
+    400106: Wall_T3
+    400108: Wall_T3 1
+    400110: Wall_T3.1
+    400112: Wall_T4
+    400114: Wall_T4 1
+    400116: Wall_T5
+    400118: Wall_T5 1
+    400120: Wall_T6
+    400122: Wall_T6 1
+    400124: Wall_T7
+    400126: Wall_T7 1
+    400128: Wall_T8
+    400130: Wall_T8 1
+    400132: Wall_T9
+    400134: Wall_T9 1
+    400136: Wall_Window
+    400138: Wall_Window001
+    400140: Wall_Window002
+    400142: Wall_Window003
+    400144: Wall_Window004
+    400146: Wall_Window005
+    400148: Window
+    400150: Window_Frame001
+    400152: Wire_Cover_01
+    2100000: 01 - Default
+    2100002: No Name
+    2100004: 02 - Default
+    2300000: AC_Wire_Cover_01
+    2300002: Barricade
+    2300004: Corridor_Light
+    2300006: Corridor_Light_Bulb
+    2300008: Corridor_Pillar_01
+    2300010: Corridor_Pillar_02
+    2300012: Corridor_Unitx2(1)_FLOOR2
+    2300014: Corridor_Unitx2_FLOOR1
+    2300016: Corridor_Unitx3_FLOOR3
+    2300018: Floor_Bedroom_006
+    2300020: Floor_Bedroom_007
+    2300022: Floor_Bedroom_008
+    2300024: Floor_Bedroom_009
+    2300026: Floor_Bedroom_010
+    2300028: Floor_Bedroom_1
+    2300030: Floor_Bedroom_1 1
+    2300032: Floor_Bedroom_2
+    2300034: Floor_Bedroom_2 1
+    2300036: Floor_Bedroom_3
+    2300038: Floor_Bedroom_3 1
+    2300040: Floor_Bevel
+    2300042: Floor_Kitchen
+    2300044: Floor_Kitchen 1
+    2300046: Floor_Living_Room
+    2300048: Floor_LivingRoom
+    2300050: Lift_Buttons
+    2300052: Lift_Door001
+    2300054: Lift_Floor_Display
+    2300056: Lift_Wall
+    2300058: Main_Door
+    2300060: Main_Door_Frame
+    2300062: Main_Door_Gate_01
+    2300064: Main_Door_Gate_02
+    2300066: Pillar_T1
+    2300068: Pillar_T1 1
+    2300070: Pillar_T2
+    2300072: Pillar_T2 1
+    2300074: Pillar_T3
+    2300076: Reference
+    2300078: Room_Door
+    2300080: Room_Door_Frame
+    2300082: Staircase_Set
+    2300084: Stairs_Wall
+    2300086: VD/RF
+    2300088: Wall_Aesthetic_01
+    2300090: Wall_T1
+    2300092: Wall_T1 1
+    2300094: Wall_T10
+    2300096: Wall_T10 1
+    2300098: Wall_T11
+    2300100: Wall_T2
+    2300102: Wall_T2 1
+    2300104: Wall_T3
+    2300106: Wall_T3 1
+    2300108: Wall_T3.1
+    2300110: Wall_T4
+    2300112: Wall_T4 1
+    2300114: Wall_T5
+    2300116: Wall_T5 1
+    2300118: Wall_T6
+    2300120: Wall_T6 1
+    2300122: Wall_T7
+    2300124: Wall_T7 1
+    2300126: Wall_T8
+    2300128: Wall_T8 1
+    2300130: Wall_T9
+    2300132: Wall_T9 1
+    2300134: Wall_Window
+    2300136: Wall_Window001
+    2300138: Wall_Window002
+    2300140: Wall_Window003
+    2300142: Wall_Window004
+    2300144: Wall_Window005
+    2300146: Window
+    2300148: Window_Frame001
+    2300150: Wire_Cover_01
+    3300000: AC_Wire_Cover_01
+    3300002: Barricade
+    3300004: Corridor_Light
+    3300006: Corridor_Light_Bulb
+    3300008: Corridor_Pillar_01
+    3300010: Corridor_Pillar_02
+    3300012: Corridor_Unitx2(1)_FLOOR2
+    3300014: Corridor_Unitx2_FLOOR1
+    3300016: Corridor_Unitx3_FLOOR3
+    3300018: Floor_Bedroom_006
+    3300020: Floor_Bedroom_007
+    3300022: Floor_Bedroom_008
+    3300024: Floor_Bedroom_009
+    3300026: Floor_Bedroom_010
+    3300028: Floor_Bedroom_1
+    3300030: Floor_Bedroom_1 1
+    3300032: Floor_Bedroom_2
+    3300034: Floor_Bedroom_2 1
+    3300036: Floor_Bedroom_3
+    3300038: Floor_Bedroom_3 1
+    3300040: Floor_Bevel
+    3300042: Floor_Kitchen
+    3300044: Floor_Kitchen 1
+    3300046: Floor_Living_Room
+    3300048: Floor_LivingRoom
+    3300050: Lift_Buttons
+    3300052: Lift_Door001
+    3300054: Lift_Floor_Display
+    3300056: Lift_Wall
+    3300058: Main_Door
+    3300060: Main_Door_Frame
+    3300062: Main_Door_Gate_01
+    3300064: Main_Door_Gate_02
+    3300066: Pillar_T1
+    3300068: Pillar_T1 1
+    3300070: Pillar_T2
+    3300072: Pillar_T2 1
+    3300074: Pillar_T3
+    3300076: Reference
+    3300078: Room_Door
+    3300080: Room_Door_Frame
+    3300082: Staircase_Set
+    3300084: Stairs_Wall
+    3300086: VD/RF
+    3300088: Wall_Aesthetic_01
+    3300090: Wall_T1
+    3300092: Wall_T1 1
+    3300094: Wall_T10
+    3300096: Wall_T10 1
+    3300098: Wall_T11
+    3300100: Wall_T2
+    3300102: Wall_T2 1
+    3300104: Wall_T3
+    3300106: Wall_T3 1
+    3300108: Wall_T3.1
+    3300110: Wall_T4
+    3300112: Wall_T4 1
+    3300114: Wall_T5
+    3300116: Wall_T5 1
+    3300118: Wall_T6
+    3300120: Wall_T6 1
+    3300122: Wall_T7
+    3300124: Wall_T7 1
+    3300126: Wall_T8
+    3300128: Wall_T8 1
+    3300130: Wall_T9
+    3300132: Wall_T9 1
+    3300134: Wall_Window
+    3300136: Wall_Window001
+    3300138: Wall_Window002
+    3300140: Wall_Window003
+    3300142: Wall_Window004
+    3300144: Wall_Window005
+    3300146: Window
+    3300148: Window_Frame001
+    3300150: Wire_Cover_01
+    4300000: Reference
+    4300002: Pillar_T1
+    4300004: Wall_Window
+    4300006: Pillar_T2
+    4300008: Wall_T6
+    4300010: Wall_T8
+    4300012: Wall_T9
+    4300014: Wall_T7
+    4300016: Wall_T10
+    4300018: Wall_T2
+    4300020: Wall_T3
+    4300022: Wall_T1
+    4300024: Wall_T4
+    4300026: Wall_T5
+    4300028: Floor_Bedroom_1
+    4300030: Floor_Bedroom_3
+    4300032: Floor_Bedroom_2
+    4300034: Floor_Kitchen
+    4300036: Floor_Living_Room
+    4300038: Wall_Window001
+    4300040: Window
+    4300042: Window_Frame001
+    4300044: Wall_Window002
+    4300046: Wall_Window003
+    4300048: Wall_Window004
+    4300050: Wall_Window005
+    4300052: Wall_T1
+    4300054: Wall_T2
+    4300056: Wall_T3.1
+    4300058: Wall_T3
+    4300060: Wall_T4
+    4300062: Wall_T5
+    4300064: Wall_T6
+    4300066: Wall_T7
+    4300068: Wall_T8
+    4300070: Wall_T9
+    4300072: Wall_T10
+    4300074: Wall_T11
+    4300076: Pillar_T1
+    4300078: Pillar_T2
+    4300080: Pillar_T3
+    4300082: Wall_Aesthetic_01
+    4300084: Wire_Cover_01
+    4300086: AC_Wire_Cover_01
+    4300088: Floor_Bevel
+    4300090: Stairs_Wall
+    4300092: Floor_Bedroom_1
+    4300094: Floor_Bedroom_2
+    4300096: Floor_Bedroom_3
+    4300098: Floor_Kitchen
+    4300100: Floor_LivingRoom
+    4300102: Corridor_Light
+    4300104: Floor_Bedroom_006
+    4300106: Floor_Bedroom_007
+    4300108: Floor_Bedroom_008
+    4300110: Floor_Bedroom_009
+    4300112: Floor_Bedroom_010
+    4300114: Corridor_Unitx3_FLOOR3
+    4300116: Staircase_Set
+    4300118: Room_Door
+    4300120: Room_Door_Frame
+    4300122: Main_Door_Frame
+    4300124: Main_Door_Gate_01
+    4300126: Main_Door_Gate_02
+    4300128: Lift_Wall
+    4300130: Lift_Buttons
+    4300132: Lift_Floor_Display
+    4300134: Lift_Door001
+    4300136: Corridor_Unitx2_FLOOR1
+    4300138: Corridor_Pillar_01
+    4300140: Corridor_Pillar_02
+    4300142: Barricade
+    4300144: VD/RF
+    4300146: Corridor_Light_Bulb
+    4300148: Corridor_Unitx2(1)_FLOOR2
+    4300150: Main_Door
+    7400000: Take 001
+    9500000: //RootNode
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
