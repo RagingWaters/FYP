@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Sec2Results
   m_EditorClassIdentifier: 
   name: Sec2Results
-  icon: {fileID: 21300000, guid: f81382c179fb84c4fa76ba0a5ec4adf2, type: 3}
+  icon: {fileID: 21300000, guid: 8471e7ef0a0f4dd4ca29ce14a77beebf, type: 3}
   isDefaultItem: 0
   prefabToSpawn: {fileID: 4783292158300404010, guid: 5403323230f1b2f43aa1cc8794b1f380,
     type: 3}

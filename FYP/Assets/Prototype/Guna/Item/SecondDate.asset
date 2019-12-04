@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SecondDate
   m_EditorClassIdentifier: 
   name: SecondDate
-  icon: {fileID: 21300000, guid: f81382c179fb84c4fa76ba0a5ec4adf2, type: 3}
+  icon: {fileID: 21300000, guid: a487d39166ff8a84986752a41a9dc06e, type: 3}
   isDefaultItem: 0
   prefabToSpawn: {fileID: 8884900067389692500, guid: 48bae3aa0cfb353498ae319b824d5c1c,
     type: 3}
