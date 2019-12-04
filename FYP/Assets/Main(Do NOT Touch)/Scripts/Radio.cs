@@ -25,7 +25,7 @@ public class Radio : MonoBehaviour
     {
         if (other.tag == "Player" && !alreadyPlayed)
         {
-            audioSource.PlayOneShot(sound,volume);
+            audioSource.Play();
             alreadyPlayed = true;
 
         }
