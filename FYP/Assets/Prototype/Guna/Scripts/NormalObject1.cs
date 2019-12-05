@@ -11,7 +11,9 @@ public class NormalObject1 : MonoBehaviour
         if (other.tag == "1")
         {
             nw.Correct1 = true;
+            print("1");
         }
+        print(other);
     }
 
     void OnTriggerExit(Collider other)

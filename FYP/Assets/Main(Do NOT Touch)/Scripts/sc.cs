@@ -17,8 +17,8 @@ public class sc : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        theLevelManager.blocker1();
-        theLevelManager.blocker2();
-        theLevelManager.blocker3();
+        //theLevelManager.blocker1();
+        //theLevelManager.blocker2();
+        //theLevelManager.blocker3();
     }
 }

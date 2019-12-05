@@ -133,29 +133,29 @@ public class LevelManager : MonoBehaviour
         o2.SetActive(false);
     }
 
-    public void blocker1()
-    {
-        if (currentShovel == 1 && currentTorch == 1 && currentKey ==1)
-        {
-            L2blocker.SetActive(false);
-        }
-    }
+    //public void blocker1()
+    //{
+    //    if (currentShovel == 1 && currentTorch == 1 && currentKey ==1)
+    //    {
+    //        L2blocker.SetActive(false);
+    //    }
+    //}
 
-    public void blocker2()
-    {
-        if (currentJournal == 1 )
-        {
-            L3blocker.SetActive(false);
-        }
-    }
+    //public void blocker2()
+    //{
+    //    if (currentJournal == 1 )
+    //    {
+    //        L3blocker.SetActive(false);
+    //    }
+    //}
 
-    public void blocker3()
-    {
-        if (currentClock == 1)
-        {
-            L4blocker.SetActive(false);
-        }
-    }
+    //public void blocker3()
+    //{
+    //    if (currentClock == 1)
+    //    {
+    //        L4blocker.SetActive(false);
+    //    }
+    //}
 
     //public void digpot()
     //{

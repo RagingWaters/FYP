@@ -115,7 +115,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 5842fbd0474bd854b93152fcf39360f8, type: 2}
-  promptopt: {fileID: 0}
 --- !u!114 &1795673135782122101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,6 +144,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4901596167831175994, guid: 3ca49537d23790745957f82890b59794,
+        type: 3}
+      propertyPath: m_TagString
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4901596167830888218, guid: 3ca49537d23790745957f82890b59794,
         type: 3}
