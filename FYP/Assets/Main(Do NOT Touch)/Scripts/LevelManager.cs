@@ -8,6 +8,7 @@ public class LevelManager : MonoBehaviour
 
     public GameObject winscreen;
     public GameObject inventory;
+    public GameObject prompt;
     private static int Current;
 
     public float waitToRespawn;
@@ -85,6 +86,7 @@ public class LevelManager : MonoBehaviour
     public void Win()
     {
         inventory.SetActive(false);
+        prompt.SetActive(false);
         option.SetActive(false);
         winscreen.SetActive(true);
         staminaSlider.gameObject.SetActive(false);
