@@ -23,6 +23,7 @@ public class DialogueTrigger : MonoBehaviour
                 dialogue1.SetActive(true);
                 StartCoroutine(ContinueDialogue());
                 radio.audioSource.Pause();
+                Debug.Log("paused");
                 //if (Input.GetKeyDown(KeyCode.Space) && isTalking == false || Input.GetButtonDown("Interact") && isTalking == false)
                 //{
                 //    dialogue1.SetActive(false);
