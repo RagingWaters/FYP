@@ -12,6 +12,7 @@ public class Dialoguefuture : MonoBehaviour
     public GameObject player;
     public Transform Target;
     private bool cd;
+    public Radio radio;
 
 
     void Start()
@@ -28,6 +29,7 @@ public class Dialoguefuture : MonoBehaviour
                 //pc.freezeMovement = true;
                 isTalking = true;
                 dialogue1.SetActive(true);
+                radio.audioSource.Pause();
                 StartCoroutine(ContinueDialogue());
 
                 //if (Input.GetKeyDown(KeyCode.Space) && isTalking == false || Input.GetButtonDown("Interact") && isTalking == false)

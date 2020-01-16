@@ -10,11 +10,15 @@ public class NormalPuzzleWin : MonoBehaviour
     public Item toyReward;
     private bool reward = false;
     public GameObject correct;
+    public GameObject player;
+    public Transform Target;
+    private bool cd;
+    
 
     // Start is called before the first frame update
     void Start()
     {
-       
+        cd = true;
     }
 
     // Update is called once per frame
@@ -26,14 +30,20 @@ public class NormalPuzzleWin : MonoBehaviour
             print("Ez game boys");
             reward = true;
             StartCoroutine(StopDialogue());
+            
+            
         }
 
     }
     IEnumerator StopDialogue()
     {
-
+        
         correct.SetActive(true);
         yield return new WaitForSeconds(4f);
         correct.SetActive(false);
+        player.transform.position = Target.transform.position;
+        yield return new WaitForSeconds(3f);
+        cd = false;
     }
+   
 }
