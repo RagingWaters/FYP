@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class openeddoor : MonoBehaviour
 {
@@ -13,10 +14,13 @@ public class openeddoor : MonoBehaviour
     public bool opendoor = false;
     public AudioManager am;
 
+    public Image doorHandleUI;
+
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
+        doorHandleUI.enabled = false;
     }
 
     // Update is called once per frame
@@ -29,7 +33,8 @@ public class openeddoor : MonoBehaviour
     {
         if(opendoor == false)
         {
-            openedooropt.SetActive(true);
+            //openedooropt.SetActive(true);
+            doorHandleUI.enabled = true;
             if (other.gameObject.tag == "Player")
             {
                 //openedooropt.SetActive(true);
@@ -40,9 +45,11 @@ public class openeddoor : MonoBehaviour
                     Debug.Log("dooropen");
                     //disableDoor.SetActive(false);
 
-                    openedooropt.SetActive(false);
+                    //openedooropt.SetActive(false);
                     open.SetActive(false);
                     opendoor = true;
+
+                    doorHandleUI.enabled = false;
                 }
             }
         } 
@@ -53,7 +60,9 @@ public class openeddoor : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            openedooropt.SetActive(false);
+            //openedooropt.SetActive(false);
+
+            doorHandleUI.enabled = false;
         }
     }
 }
