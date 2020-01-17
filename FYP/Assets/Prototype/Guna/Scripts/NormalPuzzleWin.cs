@@ -12,6 +12,7 @@ public class NormalPuzzleWin : MonoBehaviour
     public GameObject correct;
     public GameObject player;
     public Transform Target;
+    public GameObject sepiaFilter;
     private bool cd;
     
 
@@ -30,6 +31,8 @@ public class NormalPuzzleWin : MonoBehaviour
             print("Ez game boys");
             reward = true;
             StartCoroutine(StopDialogue());
+            sepiaFilter.SetActive(true);
+            
             
             
         }
