@@ -61,7 +61,7 @@ public class PlayerControls : MonoBehaviour
         
 
 
-        currentSpeed = 5;
+        currentSpeed = 3;
 
         respawnPosition = transform.position;
 
