@@ -6,15 +6,13 @@ using UnityEngine.UI;
 
 public class FadeTransition : MonoBehaviour
 {
-
     public Image imageToFade;
     public GameObject fadeImage;
 
     // Start is called before the first frame update
     void Start()
     {
-        Fade();        
-
+        Fade();       
     }
     
     void Fade()
@@ -31,7 +29,4 @@ public class FadeTransition : MonoBehaviour
 
         fadeImage.SetActive(false);
     }
-
-
-
 }
