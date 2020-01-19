@@ -18,7 +18,7 @@ public class Item : ScriptableObject
     {
         GameObject g = Instantiate(prefabToSpawn, t.position, Quaternion.identity);
         g.GetComponent<prompt>().promptopt = prompt;
-        //Destroy(g.GetComponent<ItemPickup>());
+        Destroy(g.GetComponent<ItemPickup>());
         Inventory.instance.Remove(this);
 
         Debug.Log("Using" + name);

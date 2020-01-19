@@ -1,17 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DialogueTrigger : MonoBehaviour
 {
     public GameObject dialogue1;
     public GameObject dialogue2;
+
+    public Image dialogueImage;
+
     //public DialogueManager theDialogueManager;
     public static bool isTalking;
     PlayerControls pc;
     public Radio radio;
-
-
+    /*
+    private void Start()
+    {
+        dialogueImage.enabled = (false);
+    }
+    */
     void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "Player" && isTalking == false)
@@ -21,6 +29,7 @@ public class DialogueTrigger : MonoBehaviour
                 //pc.freezeMovement = true;
                 isTalking = true;
                 dialogue1.SetActive(true);
+                dialogueImage.enabled = (true);
                 StartCoroutine(ContinueDialogue());
                 radio.audioSource.Pause();
                 Debug.Log("paused");
@@ -41,6 +50,7 @@ public class DialogueTrigger : MonoBehaviour
         {
             //dialogue1.SetActive(false);
             dialogue2.SetActive(false);
+            dialogueImage.enabled = (false);
             isTalking = false;
             //pc.freezeMovement = false;
 }
@@ -51,9 +61,11 @@ public class DialogueTrigger : MonoBehaviour
         yield return new WaitForSeconds(7f);
         dialogue1.SetActive(false);
         dialogue2.SetActive(true);
+        dialogueImage.enabled = (true);
         yield return new WaitForSeconds(4f);
         isTalking = false;
         dialogue2.SetActive(false);
+        dialogueImage.enabled = (false);
     }
 
     /*public void Next()

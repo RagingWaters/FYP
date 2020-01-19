@@ -1,16 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class prompt : MonoBehaviour
 {
 
     public GameObject promptopt;
 
+    public Image pickupIcon;
+
     // Start is called before the first frame update
     void Start()
     {
-        promptopt.SetActive(false);
+        //promptopt.SetActive(false);
+        pickupIcon.enabled = (false);
     }
 
     // Update is called once per frame
@@ -24,6 +28,7 @@ public class prompt : MonoBehaviour
         if (other.tag == "Player")
         {
             promptopt.SetActive(true);
+            pickupIcon.enabled = (true);
         }
     }
 
@@ -32,6 +37,7 @@ public class prompt : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             promptopt.SetActive(false);
+            pickupIcon.enabled = (false);
         }
     }
 }
