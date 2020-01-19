@@ -17,6 +17,7 @@ public class NormalPuzzleWin : MonoBehaviour
     private bool cd;
     public GameObject wrongPanel;
     public Radio radio;
+    public GameObject npc;
 
 
     // Start is called before the first frame update
@@ -48,11 +49,15 @@ public class NormalPuzzleWin : MonoBehaviour
         radio.audioSource.Pause();
         correct.SetActive(true);
         yield return new WaitForSeconds(4f);
+        FadeTransition.SetActive(true);
         correct.SetActive(false);
         player.transform.position = Target.transform.position;
+        yield return new WaitForSeconds(1f);
+        FadeTransition.SetActive(false);
         sepiaFilter.SetActive(true);
         yield return new WaitForSeconds(3f);
-        
+        npc.SetActive(false);
+
         cd = false;
     }
 

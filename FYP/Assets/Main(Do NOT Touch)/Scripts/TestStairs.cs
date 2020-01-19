@@ -9,9 +9,9 @@ public class TestStairs : MonoBehaviour
     public Transform Target;
     private bool cd;
     public GameObject sepiaFilter;
-    public GameObject npc;
+    
     public GameObject timeCrack;
-
+    public GameObject fadePanel;
     void Start()
     {
         //cd = false;
@@ -33,11 +33,12 @@ public class TestStairs : MonoBehaviour
 
     IEnumerator Teleport()
     {
+        fadePanel.SetActive(true);
         player.transform.position = Target.transform.position;
-        
+        yield return new WaitForSeconds(1f);
+        fadePanel.SetActive(false);
         sepiaFilter.SetActive(false);
         //Inventory.instance.Add(toyReward);
-        npc.SetActive(false);
         yield return new WaitForSeconds(2f);
         timeCrack.SetActive(true);
         
