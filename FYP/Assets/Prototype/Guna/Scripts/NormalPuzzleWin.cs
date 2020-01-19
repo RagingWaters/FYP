@@ -15,7 +15,9 @@ public class NormalPuzzleWin : MonoBehaviour
     public GameObject sepiaFilter;
     public GameObject FadeTransition;
     private bool cd;
-    
+    public GameObject wrongPanel;
+    public Radio radio;
+
 
     // Start is called before the first frame update
     void Start()
@@ -33,18 +35,33 @@ public class NormalPuzzleWin : MonoBehaviour
             called = true;
             StartCoroutine(StopDialogue());
             Object.Instantiate(FadeTransition);
-            sepiaFilter.SetActive(true);
+        
+        }
+        else
+        {
+            //StartCoroutine(Wrong());
         }
 
     }
     IEnumerator StopDialogue()
     {
+        radio.audioSource.Pause();
         correct.SetActive(true);
         yield return new WaitForSeconds(4f);
         correct.SetActive(false);
         player.transform.position = Target.transform.position;
+        sepiaFilter.SetActive(true);
         yield return new WaitForSeconds(3f);
+        
         cd = false;
+    }
+
+    IEnumerator Wrong()
+    {
+        wrongPanel.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        wrongPanel.SetActive(false);
+
     }
    
 }
