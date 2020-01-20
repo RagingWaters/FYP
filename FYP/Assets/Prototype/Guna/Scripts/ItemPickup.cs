@@ -31,10 +31,10 @@ public class ItemPickup : MonoBehaviour
 
         if(wasPickedUp)
         {
+            Destroy(gameObject);
             //anim.SetBool("wasPickedUp", true);
             GetComponent<prompt>().promptopt.SetActive(false);
             GetComponent<prompt>().pickupIcon.enabled = (false);
-            Destroy(gameObject);
         }
     }
 }
