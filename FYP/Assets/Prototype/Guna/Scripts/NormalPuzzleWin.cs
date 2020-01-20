@@ -35,7 +35,7 @@ public class NormalPuzzleWin : MonoBehaviour
             print("Ez game boys");
             called = true;
             StartCoroutine(StopDialogue());
-            Object.Instantiate(FadeTransition);
+            //Object.Instantiate(FadeTransition);
         
         }
         else
