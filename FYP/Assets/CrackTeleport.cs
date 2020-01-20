@@ -9,8 +9,8 @@ public class CrackTeleport : MonoBehaviour
     public GameObject player;
     public Transform Target;
     public GameObject sepiaFilter;
+    
 
-    public GameObject timeCrack;
 
     public Image imageToFade;
     public GameObject fadeImage;
@@ -46,7 +46,7 @@ public class CrackTeleport : MonoBehaviour
         yield return new WaitForSeconds(1f);
         sepiaFilter.SetActive(true);
         yield return new WaitForSeconds(2f);
-        timeCrack.SetActive(true);
+       
     }
 
     IEnumerator OffFade()

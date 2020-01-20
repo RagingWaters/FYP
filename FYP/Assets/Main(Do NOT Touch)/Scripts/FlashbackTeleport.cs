@@ -10,9 +10,11 @@ public class FlashbackTeleport : MonoBehaviour
     public Transform Target;
     private bool cd;
     public GameObject sepiaFilter;
+    public GameObject timeCrack;
 
     public Image imageToFade;
     public GameObject fadeImage;
+   
 
     void Start()
     {
@@ -43,9 +45,11 @@ public class FlashbackTeleport : MonoBehaviour
     {
         Fade();
         player.transform.position = Target.transform.position;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.1f);
         sepiaFilter.SetActive(false);
         yield return new WaitForSeconds(2f);
+        timeCrack.SetActive(true);
+
     }
 
     IEnumerator OffFade()
