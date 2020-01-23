@@ -1,0 +1,187 @@
+fileFormatVersion: 2
+guid: 0c363c5c1d1af31439d99bda8f162e3a
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Cube_007
+    100004: Cube_008
+    100006: Cube_009
+    100008: Cube_0_006
+    100010: Cube_0_007
+    100012: Cube_0_008
+    100014: Cube_0_009
+    100016: Cube_1_006
+    100018: Cube_1_007
+    100020: Cube_1_008
+    100022: Cube_1_009
+    100024: Cube_2_003
+    100026: Cube_3_003
+    100028: Cube_4_003
+    100030: Cube_5_003
+    100032: slat__supports_003
+    100034: slat__supports_004
+    100036: slat__supports_005
+    400000: //RootNode
+    400002: Cube_007
+    400004: Cube_008
+    400006: Cube_009
+    400008: Cube_0_006
+    400010: Cube_0_007
+    400012: Cube_0_008
+    400014: Cube_0_009
+    400016: Cube_1_006
+    400018: Cube_1_007
+    400020: Cube_1_008
+    400022: Cube_1_009
+    400024: Cube_2_003
+    400026: Cube_3_003
+    400028: Cube_4_003
+    400030: Cube_5_003
+    400032: slat__supports_003
+    400034: slat__supports_004
+    400036: slat__supports_005
+    2100000: Wood Fraxinus
+    2100002: Wood Quercus 5
+    2300000: Cube_007
+    2300002: Cube_008
+    2300004: Cube_009
+    2300006: Cube_0_006
+    2300008: Cube_0_007
+    2300010: Cube_0_008
+    2300012: Cube_0_009
+    2300014: Cube_1_006
+    2300016: Cube_1_007
+    2300018: Cube_1_008
+    2300020: Cube_1_009
+    2300022: Cube_2_003
+    2300024: Cube_3_003
+    2300026: Cube_4_003
+    2300028: Cube_5_003
+    2300030: slat__supports_003
+    2300032: slat__supports_004
+    2300034: slat__supports_005
+    3300000: Cube_007
+    3300002: Cube_008
+    3300004: Cube_009
+    3300006: Cube_0_006
+    3300008: Cube_0_007
+    3300010: Cube_0_008
+    3300012: Cube_0_009
+    3300014: Cube_1_006
+    3300016: Cube_1_007
+    3300018: Cube_1_008
+    3300020: Cube_1_009
+    3300022: Cube_2_003
+    3300024: Cube_3_003
+    3300026: Cube_4_003
+    3300028: Cube_5_003
+    3300030: slat__supports_003
+    3300032: slat__supports_004
+    3300034: slat__supports_005
+    4300000: Cube_0_006
+    4300002: Cube_007
+    4300004: Cube_0_007
+    4300006: Cube_0_008
+    4300008: Cube_008
+    4300010: Cube_1_006
+    4300012: Cube_1_007
+    4300014: Cube_2_003
+    4300016: Cube_3_003
+    4300018: Cube_4_003
+    4300020: Cube_5_003
+    4300022: Cube_009
+    4300024: slat__supports_003
+    4300026: slat__supports_004
+    4300028: slat__supports_005
+    4300030: Cube_0_009
+    4300032: Cube_1_008
+    4300034: Cube_1_009
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
