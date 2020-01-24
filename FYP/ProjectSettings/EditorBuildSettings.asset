@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Main(Do NOT Touch)/Scenes/Main New.unity
     guid: f96d53c9300a23548a91dbfcd404ef92
   - enabled: 1
-    path: Assets/Main(Do NOT Touch)/Scenes/Pre-Beta Main.unity
+    path: Assets/Main(Do NOT Touch)/Scenes/Beta Main.unity
     guid: 7da16753743a8714a95ef3f31c2e9c73
   m_configObjects: {}
