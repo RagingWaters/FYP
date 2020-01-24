@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2328202159035514007}
   - component: {fileID: 6414465477732118421}
   - component: {fileID: 2328202159035514025}
-  - component: {fileID: 970977643324629188}
+  - component: {fileID: 6596684318578311841}
   m_Layer: 0
   m_Name: GiraffeToy
   m_TagString: 3
@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 73c83e3ebda35d644bbe13b705f05b70, type: 2}
---- !u!114 &970977643324629188
+--- !u!114 &6596684318578311841
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -114,6 +114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   promptopt: {fileID: 0}
+  pickupIcon: {fileID: 0}
 --- !u!65 &2027608114936163453
 BoxCollider:
   m_ObjectHideFlags: 0
