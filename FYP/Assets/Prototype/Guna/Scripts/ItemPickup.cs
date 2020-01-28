@@ -25,16 +25,13 @@ public class ItemPickup : MonoBehaviour
 
     void PickUp()
     {
-        Debug.Log("Picking up " + item.name);
-        item.prompt = GetComponent<prompt>().promptopt;     
+        Debug.Log("Picking up " + item.name);  
         bool wasPickedUp = Inventory.instance.Add(item);
 
         if(wasPickedUp)
         {
             Destroy(gameObject);
             //anim.SetBool("wasPickedUp", true);
-            GetComponent<prompt>().promptopt.SetActive(false);
-            GetComponent<prompt>().pickupIcon.enabled = (false);
         }
     }
 }

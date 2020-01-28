@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 7532020988216625840}
   - component: {fileID: 5007312233051351319}
   - component: {fileID: 5007312233051351322}
-  - component: {fileID: 1795673135782122101}
   m_Layer: 0
   m_Name: TeddyBearToy
   m_TagString: 2
@@ -115,19 +114,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 5842fbd0474bd854b93152fcf39360f8, type: 2}
---- !u!114 &1795673135782122101
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5007312233051351317}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 066612555f2fc064c948d7c9b3f293a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  promptopt: {fileID: 0}
 --- !u!1001 &1536097278331218301
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -167,7 +167,6 @@ GameObject:
   - component: {fileID: 4536079708187726124}
   - component: {fileID: 9139417880724223639}
   - component: {fileID: 1424039272755583541}
-  - component: {fileID: 1928614978821156563}
   m_Layer: 0
   m_Name: ThirdDate
   m_TagString: 3
@@ -257,19 +256,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 9, y: 5, z: 9}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1928614978821156563
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2554100546318057044}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 066612555f2fc064c948d7c9b3f293a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  promptopt: {fileID: 0}
 --- !u!1 &2554100546318057046
 GameObject:
   m_ObjectHideFlags: 0

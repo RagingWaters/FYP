@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 24842741273586053}
   - component: {fileID: 8362755744762827813}
   - component: {fileID: 1948334687524582371}
-  - component: {fileID: 1074873362960578832}
   m_Layer: 0
   m_Name: microphone
   m_TagString: 4
@@ -123,17 +122,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 5c91b663e9a39c242a25c93725b3a94d, type: 2}
---- !u!114 &1074873362960578832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4873664603289803829}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 066612555f2fc064c948d7c9b3f293a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  promptopt: {fileID: 0}
-  pickupIcon: {fileID: 0}
+  pr: {fileID: 0}

@@ -7,8 +7,7 @@ public class prompt : MonoBehaviour
 {
 
     public GameObject promptopt;
-
-
+    
     public Image pickupIcon;
 
     // Start is called before the first frame update

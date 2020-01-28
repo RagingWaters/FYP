@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 4380264541902518686}
   - component: {fileID: 14933297287279128}
   - component: {fileID: 14933297287279141}
-  - component: {fileID: 4128666226616280885}
   m_Layer: 0
   m_Name: 'Stool '
   m_TagString: 1
@@ -115,19 +114,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 206c813c31fce5c4099b7470f24bff3c, type: 2}
---- !u!114 &4128666226616280885
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 14933297287279134}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 066612555f2fc064c948d7c9b3f293a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  promptopt: {fileID: 0}
 --- !u!64 &83302201
 MeshCollider:
   m_ObjectHideFlags: 0
