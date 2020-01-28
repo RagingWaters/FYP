@@ -7,6 +7,7 @@ public class tutorial : MonoBehaviour
 {
     public GameObject dialogue1;
     public GameObject dialogue2;
+    public GameObject dialogue3;
     public GameObject key1;
     public GameObject key2;
     public GameObject key3;
@@ -20,6 +21,13 @@ public class tutorial : MonoBehaviour
     //public DialogueManager theDialogueManager;
     public static bool isTalking;
     PlayerControls pc;
+    public tutorialwin tw;
+    bool third = false;
+
+    void Update()
+    {
+
+    }
 
     void OnTriggerStay(Collider other)
     {
@@ -39,6 +47,11 @@ public class tutorial : MonoBehaviour
 
                 Debug.Log("paused");
             }
+          
+            else if (tw.Correct1 == true && third == false) 
+            {
+                StartCoroutine(thirdDialogue());
+            }
 
         }
     }
@@ -55,6 +68,9 @@ public class tutorial : MonoBehaviour
         }
     }
 
+
+
+
     IEnumerator ContinueDialogue()
     {
         yield return new WaitForSeconds(5f);
@@ -64,6 +80,17 @@ public class tutorial : MonoBehaviour
         yield return new WaitForSeconds(4f);
         isTalking = false;
         dialogue2.SetActive(false);
+        dialogueImage.enabled = (false);
+    }
+
+    IEnumerator thirdDialogue()
+    {
+        dialogue3.SetActive(true);
+        box2.SetActive(true);
+        dialogueImage.enabled = (true);
+        third = true;
+        yield return new WaitForSeconds(4f);
+        dialogue3.SetActive(false);
         dialogueImage.enabled = (false);
     }
 

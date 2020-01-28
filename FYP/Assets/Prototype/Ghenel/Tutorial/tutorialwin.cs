@@ -9,10 +9,12 @@ public class tutorialwin : MonoBehaviour
     //public Item toyReward;
     private bool called = false;
     public GameObject correct;
+    public GameObject correct2;
     public GameObject player;
     private bool cd;
     public GameObject wrongPanel;
     public GameObject npc;
+    public Animator anim;
 
 
     // Start is called before the first frame update
@@ -30,6 +32,7 @@ public class tutorialwin : MonoBehaviour
             print("Ez game boys");
             called = true;
             StartCoroutine(StopDialogue());
+            anim.Play("GateDoorOpen");
             //Object.Instantiate(FadeTransition);
 
         }
@@ -44,6 +47,10 @@ public class tutorialwin : MonoBehaviour
         correct.SetActive(true);
         yield return new WaitForSeconds(4f);
         correct.SetActive(false);
+        yield return new WaitForSeconds(1f);
+        correct2.SetActive(true);
+        yield return new WaitForSeconds(4f);
+        correct2.SetActive(false);
         yield return new WaitForSeconds(1f);
         npc.SetActive(false);
 
