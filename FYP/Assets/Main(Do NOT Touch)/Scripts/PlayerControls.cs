@@ -76,6 +76,7 @@ public class PlayerControls : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (FlashBackDialog.isListening) return;
         if (DialogueTrigger.isTalking) return;
         //transform.Translate(currentSpeed * Input.GetAxis("Horizontal") * Time.deltaTime, 0f, currentSpeed * Input.GetAxis("Vertical") * Time.deltaTime);
         Inputs();
