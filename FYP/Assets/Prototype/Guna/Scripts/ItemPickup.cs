@@ -8,7 +8,7 @@ public class ItemPickup : MonoBehaviour
     //private Animator anim;
     //public AudioClip clip;
     //public AudioSource source;
-    public GameObject icons;
+    //public GameObject icons;
 
     void Start()
     {
@@ -20,7 +20,7 @@ public class ItemPickup : MonoBehaviour
         if (other.tag == "Player" && Input.GetKeyDown(KeyCode.Space) || other.tag == "Player" && Input.GetButtonDown("Interact"))
         {
             PickUp();
-            Destroy(icons);
+            //Destroy(icons);
             //source.PlayOneShot(clip);
         }
     }

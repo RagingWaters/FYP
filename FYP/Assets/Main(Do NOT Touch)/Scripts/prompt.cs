@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class prompt : MonoBehaviour
 {
 
-    public GameObject promptopt;
+    //public GameObject promptopt;
     
     public Image pickupIcon;
 
@@ -27,8 +27,8 @@ public class prompt : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            promptopt.SetActive(true);
-
+            //promptopt.SetActive(true);
+            pickupIcon.enabled = (true);
         }
     }
 
@@ -36,7 +36,7 @@ public class prompt : MonoBehaviour
     {
         if (other.tag == "Player" && Input.GetKeyDown(KeyCode.Space) || other.tag == "Player" && Input.GetButtonDown("Interact"))
         {
-            promptopt.SetActive(false);
+            //promptopt.SetActive(false);
             pickupIcon.enabled = (false);
         }
     }
@@ -45,7 +45,7 @@ public class prompt : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            promptopt.SetActive(false);
+            //promptopt.SetActive(false);
             pickupIcon.enabled = (false);
         }
     }
