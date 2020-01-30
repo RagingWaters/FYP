@@ -15,6 +15,5 @@ MonoBehaviour:
   name: Key3
   icon: {fileID: 21300000, guid: d730fd83f61e87c4c999f97d658869b3, type: 3}
   isDefaultItem: 0
-  prefabToSpawn: {fileID: 1742978824383009651, guid: 20f7f75a870babb498bae1f7ebf5c354,
+  prefabToSpawn: {fileID: 9075859460411622199, guid: 05f8301c7804bc44e822cd9cda2102c4,
     type: 3}
-  prompt: {fileID: 0}
