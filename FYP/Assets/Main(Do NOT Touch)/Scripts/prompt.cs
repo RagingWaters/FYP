@@ -28,9 +28,12 @@ public class prompt : MonoBehaviour
         if (other.tag == "Player")
         {
             promptopt.SetActive(true);
-            pickupIcon.enabled = (true);
-        }
 
+        }
+    }
+
+    void OnTriggerStay(Collider other)
+    {
         if (other.tag == "Player" && Input.GetKeyDown(KeyCode.Space) || other.tag == "Player" && Input.GetButtonDown("Interact"))
         {
             promptopt.SetActive(false);
