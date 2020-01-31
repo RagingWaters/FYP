@@ -20,7 +20,6 @@ public class ItemPickup : MonoBehaviour
         if (other.tag == "Player" && Input.GetKeyDown(KeyCode.Space) || other.tag == "Player" && Input.GetButtonDown("Interact"))
         {
             PickUp();
-            //Destroy(icons);
             //source.PlayOneShot(clip);
         }
     }

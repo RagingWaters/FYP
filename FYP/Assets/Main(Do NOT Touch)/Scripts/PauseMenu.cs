@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -9,11 +10,16 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject pauseMenuScreen;
     public GameObject transition;
+    public GameObject buttonToSelect;
+    public GameObject inv;
+    public EventSystem es;
+
 
     public GameObject instructionScreen;
     public GameObject ints;
     public GameObject screen1;
     public GameObject screen2;
+    PlayerController pc;
 
 
     // Update is called once per frame
@@ -64,6 +70,7 @@ public class PauseMenu : MonoBehaviour
     public void Resume()
     {
         pauseMenuScreen.SetActive(false);
+        es.SetSelectedGameObject(inv);
         Time.timeScale = 1f;
         GameIsPaused = false;
     }
@@ -72,6 +79,7 @@ public class PauseMenu : MonoBehaviour
     void Pause()
     {
         pauseMenuScreen.SetActive(true);
+        es.SetSelectedGameObject(buttonToSelect);
         Time.timeScale = 0f;
         GameIsPaused = true;
     }

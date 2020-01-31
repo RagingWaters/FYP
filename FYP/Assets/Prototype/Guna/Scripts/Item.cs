@@ -14,7 +14,7 @@ public class Item : ScriptableObject
     public virtual void Use(Transform t)
     {
         GameObject g = Instantiate(prefabToSpawn, t.position, Quaternion.identity);
-        Destroy(g.GetComponent<ItemPickup>());
+        //Destroy(g.GetComponent<ItemPickup>());
         Inventory.instance.Remove(this);
 
         Debug.Log("Using" + name);

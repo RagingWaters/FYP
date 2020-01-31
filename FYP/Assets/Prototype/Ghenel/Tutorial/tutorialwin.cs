@@ -9,7 +9,7 @@ public class tutorialwin : MonoBehaviour
     //public Item toyReward;
     private bool called = false;
     public GameObject correct;
-    public GameObject correct2;
+    //public GameObject correct2;
     public GameObject player;
     private bool cd;
     public GameObject wrongPanel;
@@ -26,7 +26,7 @@ public class tutorialwin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Correct1 == true && Correct2 == true == true && called == false)
+        if (Correct1 == true && Correct2 == true && called == false)
         {
             //Inventory.instance.Add(toyReward);
             print("Ez game boys");
@@ -48,10 +48,10 @@ public class tutorialwin : MonoBehaviour
         yield return new WaitForSeconds(4f);
         correct.SetActive(false);
         yield return new WaitForSeconds(1f);
-        correct2.SetActive(true);
-        yield return new WaitForSeconds(4f);
-        correct2.SetActive(false);
-        yield return new WaitForSeconds(1f);
+        //correct2.SetActive(true);
+        //yield return new WaitForSeconds(4f);
+        //correct2.SetActive(false);
+        //yield return new WaitForSeconds(1f);
         npc.SetActive(false);
 
         cd = false;
