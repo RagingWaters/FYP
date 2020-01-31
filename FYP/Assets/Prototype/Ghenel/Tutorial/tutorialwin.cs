@@ -48,6 +48,7 @@ public class tutorialwin : MonoBehaviour
         yield return new WaitForSeconds(4f);
         correct.SetActive(false);
         yield return new WaitForSeconds(1f);
+        Correct1 = false;
         //correct2.SetActive(true);
         //yield return new WaitForSeconds(4f);
         //correct2.SetActive(false);

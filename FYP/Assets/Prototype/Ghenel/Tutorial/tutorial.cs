@@ -23,6 +23,7 @@ public class tutorial : MonoBehaviour
     PlayerControls pc;
     public tutorialwin tw;
     bool third = false;
+    bool stated;
 
     void Update()
     {
@@ -31,9 +32,9 @@ public class tutorial : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == "Player" && isTalking == false)
+        if (other.tag == "Player" && isTalking == false)
         {
-            if (Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("Interact"))
+            if (Input.GetKeyDown(KeyCode.Space) && stated == false || Input.GetButtonDown("Interact") && stated == false)
             {
                 //pc.freezeMovement = true;
                 isTalking = true;
@@ -43,6 +44,7 @@ public class tutorial : MonoBehaviour
                 key3.SetActive(true);
                 box1.SetActive(true);
                 dialogueImage.enabled = (true);
+                stated = true;
                 StartCoroutine(ContinueDialogue());
 
                 Debug.Log("paused");
@@ -60,7 +62,7 @@ public class tutorial : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            //dialogue1.SetActive(false);
+            dialogue1.SetActive(false);
             dialogue2.SetActive(false);
             dialogueImage.enabled = (false);
             isTalking = false;

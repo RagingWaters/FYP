@@ -78,6 +78,7 @@ public class PlayerControls : MonoBehaviour
     {
         if (FlashBackDialog.isListening) return;
         if (DialogueTrigger.isTalking) return;
+        if (ZoomOutCam.zoomedIn) return;
         //transform.Translate(currentSpeed * Input.GetAxis("Horizontal") * Time.deltaTime, 0f, currentSpeed * Input.GetAxis("Vertical") * Time.deltaTime);
         Inputs();
 

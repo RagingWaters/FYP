@@ -6,7 +6,7 @@ public class ZoomOutCam : MonoBehaviour
 {
     public GameObject ZoomoutCam;
     public GameObject StoredCam;
-    bool zoomedIn = false;
+    public static bool zoomedIn = false;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +26,7 @@ public class ZoomOutCam : MonoBehaviour
             ZoomCam();
         }
 
-        if (Input.GetKeyDown(KeyCode.X) && zoomedIn == true || Input.GetButtonDown("ZoomIn") && zoomedIn == true)
+        else if (Input.GetKeyDown(KeyCode.Z) && zoomedIn == true || Input.GetButtonDown("ZoomOut") && zoomedIn == true)
         {
             print("zoomOut");
             OriginalCam();
