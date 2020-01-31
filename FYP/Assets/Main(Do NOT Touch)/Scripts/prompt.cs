@@ -37,7 +37,8 @@ public class prompt : MonoBehaviour
         if (other.tag == "Player" && Input.GetKeyDown(KeyCode.Space) || other.tag == "Player" && Input.GetButtonDown("Interact"))
         {
             //promptopt.SetActive(false);
-            pickupIcon.enabled = (false);
+            //pickupIcon.enabled = (false);
+            Destroy(pickupIcon.gameObject);
         }
     }
 
