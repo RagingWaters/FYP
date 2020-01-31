@@ -18,7 +18,7 @@ public class ZoomOutCam : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z) && zoomedIn == false ||   Input.GetButtonDown("Zoom") && zoomedIn == false)
+        if (Input.GetKeyDown(KeyCode.Z) && zoomedIn == false ||   Input.GetButtonDown("ZoomOut") && zoomedIn == false)
         {
             StoredCam.transform.position = PlayerControls.instance.referenceCam.transform.position;
             StoredCam.transform.rotation = PlayerControls.instance.referenceCam.transform.rotation;
@@ -26,7 +26,7 @@ public class ZoomOutCam : MonoBehaviour
             ZoomCam();
         }
 
-        if (Input.GetKeyDown(KeyCode.X) && zoomedIn == true || Input.GetButtonDown("Zoom") && zoomedIn == true)
+        if (Input.GetKeyDown(KeyCode.X) && zoomedIn == true || Input.GetButtonDown("ZoomIn") && zoomedIn == true)
         {
             print("zoomOut");
             OriginalCam();
