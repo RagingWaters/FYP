@@ -5,7 +5,11 @@ using UnityEngine;
 public class lastinst : MonoBehaviour
 {
     public GameObject inst1;
-    // Start is called before the first frame update
+
+    PlayerControls pc;
+
+    public static bool instructionIsActive = true;
+
     void Start()
     {
 
@@ -14,9 +18,10 @@ public class lastinst : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("Interact"))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("Interact") && instructionIsActive == true)
         {
-            inst1.SetActive(false);
+            inst1.SetActive(false);        
+            instructionIsActive = false;
         }
     }
 }

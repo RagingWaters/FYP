@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PlayerControls : MonoBehaviour
 {
     public Camera referenceCam;
-    Rigidbody rb;
+    public Rigidbody rb;
 
 
     public float currentSpeed;
@@ -58,19 +58,12 @@ public class PlayerControls : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         col = GetComponent<SphereCollider>();
         source = GetComponent<AudioSource>();
-        
-
-
-        currentSpeed = 3;
 
         respawnPosition = transform.position;
-
-
 
         theLevelmanager = FindObjectOfType<LevelManager>();
 
         players = GameObject.FindGameObjectsWithTag("Player");
-
     }
 
     // Update is called once per frame
@@ -79,6 +72,8 @@ public class PlayerControls : MonoBehaviour
         if (FlashBackDialog.isListening) return;
         if (DialogueTrigger.isTalking) return;
         if (ZoomOutCam.zoomedIn) return;
+        if (lastinst.instructionIsActive) return;       
+
         //transform.Translate(currentSpeed * Input.GetAxis("Horizontal") * Time.deltaTime, 0f, currentSpeed * Input.GetAxis("Vertical") * Time.deltaTime);
         Inputs();
 
@@ -134,9 +129,6 @@ public class PlayerControls : MonoBehaviour
         right.y = 0;
         Vector3 moveDirection = (forward * verticalInput + right * horizontalInput).normalized * currentSpeed;
         rb.velocity = new Vector3(moveDirection.x, rb.velocity.y, moveDirection.z);
-        
-        
-
 
         if (frameStorage <= 2 && frameStorage >= 0)
         {
@@ -162,7 +154,5 @@ public class PlayerControls : MonoBehaviour
             theLevelmanager.gameOver();
              //theLevelmanager.MinusArticle(articleValue);
         }
-
     }
-
 }

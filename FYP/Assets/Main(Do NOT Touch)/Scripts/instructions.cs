@@ -6,10 +6,11 @@ public class instructions : MonoBehaviour
 {
     public GameObject inst1;
     public GameObject inst2;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
