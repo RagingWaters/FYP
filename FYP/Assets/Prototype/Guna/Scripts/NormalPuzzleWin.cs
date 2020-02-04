@@ -18,7 +18,7 @@ public class NormalPuzzleWin : MonoBehaviour
     public GameObject wrongPanel;
     public Radio radio;
     public GameObject npc;
-
+    
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +36,7 @@ public class NormalPuzzleWin : MonoBehaviour
             called = true;
             StartCoroutine(StopDialogue());
             //Object.Instantiate(FadeTransition);
+            
         
         }
         else
