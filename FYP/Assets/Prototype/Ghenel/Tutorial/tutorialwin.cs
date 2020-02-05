@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class tutorialwin : MonoBehaviour
 {
@@ -17,9 +18,12 @@ public class tutorialwin : MonoBehaviour
     public Animator anim;
 
 
+    public Image dialogueImage;
+
     // Start is called before the first frame update
     void Start()
     {
+        anim = GetComponent<Animator>();
         cd = true;
     }
 
@@ -44,9 +48,11 @@ public class tutorialwin : MonoBehaviour
     }
     IEnumerator StopDialogue()
     {
+        dialogueImage.enabled = (true);
         correct.SetActive(true);
         yield return new WaitForSeconds(4f);
         correct.SetActive(false);
+        dialogueImage.enabled = (false);
         yield return new WaitForSeconds(1f);
         Correct1 = false;
         //correct2.SetActive(true);

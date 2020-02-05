@@ -19,7 +19,7 @@ public class openeddoor : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        anim = GetComponent<Animator>();
+        
         doorHandleUI.enabled = false;
     }
 

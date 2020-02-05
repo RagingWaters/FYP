@@ -16,6 +16,7 @@ public class tutorial : MonoBehaviour
 
 
 
+
     public Image dialogueImage;
 
     //public DialogueManager theDialogueManager;
@@ -25,7 +26,7 @@ public class tutorial : MonoBehaviour
     bool third = false;
     bool stated;
 
-    void Update()
+    void Start()
     {
 
     }
