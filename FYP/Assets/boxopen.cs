@@ -18,7 +18,7 @@ public class boxopen : MonoBehaviour
     {
         if (tw.Correct1 == true && third == false)
         {
-           // anim.Play("boxopen");
+            anim.Play("boxopen");
         }
     }
 }
