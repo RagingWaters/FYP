@@ -18,7 +18,6 @@ public class PrologueManager : MonoBehaviour
      void Start()
     {
         StartCoroutine(Type());
-        continueButton.SetActive(false);
     }
   
     void Update()
