@@ -7,6 +7,7 @@ public class DialogueTrigger : MonoBehaviour
 {
     public GameObject dialogue1;
     public GameObject dialogue2;
+    public GameObject dialogue3;
 
     public Image dialogueImage;
 
@@ -63,9 +64,12 @@ public class DialogueTrigger : MonoBehaviour
         dialogue2.SetActive(true);
         dialogueImage.enabled = (true);
         yield return new WaitForSeconds(4f);
-        isTalking = false;
         dialogue2.SetActive(false);
+        dialogue3.SetActive(true);
+        yield return new WaitForSeconds(4f);
+        dialogue3.SetActive(false);
         dialogueImage.enabled = (false);
+        isTalking = false;
     }
 
     /*public void Next()
