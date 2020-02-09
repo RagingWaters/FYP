@@ -4,13 +4,31 @@ using UnityEngine;
 
 public class tutorialObject1 : MonoBehaviour
 {
-    public tutorialwin tw;
+    public tutorialwin tw;    
 
-    void OnTriggerEnter(Collider other)
+    Animator m_Animator;
+    bool boxOpened;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        m_Animator = gameObject.GetComponent<Animator>();
+        tw = GetComponent<tutorialwin>();
+    }
+
+    void Update()
+    {
+        //if (tw.Correct1 == true)
+           // m_Animator.SetBool("Box Opened", true);
+
+       // Debug.Log(tw.Correct1);
+    }
+
+        void OnTriggerEnter(Collider other)
     {
         if (other.tag == "1")
         {
-            tw.Correct1 = true;
+            tw.Correct1 = true;            
         }
     }
 

@@ -16,7 +16,7 @@ public class tutorialwin : MonoBehaviour
     public GameObject wrongPanel;
     public GameObject npc;
     public Animator anim;
-    public Animator anim1;
+    public Animator topAnim;
 
 
     public Image dialogueImage;
@@ -44,6 +44,9 @@ public class tutorialwin : MonoBehaviour
         {
             //StartCoroutine(Wrong());
         }
+
+        if (Correct1 == true)
+            topAnim.SetBool("Box Opened", true);
 
     }
     IEnumerator StopDialogue()
