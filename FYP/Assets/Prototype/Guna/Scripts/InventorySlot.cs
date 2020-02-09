@@ -1,12 +1,23 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class InventorySlot : MonoBehaviour
+
+public class InventorySlot : MonoBehaviour, ISelectHandler
 {
     public Image icon;
+    [SerializeField] InventoryToolTip toolTip;
 
     Item item;
 
+    protected virtual void OnValidate()
+    {
+        if(toolTip == null)
+        {
+            toolTip = FindObjectOfType<InventoryToolTip>();
+        }
+    }
+    
     public void AddItem (Item newItem)
     {
         item = newItem;
@@ -49,5 +60,10 @@ public class InventorySlot : MonoBehaviour
             }
             
         }
+    }
+
+    public void OnSelect(BaseEventData eventData)
+    {
+        toolTip.ShowToolTip((Item)item);
     }
 }

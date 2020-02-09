@@ -31,6 +31,12 @@ public class EnterRoom : MonoBehaviour
         PlayerControls.instance.referenceCam.transform.rotation = Activecam.transform.rotation;
     }
 
+    void CamSwitch()
+    {
+        PlayerControls.instance.referenceCam.transform.position = Activecam.transform.position;
+        PlayerControls.instance.referenceCam.transform.rotation = Activecam.transform.rotation;
+    }
+
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player" && inRoom == false)
@@ -38,6 +44,12 @@ public class EnterRoom : MonoBehaviour
         {
             print("In room");
             ChangeCamPos();
+        }
+
+        if (other.gameObject.tag == "Player" && inRoom == true)
+
+        {
+            CamSwitch();
         }
     }
 }

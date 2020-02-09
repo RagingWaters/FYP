@@ -12,8 +12,8 @@ public class tutorialObject1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        m_Animator = gameObject.GetComponent<Animator>();
-        tw = GetComponent<tutorialwin>();
+        //m_Animator = gameObject.GetComponent<Animator>();
+        //tw = GetComponent<tutorialwin>();
     }
 
     void Update()
@@ -24,9 +24,9 @@ public class tutorialObject1 : MonoBehaviour
        // Debug.Log(tw.Correct1);
     }
 
-        void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "1")
+        if (other.gameObject.tag == "1")
         {
             tw.Correct1 = true;            
         }

@@ -31,6 +31,15 @@ public class tutorial : MonoBehaviour
 
     }
 
+    // Update is called once per frame
+    void Update()
+    {
+        if (tw.Correct1 == true && third == false) 
+            {
+                StartCoroutine(thirdDialogue());
+            }
+    }
+
     void OnTriggerStay(Collider other)
     {
         if (other.tag == "Player" && isTalking == false)
@@ -51,10 +60,10 @@ public class tutorial : MonoBehaviour
                 Debug.Log("paused");
             }
           
-            else if (tw.Correct1 == true && third == false) 
-            {
-                StartCoroutine(thirdDialogue());
-            }
+            //else if (tw.Correct1 == true && third == false) 
+           // {
+            //    StartCoroutine(thirdDialogue());
+           // }
 
         }
     }
