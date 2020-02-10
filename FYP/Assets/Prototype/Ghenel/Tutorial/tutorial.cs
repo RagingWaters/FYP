@@ -85,11 +85,11 @@ public class tutorial : MonoBehaviour
 
     IEnumerator ContinueDialogue()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(3f);
         dialogue1.SetActive(false);
         dialogue2.SetActive(true);
         dialogueImage.enabled = (true);
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(2f);
         isTalking = false;
         dialogue2.SetActive(false);
         dialogueImage.enabled = (false);
