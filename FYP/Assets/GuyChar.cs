@@ -5,6 +5,8 @@ using UnityEngine;
 public class GuyChar : MonoBehaviour
 {
     Animator guyAnim;
+    public GameObject guyScare1;
+    public 
 
 
     // Start is called before the first frame update
@@ -16,10 +18,22 @@ public class GuyChar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       // if ( )
-
-
-
-
+        /*
+        if ( )
+            guyScare1.SetActive(true);
+            */
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            guyScare1.SetActive(true);
+        }
+    }
+
+
+
+
+
 }

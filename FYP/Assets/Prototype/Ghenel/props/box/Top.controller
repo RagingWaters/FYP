@@ -9,7 +9,7 @@ AnimatorController:
   m_Name: Top
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: Box Opened
+  - m_Name: Box Opened 1
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -37,7 +37,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Box Opened
+    m_ConditionEvent: Box Opened 1
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102697683294895800}
@@ -117,7 +117,7 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 1102697683294895800}
-    m_Position: {x: 156, y: 204, z: 0}
+    m_Position: {x: 276, y: 240, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102883587679078078}
     m_Position: {x: 264, y: 120, z: 0}

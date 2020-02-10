@@ -14,16 +14,27 @@ public class PrologueManager : MonoBehaviour
 
     public GameObject continueButton;
     public Image blackBG;
+    public GameObject prelogueManager;
+    public GameObject instructionLog;
+
 
      void Start()
     {
-        StartCoroutine(Type());
+        //continueButton.SetActive(false);
+        StartCoroutine(Type());       
     }
-  
+
     void Update()
     {
-        if (textDisplay.text == sentences[index])        
-            continueButton.SetActive(true);
+        if (index >= sentences.Length)
+        {
+            prelogueManager.SetActive(false);
+            instructionLog.SetActive(true);
+            return;
+        }
+
+        if (textDisplay.text == sentences[index])
+            continueButton.SetActive(true);   
     }
 
     IEnumerator Type()
@@ -31,16 +42,19 @@ public class PrologueManager : MonoBehaviour
         foreach (char letter in sentences[index].ToCharArray())
         {
             textDisplay.text += letter;
+            
             yield return new WaitForSeconds(typingSpeed);
-
         }
+
+        continueButton.SetActive(true);
     }
 
     public void NextSentence()
     {
+
         continueButton.SetActive(false);
 
-        if (index < sentences.Length - 1)
+        if (index < sentences.Length)
         {
             index++;
             textDisplay.text = "";
@@ -52,4 +66,5 @@ public class PrologueManager : MonoBehaviour
             continueButton.SetActive(false);
         }        
     }
+    
 }

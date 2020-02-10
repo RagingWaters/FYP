@@ -6,11 +6,20 @@ public class tutorialObject2 : MonoBehaviour
 {
     public tutorialwin tw;
 
+    Animator m_Animator;
+
+    void Start()
+    {        
+        m_Animator = gameObject.GetComponent<Animator>();
+        tw = FindObjectOfType<tutorialwin>();
+    }
+
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "2")
         {
             tw.Correct2 = true;
+            m_Animator.SetBool("Box Opened 1", true);
         }
     }
 
