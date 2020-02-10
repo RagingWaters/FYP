@@ -26,7 +26,7 @@ public class EnterRoom : MonoBehaviour
         inRoom = true;
         testCam.enabled = true;
         Camera.main.enabled = false;
-        PlayerControls.instance.referenceCam = testCam;
+        PlayerControls.instance.referenceCam = testCam; 
         PlayerControls.instance.referenceCam.transform.position = Activecam.transform.position;
         PlayerControls.instance.referenceCam.transform.rotation = Activecam.transform.rotation;
     }

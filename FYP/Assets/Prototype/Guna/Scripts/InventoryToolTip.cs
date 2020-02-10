@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class InventoryToolTip : MonoBehaviour
 {
     [SerializeField] Text ItemNameText;
+    InventorySlot inventorySlot;
     
     public void ShowToolTip(Item item)
     {

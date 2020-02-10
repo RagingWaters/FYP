@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 public class InventorySlot : MonoBehaviour, ISelectHandler
 {
     public Image icon;
+    public Button button;
     [SerializeField] InventoryToolTip toolTip;
 
     Item item;
@@ -60,10 +61,15 @@ public class InventorySlot : MonoBehaviour, ISelectHandler
             }
             
         }
+
     }
 
     public void OnSelect(BaseEventData eventData)
-    {
-        toolTip.ShowToolTip((Item)item);
-    }
+     {
+         // Do something.
+         Debug.Log("<color=red>Event:</color> Completed selection.");
+         toolTip.ShowToolTip((Item)item);
+     }
+
+
 }
