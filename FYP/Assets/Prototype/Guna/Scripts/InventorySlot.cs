@@ -72,11 +72,11 @@ public class InventorySlot : MonoBehaviour, ISelectHandler
             toolTip.ShowToolTip((Item)item);
          }
 
-         if (item == null)
-         {
-            print(item.GetType());
-            toolTip.CloseToolTip();
-         }
+        //  if (item == null)
+        //  {
+        //     print(item.GetType());
+        //     toolTip.CloseToolTip();
+        //  }
      }
 
 
