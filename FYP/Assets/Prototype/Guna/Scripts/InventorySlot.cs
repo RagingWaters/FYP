@@ -66,9 +66,17 @@ public class InventorySlot : MonoBehaviour, ISelectHandler
 
     public void OnSelect(BaseEventData eventData)
      {
-         // Do something.
-         Debug.Log("<color=red>Event:</color> Completed selection.");
-         toolTip.ShowToolTip((Item)item);
+         if (item is Item)
+         {
+            print(item);
+            toolTip.ShowToolTip((Item)item);
+         }
+
+         if (item == null)
+         {
+            print(item.GetType());
+            toolTip.CloseToolTip();
+         }
      }
 
 
