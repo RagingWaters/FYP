@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1149373762243907998}
   m_Layer: 0
   m_Name: Textbook
-  m_TagString: Untagged
+  m_TagString: 1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76,6 +76,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 05015c02960a16c4eab3ccf0da1b62de, type: 2}
+  source: {fileID: 0}
 --- !u!1001 &3946294313388929531
 PrefabInstance:
   m_ObjectHideFlags: 0
