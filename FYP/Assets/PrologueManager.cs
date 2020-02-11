@@ -16,6 +16,7 @@ public class PrologueManager : MonoBehaviour
     public Image blackBG;
     public GameObject prelogueManager;
     public GameObject instructionLog;
+    public AudioSource audio;
 
 
      void Start()
@@ -42,7 +43,7 @@ public class PrologueManager : MonoBehaviour
         foreach (char letter in sentences[index].ToCharArray())
         {
             textDisplay.text += letter;
-            
+            audio.Play();
             yield return new WaitForSeconds(typingSpeed);
         }
 

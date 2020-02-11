@@ -15,6 +15,7 @@ public class DialogueTrigger : MonoBehaviour
     public static bool isTalking;
     PlayerControls pc;
     public Radio radio;
+    public AudioSource audio;
     /*
     private void Start()
     {
@@ -32,7 +33,8 @@ public class DialogueTrigger : MonoBehaviour
                 dialogue1.SetActive(true);
                 dialogueImage.enabled = (true);
                 StartCoroutine(ContinueDialogue());
-                radio.audioSource.Pause();
+                
+                
                 Debug.Log("paused");
                 //if (Input.GetKeyDown(KeyCode.Space) && isTalking == false || Input.GetButtonDown("Interact") && isTalking == false)
                 //{
@@ -53,8 +55,10 @@ public class DialogueTrigger : MonoBehaviour
             dialogue2.SetActive(false);
             dialogueImage.enabled = (false);
             isTalking = false;
+            radio.audioSource.Pause();
+
             //pc.freezeMovement = false;
-}
+        }
     }
 
     IEnumerator ContinueDialogue()

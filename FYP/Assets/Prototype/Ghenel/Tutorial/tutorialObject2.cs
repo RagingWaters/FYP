@@ -7,7 +7,7 @@ public class tutorialObject2 : MonoBehaviour
     public tutorialwin tw;
 
     Animator m_Animator;
-
+   public AudioManager am;
     void Start()
     {        
         m_Animator = gameObject.GetComponent<Animator>();
@@ -20,6 +20,7 @@ public class tutorialObject2 : MonoBehaviour
         {
             tw.Correct2 = true;
             m_Animator.SetBool("Box Opened 1", true);
+            am.Box();
         }
     }
 

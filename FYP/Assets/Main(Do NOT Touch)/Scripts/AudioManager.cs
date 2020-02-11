@@ -8,6 +8,8 @@ public class AudioManager : MonoBehaviour
     public float volume;
     public AudioClip aClip;
     public AudioClip bClip;
+    public AudioClip cClip;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,8 +26,13 @@ public class AudioManager : MonoBehaviour
     {
         aSource.PlayOneShot(aClip, volume);
     }
-    public void Toy()
+    public void Pickup()
     {
         aSource.PlayOneShot(bClip, volume);
+    }
+
+    public void Box()
+    {
+        aSource.PlayOneShot(cClip, volume);
     }
 }

@@ -7,7 +7,7 @@ public class tutorialObject1 : MonoBehaviour
     public tutorialwin tw;    
 
     Animator m_Animator;
-
+   public AudioManager am;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +26,7 @@ public class tutorialObject1 : MonoBehaviour
         {
             tw.Correct1 = true;
             m_Animator.SetBool("Box Opened 1", true);
+            am.Box();
         }
     }
 
