@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 public class InventorySlot : MonoBehaviour, ISelectHandler
 {
     public Image icon;
-    public Button button;
+    //public Button button;
     [SerializeField] InventoryToolTip toolTip;
 
     Item item;
