@@ -35,9 +35,6 @@ public class PrologueManager : MonoBehaviour
             return;
         }
 
-        // if (textDisplay.text == sentences[index])
-        //     continueButton.SetActive(true);   
-
         if (Input.GetKeyDown(KeyCode.Space) && sentenceCompleted == true || Input.GetButtonDown("Interact") && sentenceCompleted == true)
         {
             sentenceCompleted = false;
@@ -50,11 +47,11 @@ public class PrologueManager : MonoBehaviour
         foreach (char letter in sentences[index].ToCharArray())
         {
             textDisplay.text += letter;
-            audio.Play();
-            sentenceCompleted = true;
+            audio.Play();            
             yield return new WaitForSeconds(typingSpeed);
         }
 
+        sentenceCompleted = true;
         continueButton.SetActive(true);
     }
 
