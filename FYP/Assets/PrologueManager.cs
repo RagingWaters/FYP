@@ -11,6 +11,7 @@ public class PrologueManager : MonoBehaviour
     public string[] sentences;
     private int index;
     public float typingSpeed;
+    bool sentenceCompleted = false;
 
     public GameObject continueButton;
     public Image blackBG;
@@ -34,8 +35,14 @@ public class PrologueManager : MonoBehaviour
             return;
         }
 
-        if (textDisplay.text == sentences[index])
-            continueButton.SetActive(true);   
+        // if (textDisplay.text == sentences[index])
+        //     continueButton.SetActive(true);   
+
+        if (Input.GetKeyDown(KeyCode.Space) && sentenceCompleted == true || Input.GetButtonDown("Interact") && sentenceCompleted == true)
+        {
+            sentenceCompleted = false;
+            NextSentence();
+        }
     }
 
     IEnumerator Type()
@@ -44,6 +51,7 @@ public class PrologueManager : MonoBehaviour
         {
             textDisplay.text += letter;
             audio.Play();
+            sentenceCompleted = true;
             yield return new WaitForSeconds(typingSpeed);
         }
 
