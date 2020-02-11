@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Giraffe
   m_EditorClassIdentifier: 
   name: Giraffe
-  icon: {fileID: 21300000, guid: 1e1cd3d80caf7f44f8987cb182964866, type: 3}
+  icon: {fileID: 21300000, guid: 7f5bf65e64888e2498d9fba49e2c5674, type: 3}
   isDefaultItem: 0
   prefabToSpawn: {fileID: 2328202159035514002, guid: ecdf32b18e058ab45a5c62651e41cb09,
     type: 3}

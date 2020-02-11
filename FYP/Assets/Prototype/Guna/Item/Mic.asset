@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Mic
   m_EditorClassIdentifier: 
   name: Mic
-  icon: {fileID: 21300000, guid: 5187258dae20071498ea25639edaec0f, type: 3}
+  icon: {fileID: 21300000, guid: 0a4824fed322d9e4294c6f859546fa19, type: 3}
   isDefaultItem: 0
   prefabToSpawn: {fileID: 4873664603289803829, guid: 5d4877e0bfbbc5841ba5973ece5fe7b4,
     type: 3}
-  prompt: {fileID: 0}

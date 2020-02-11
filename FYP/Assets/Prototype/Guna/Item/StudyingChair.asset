@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: StudyingChair
   m_EditorClassIdentifier: 
   name: StudyingChair
-  icon: {fileID: 21300000, guid: cc088b5fae7ac854d8f70042a31b51df, type: 3}
+  icon: {fileID: 21300000, guid: 809c384a637dbfa439c8899c96ee7645, type: 3}
   isDefaultItem: 0
   prefabToSpawn: {fileID: 8100091287761884362, guid: 8c68340f1602f174bbeda254e938cda3,
     type: 3}
