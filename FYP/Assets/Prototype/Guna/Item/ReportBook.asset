@@ -15,5 +15,5 @@ MonoBehaviour:
   name: ReportBook
   icon: {fileID: 21300000, guid: 2b5c63be951042942823b1d0fb5663f2, type: 3}
   isDefaultItem: 0
-  prefabToSpawn: {fileID: 78441391505075482, guid: 91c3f9da66c2d374eb169f713c913813,
+  prefabToSpawn: {fileID: 4320179948867755560, guid: ebf9a3568c1324c48837e3266539b1be,
     type: 3}
