@@ -10,7 +10,7 @@ public class scare1 : MonoBehaviour
     public Animator anim;
 
     public AudioSource audioSource;
-
+    public bool alreadyPlayed = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,11 +25,12 @@ public class scare1 : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player" && !alreadyPlayed)
         {
             enemy.SetActive(true);
             anim.Play("scare1");
             audioSource.Play();
+            alreadyPlayed = true;
             StartCoroutine(StopDialogue());
         }
     }

@@ -11,6 +11,9 @@ public class FlashbackTeleport : MonoBehaviour
     private bool cd;
     public GameObject sepiaFilter;
     public GameObject timeCrack;
+    public GameObject npc;
+    public GameObject bigboss;
+    public GameObject portal;
 
     public Image imageToFade;
     public GameObject fadeImage;
@@ -29,6 +32,9 @@ public class FlashbackTeleport : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space) && cd == false || Input.GetButtonDown("Interact") && cd == false)
             {
                 StartCoroutine(Teleport());
+                npc.SetActive(false);
+                bigboss.SetActive(false);
+                portal.SetActive(true);
             }
         }
     }
