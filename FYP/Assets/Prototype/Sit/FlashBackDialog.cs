@@ -27,18 +27,15 @@ public class FlashBackDialog : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(textDisplay.text == sentences[index])
-        {
-            continueButton.SetActive(true);
-        }
+        // if(textDisplay.text == sentences[index])
+        // {
+        //     continueButton.SetActive(true);
+        // }
 
         if(conversated == true && Input.GetKeyDown(KeyCode.Space) && textDisplay.text == sentences[index] && alreadyTalked == false || conversated == true && Input.GetButtonDown("Interact")  && textDisplay.text == sentences[index] && alreadyTalked == false)
         {
             Talking();
-            alreadyTalked = true;
         }
-
-
     }
 
     private void OnTriggerEnter(Collider other)
@@ -83,8 +80,7 @@ public class FlashBackDialog : MonoBehaviour
             isListening = false;
             speechBubble.SetActive(false);
             continueButton.SetActive(false);
-            
-            
+            alreadyTalked = true;
         }
     }
 
@@ -111,16 +107,14 @@ public class FlashBackDialog : MonoBehaviour
             talked = false;
             bubbles1.SetActive(false);
             bubbles2.SetActive(true);
-           
         }
-
-      
 
         else
         {
             return;
         }
     }
+
     public void Talking()
     {
         NextFunction();
