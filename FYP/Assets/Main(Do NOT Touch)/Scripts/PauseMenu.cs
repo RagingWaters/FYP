@@ -40,31 +40,31 @@ public class PauseMenu : MonoBehaviour
     }
 
     //For Instructions
-    public void Instructions()
-    {
-        ints.SetActive(true);
-        screen1.SetActive(false);
-        screen2.SetActive(false);
-    }
+    // public void Instructions()
+    // {
+    //     ints.SetActive(true);
+    //     screen1.SetActive(false);
+    //     screen2.SetActive(false);
+    // }
 
-    public void Screen1()
-    {
-        ints.SetActive(false);
-        screen1.SetActive(true);
-        screen2.SetActive(false);
-    }
+    // public void Screen1()
+    // {
+    //     ints.SetActive(false);
+    //     screen1.SetActive(true);
+    //     screen2.SetActive(false);
+    // }
 
-    public void Screen2()
-    {
-        ints.SetActive(false);
-        screen1.SetActive(false);
-        screen2.SetActive(true);
-    }
+    // public void Screen2()
+    // {
+    //     ints.SetActive(false);
+    //     screen1.SetActive(false);
+    //     screen2.SetActive(true);
+    // }
 
-    public void CloseInstructions()
-    {
-        instructionScreen.SetActive(false);
-    }
+    // public void CloseInstructions()
+    // {
+    //     instructionScreen.SetActive(false);
+    // }
 
     // Resume Button
     public void Resume()
@@ -90,6 +90,11 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene("Main New");
         Debug.Log("MAIN MENU");
+    }
+
+    public void ManuallySelectButton(GameObject buttonToSelect)
+    {
+        es.SetSelectedGameObject(buttonToSelect);
     }
 
 }

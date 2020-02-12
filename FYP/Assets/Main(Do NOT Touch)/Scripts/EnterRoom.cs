@@ -43,7 +43,21 @@ public class EnterRoom : MonoBehaviour
         if (other.gameObject.tag == "Player" && inRoom == false)
 
         {
-            print("In room");
+            ChangeCamPos();
+        }
+
+        if (other.gameObject.tag == "Player" && inRoom == true)
+
+        {
+            CamSwitch();
+        }
+    }
+
+    void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.tag == "Player" && inRoom == false)
+
+        {
             ChangeCamPos();
         }
 
