@@ -24,7 +24,7 @@ public class CameraChange : MonoBehaviour
 
     void MidCamActive()
     {
-        MidSecCam.enabled=true;
+        MidSecCam.enabled = true;
         MidCam.SetActive(true);
         mainCamRef.enabled = false;
         mainCam.SetActive(false);
