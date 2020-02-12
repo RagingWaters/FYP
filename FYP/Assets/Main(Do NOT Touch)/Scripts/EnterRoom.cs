@@ -6,7 +6,8 @@ public class EnterRoom : MonoBehaviour
 {
     public GameObject Activecam;
     public CameraFollow cf;
-    public Camera testCam;
+    public Camera RoomCam;
+    public Camera mainCam;
     public static bool inRoom = false;
 
     // Start is called before the first frame update
@@ -24,9 +25,9 @@ public class EnterRoom : MonoBehaviour
     void ChangeCamPos()
     {
         inRoom = true;
-        testCam.enabled = true;
-        Camera.main.enabled = false;
-        PlayerControls.instance.referenceCam = testCam; 
+        RoomCam.enabled = true;
+        mainCam.enabled = false;
+        PlayerControls.instance.referenceCam = RoomCam; 
         PlayerControls.instance.referenceCam.transform.position = Activecam.transform.position;
         PlayerControls.instance.referenceCam.transform.rotation = Activecam.transform.rotation;
     }

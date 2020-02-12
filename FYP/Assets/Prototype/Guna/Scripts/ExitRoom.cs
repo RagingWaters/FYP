@@ -5,7 +5,7 @@ using UnityEngine;
 public class ExitRoom : MonoBehaviour
 {
     public CameraFollow cf;
-    public Camera testCam;
+    public Camera RoomCam;
     public Camera mainCam;
 
     // Start is called before the first frame update
@@ -24,7 +24,7 @@ public class ExitRoom : MonoBehaviour
     {
         EnterRoom.inRoom = false;
         mainCam.enabled = true;
-        testCam.enabled = false;
+        RoomCam.enabled = false;
         PlayerControls.instance.referenceCam = mainCam;
     }
 
