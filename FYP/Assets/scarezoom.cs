@@ -26,7 +26,7 @@ public class scarezoom : MonoBehaviour
         if (other.gameObject.tag == "Player" && !alreadyPlayed)
         {
             enemy.SetActive(true);
-            anim.Play("scare2");
+            anim.Play("zoomscare");
             audioSource.Play();
             alreadyPlayed = true;
             StartCoroutine(StopDialogue());
