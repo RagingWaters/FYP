@@ -1,0 +1,275 @@
+fileFormatVersion: 2
+guid: fd80fc241a7a7f34998bf380f09f83e9
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Base Human
+    100002: Base HumanHead
+    100004: Base HumanLCollarbone
+    100006: Base HumanLDigit11
+    100008: Base HumanLDigit12
+    100010: Base HumanLDigit13
+    100012: Base HumanLDigit21
+    100014: Base HumanLDigit22
+    100016: Base HumanLDigit23
+    100018: Base HumanLDigit31
+    100020: Base HumanLDigit32
+    100022: Base HumanLDigit33
+    100024: Base HumanLDigit41
+    100026: Base HumanLDigit42
+    100028: Base HumanLDigit43
+    100030: Base HumanLDigit51
+    100032: Base HumanLDigit52
+    100034: Base HumanLDigit53
+    100036: Base HumanLForearm
+    100038: Base HumanLLeg1
+    100040: Base HumanLLeg2
+    100042: Base HumanLLegAnkle
+    100044: Base HumanLLegPlatform
+    100046: Base HumanLPalm
+    100048: Base HumanLUpperarm
+    100050: Base HumanNeck1
+    100052: Base HumanNeck2
+    100054: Base HumanPelvis
+    100056: Base HumanRCollarbone
+    100058: Base HumanRDigit11
+    100060: Base HumanRDigit12
+    100062: Base HumanRDigit13
+    100064: Base HumanRDigit21
+    100066: Base HumanRDigit22
+    100068: Base HumanRDigit23
+    100070: Base HumanRDigit31
+    100072: Base HumanRDigit32
+    100074: Base HumanRDigit33
+    100076: Base HumanRDigit41
+    100078: Base HumanRDigit42
+    100080: Base HumanRDigit43
+    100082: Base HumanRDigit51
+    100084: Base HumanRDigit52
+    100086: Base HumanRDigit53
+    100088: Base HumanRForearm
+    100090: Base HumanRibcage
+    100092: Base HumanRLeg1
+    100094: Base HumanRLeg2
+    100096: Base HumanRLegAnkle
+    100098: Base HumanRLegPlatform
+    100100: Base HumanRPalm
+    100102: Base HumanRUpperarm
+    100104: Base HumanSpine1
+    100106: Base HumanSpine2
+    100108: C_Low_Boots_C_Low_Boots
+    100110: C_Low_Hair_C_Low_Hair
+    100112: C_Low_Hands_C_Low_Hands
+    100114: C_Low_Head_C_Low_Head
+    100116: C_Low_InnerShirt_C_Low_InnerShirt
+    100118: C_Low_Jacket_C_Low_Jacket
+    100120: C_Low_Pants_C_Low_Pants
+    100122: C_Rig
+    100124: //RootNode
+    400000: Base Human
+    400002: Base HumanHead
+    400004: Base HumanLCollarbone
+    400006: Base HumanLDigit11
+    400008: Base HumanLDigit12
+    400010: Base HumanLDigit13
+    400012: Base HumanLDigit21
+    400014: Base HumanLDigit22
+    400016: Base HumanLDigit23
+    400018: Base HumanLDigit31
+    400020: Base HumanLDigit32
+    400022: Base HumanLDigit33
+    400024: Base HumanLDigit41
+    400026: Base HumanLDigit42
+    400028: Base HumanLDigit43
+    400030: Base HumanLDigit51
+    400032: Base HumanLDigit52
+    400034: Base HumanLDigit53
+    400036: Base HumanLForearm
+    400038: Base HumanLLeg1
+    400040: Base HumanLLeg2
+    400042: Base HumanLLegAnkle
+    400044: Base HumanLLegPlatform
+    400046: Base HumanLPalm
+    400048: Base HumanLUpperarm
+    400050: Base HumanNeck1
+    400052: Base HumanNeck2
+    400054: Base HumanPelvis
+    400056: Base HumanRCollarbone
+    400058: Base HumanRDigit11
+    400060: Base HumanRDigit12
+    400062: Base HumanRDigit13
+    400064: Base HumanRDigit21
+    400066: Base HumanRDigit22
+    400068: Base HumanRDigit23
+    400070: Base HumanRDigit31
+    400072: Base HumanRDigit32
+    400074: Base HumanRDigit33
+    400076: Base HumanRDigit41
+    400078: Base HumanRDigit42
+    400080: Base HumanRDigit43
+    400082: Base HumanRDigit51
+    400084: Base HumanRDigit52
+    400086: Base HumanRDigit53
+    400088: Base HumanRForearm
+    400090: Base HumanRibcage
+    400092: Base HumanRLeg1
+    400094: Base HumanRLeg2
+    400096: Base HumanRLegAnkle
+    400098: Base HumanRLegPlatform
+    400100: Base HumanRPalm
+    400102: Base HumanRUpperarm
+    400104: Base HumanSpine1
+    400106: Base HumanSpine2
+    400108: C_Low_Boots_C_Low_Boots
+    400110: C_Low_Hair_C_Low_Hair
+    400112: C_Low_Hands_C_Low_Hands
+    400114: C_Low_Head_C_Low_Head
+    400116: C_Low_InnerShirt_C_Low_InnerShirt
+    400118: C_Low_Jacket_C_Low_Jacket
+    400120: C_Low_Pants_C_Low_Pants
+    400122: C_Rig
+    400124: //RootNode
+    2100000: Material__31
+    2100002: Material__32
+    2100004: Material__34
+    2100006: Material__36
+    2100008: Material__35
+    2100010: Material__33
+    2100012: Material__37
+    4300000: C_Low_Boots_C_Low_Boots
+    4300002: C_Low_Hair_C_Low_Hair
+    4300004: C_Low_Hands_C_Low_Hands
+    4300006: C_Low_Head_C_Low_Head
+    4300008: C_Low_InnerShirt_C_Low_InnerShirt
+    4300010: C_Low_Jacket_C_Low_Jacket
+    4300012: C_Low_Pants_C_Low_Pants
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: C_Low_Boots_C_Low_Boots
+    13700002: C_Low_Hair_C_Low_Hair
+    13700004: C_Low_Hands_C_Low_Hands
+    13700006: C_Low_Head_C_Low_Head
+    13700008: C_Low_InnerShirt_C_Low_InnerShirt
+    13700010: C_Low_Jacket_C_Low_Jacket
+    13700012: C_Low_Pants_C_Low_Pants
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__31
+    second: {fileID: 2100000, guid: 5a4c20d07f318814f9c182a5deab6787, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__32
+    second: {fileID: 2100000, guid: f98ca9eaad1dd2845bbb69e822a02d67, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__33
+    second: {fileID: 2100000, guid: 2e89879a914d0e5419c420b16ad65c19, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__34
+    second: {fileID: 2100000, guid: 935ef7e2595a213499372f168f357a8a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__35
+    second: {fileID: 2100000, guid: 171e2db0397a3c34e80ecd37d62b2981, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__36
+    second: {fileID: 2100000, guid: 4af9098d26fc0974eaddeeff7d958e37, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__37
+    second: {fileID: 2100000, guid: 00a4448372407f24ab579f6ed90c4442, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
