@@ -23,17 +23,17 @@ public class LevelManager : MonoBehaviour
     private Animation anim;
     //public static int theScore;
 
-   [SerializeField] private int currentScore;
-   [SerializeField] private int currentCross;
-   [SerializeField] public int currentKey;
-   [SerializeField] public int currentShovel;
-   [SerializeField] public int currentCigg;
-   [SerializeField] public int currentTorch;
-   [SerializeField] public int currentJournal;
-   [SerializeField] public int currentClock;
-   [SerializeField] public int currentPages;
-   [SerializeField] public int currentTalisman;
-   [SerializeField] public int currentCandles;
+   //[SerializeField] private int currentScore;
+   //[SerializeField] private int currentCross;
+   //[SerializeField] public int currentKey;
+   //[SerializeField] public int currentShovel;
+   //[SerializeField] public int currentCigg;
+   //[SerializeField] public int currentTorch;
+   //[SerializeField] public int currentJournal;
+   //[SerializeField] public int currentClock;
+   //[SerializeField] public int currentPages;
+   //[SerializeField] public int currentTalisman;
+   //[SerializeField] public int currentCandles;
 
     public GameObject gameOverScreen;
     public GameObject option;
@@ -43,22 +43,22 @@ public class LevelManager : MonoBehaviour
 
    // public GameObject Door;
    // public GameObject LastDoor;
-    public GameObject torchdoor;
-    public GameObject warning;
-    public GameObject warningwrong;
-    public GameObject Door1;
+    //public GameObject torchdoor;
+    //public GameObject warning;
+    //public GameObject warningwrong;
+    //public GameObject Door1;
 
-    public GameObject o1;
-    public GameObject o2;
+    //public GameObject o1;
+    //public GameObject o2;
 
-    public GameObject keypotopt;
-    public GameObject foundkey;
-    public GameObject warning0shovel;
-    //public GameObject keyy;
-    public GameObject warningnth;
-    public GameObject cigg;
-    public GameObject foundcigg;
-    public GameObject randompotopt;
+    //public GameObject keypotopt;
+    //public GameObject foundkey;
+    //public GameObject warning0shovel;
+    ////public GameObject keyy;
+    //public GameObject warningnth;
+    //public GameObject cigg;
+    //public GameObject foundcigg;
+    //public GameObject randompotopt;
 
     //public GameObject L2blocker;
     //public GameObject L3blocker;
@@ -74,7 +74,7 @@ public class LevelManager : MonoBehaviour
 
         //keyy.SetActive(false);
         //theScore = 0;
-        newspaperText.GetComponent<Text>().text = "Pieces : " + currentScore + " / 4";
+        //newspaperText.GetComponent<Text>().text = "Pieces : " + currentScore + " / 4";
     }
 
     // Update is called once per frame
@@ -105,35 +105,35 @@ public class LevelManager : MonoBehaviour
         Player.gameObject.SetActive(false);
     }
 
-    public void OpenAnyDoor(GameObject warning)
-    {
-        if (currentKey == 1)
-        {
-            torchdoor.SetActive(false);
-            o1.SetActive(false);
-        }
-        else
-        {
-            warning.SetActive(true);
-        }
-    }
-    public void Openwrongdoor()
-    {
-        if (currentKey ==1)
-        {
-            warningwrong.SetActive(true);
-        }
-        else
-        {
-            warning.SetActive(true);
-        }
-    }
+    //public void OpenAnyDoor(GameObject warning)
+    //{
+    //    if (currentKey == 1)
+    //    {
+    //        torchdoor.SetActive(false);
+    //        o1.SetActive(false);
+    //    }
+    //    else
+    //    {
+    //        warning.SetActive(true);
+    //    }
+    //}
+    //public void Openwrongdoor()
+    //{
+    //    if (currentKey ==1)
+    //    {
+    //        warningwrong.SetActive(true);
+    //    }
+    //    else
+    //    {
+    //        warning.SetActive(true);
+    //    }
+    //}
 
-    public void Openopendoors()
-    {
-        Door1.SetActive(false);
-        o2.SetActive(false);
-    }
+    //public void Openopendoors()
+    //{
+    //    Door1.SetActive(false);
+    //    o2.SetActive(false);
+    //}
 
     //public void blocker1()
     //{
@@ -185,86 +185,86 @@ public class LevelManager : MonoBehaviour
     //    }
     //}
 
-    public void digrandompot()
-    {
-        if (currentShovel == 1)
-        {
-            foundcigg.SetActive(true);
-            cigg.SetActive(true);
-            randompotopt.SetActive(false);
+    //public void digrandompot()
+    //{
+    //    if (currentShovel == 1)
+    //    {
+    //        foundcigg.SetActive(true);
+    //        cigg.SetActive(true);
+    //        randompotopt.SetActive(false);
             
-        }
-        else
-        {
-            warning0shovel.SetActive(true);
-        }
-    }
+    //    }
+    //    else
+    //    {
+    //        warning0shovel.SetActive(true);
+    //    }
+    //}
 
-    public void digemptypot()
-    {
-        if (currentShovel == 1)
-        {
-            warningnth.SetActive(true);
-        }
-        else
-        {
-            warning0shovel.SetActive(true);
-        }
-    }
-
-
-    public void AddCross(int CrossToAdd)
-    {
-        currentCross += CrossToAdd;
-    }
-
-    public void AddKey(int KeyToAdd)
-    {
-        currentKey += KeyToAdd;
-    }
-
-    public void AddTorch(int TorchtoAdd)
-    {
-        currentTorch += TorchtoAdd;
-    }
-
-    public void AddShovel(int ShovelToAdd)
-    {
-        currentShovel += ShovelToAdd;
-
-    }
-
-    public void AddCigg(int ciggToAdd)
-    {
-        currentCigg += ciggToAdd;
-
-    }
-
-    public void AddJournal( int JournalToAdd)
-    {
-        currentJournal += JournalToAdd;
-    }
-
-    public void AddClock(int ToyToAdd)
-    {
-        currentClock += ToyToAdd;
-    }
-
-    public void AddTalisman(int TalismanToAdd)
-    {
-        currentTalisman += TalismanToAdd;
-    }
-
-    public void AddCandles(int CandlesToAdd)
-    {
-        currentTalisman += CandlesToAdd;
-    }
+    //public void digemptypot()
+    //{
+    //    if (currentShovel == 1)
+    //    {
+    //        warningnth.SetActive(true);
+    //    }
+    //    else
+    //    {
+    //        warning0shovel.SetActive(true);
+    //    }
+    //}
 
 
-    public void AddPage(int PageToAdd)
-    {
-        currentPages += PageToAdd;
-    }
+    //public void AddCross(int CrossToAdd)
+    //{
+    //    currentCross += CrossToAdd;
+    //}
+
+    //public void AddKey(int KeyToAdd)
+    //{
+    //    currentKey += KeyToAdd;
+    //}
+
+    //public void AddTorch(int TorchtoAdd)
+    //{
+    //    currentTorch += TorchtoAdd;
+    //}
+
+    //public void AddShovel(int ShovelToAdd)
+    //{
+    //    currentShovel += ShovelToAdd;
+
+    //}
+
+    //public void AddCigg(int ciggToAdd)
+    //{
+    //    currentCigg += ciggToAdd;
+
+    //}
+
+    //public void AddJournal( int JournalToAdd)
+    //{
+    //    currentJournal += JournalToAdd;
+    //}
+
+    //public void AddClock(int ToyToAdd)
+    //{
+    //    currentClock += ToyToAdd;
+    //}
+
+    //public void AddTalisman(int TalismanToAdd)
+    //{
+    //    currentTalisman += TalismanToAdd;
+    //}
+
+    //public void AddCandles(int CandlesToAdd)
+    //{
+    //    currentTalisman += CandlesToAdd;
+    //}
+
+
+    //public void AddPage(int PageToAdd)
+    //{
+    //    currentPages += PageToAdd;
+    //}
 
         public IEnumerator RespawnCo()
     {

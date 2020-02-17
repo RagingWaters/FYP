@@ -33,7 +33,7 @@ public class Pages : MonoBehaviour
                 pc.enabled = false;
                 Time.timeScale = 0;
                 
-                lm.AddPage(pageValue);
+                //lm.AddPage(pageValue);
                 
                 Debug.Log("Page Added");
                 

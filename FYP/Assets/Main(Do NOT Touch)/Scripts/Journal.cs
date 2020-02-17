@@ -27,7 +27,7 @@ public class Journal : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("Interact"))
             {
               
-                lm.AddJournal(journalValue);
+                //lm.AddJournal(journalValue);
                 dialogue.SetActive(true);
                 dgameObject.SetActive(true);
                 print("added journal");
