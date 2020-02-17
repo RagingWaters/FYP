@@ -2,10 +2,10 @@
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
+
 public class InventorySlot : MonoBehaviour, ISelectHandler
 {
     public Image icon;
-    public GameObject description;
     //public Button button;
     [SerializeField] InventoryToolTip toolTip;
 
@@ -41,7 +41,7 @@ public class InventorySlot : MonoBehaviour, ISelectHandler
         {
             Collider[] colliders = Physics.OverlapSphere(PlayerControls.instance.transform.position, 0.01f);
 
-            foreach (Collider c in colliders)
+            foreach(Collider c in colliders)
             {
                 UsableItem usableItem = c.GetComponent<UsableItem>();
                 
@@ -64,21 +64,12 @@ public class InventorySlot : MonoBehaviour, ISelectHandler
 
     }
 
-    public void PressItem ()
-    {
-        if (item != null)
-        {
-            description.SetActive(true);
-        }
-    }
-
     public void OnSelect(BaseEventData eventData)
      {
          if (item is Item)
          {
             print(item);
             toolTip.ShowToolTip((Item)item);
-
          }
 
         //  if (item == null)

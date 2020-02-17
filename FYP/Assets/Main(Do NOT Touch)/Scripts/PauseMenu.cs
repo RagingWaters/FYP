@@ -19,6 +19,7 @@ public class PauseMenu : MonoBehaviour
     public GameObject ints;
     public GameObject screen1;
     public GameObject screen2;
+    PlayerController pc;
 
 
     // Update is called once per frame
