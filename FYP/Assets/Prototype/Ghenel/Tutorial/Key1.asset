@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Key1
   m_EditorClassIdentifier: 
   name: Key1
+  description: Key1 Description
   icon: {fileID: 21300000, guid: 775fe5481812cb1429e912718ea07c8d, type: 3}
   isDefaultItem: 0
   prefabToSpawn: {fileID: 4974735270679254465, guid: f5b00c7b53ef0404ab05cb77f87d400d,

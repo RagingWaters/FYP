@@ -70,7 +70,7 @@ public class InventorySlot : MonoBehaviour, ISelectHandler
          {
             print(item);
             toolTip.ShowToolTip((Item)item);
-         }
+        }
 
         //  if (item == null)
         //  {
