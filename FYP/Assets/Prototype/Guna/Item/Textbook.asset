@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Textbook
   m_EditorClassIdentifier: 
   name: Textbook
+  description: A secondary school math textbook. Pages seem a little wet.
   icon: {fileID: 21300000, guid: 201b666cc3e29834c9309e203238144f, type: 3}
   isDefaultItem: 0
   prefabToSpawn: {fileID: 4758883349218356561, guid: 6c8ddd5f646aa3f4f80f7464162e22b2,

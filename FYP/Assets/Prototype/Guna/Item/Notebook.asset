@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Notebook
   m_EditorClassIdentifier: 
   name: Notebook
+  description: A notebook belonging to a Secondary School child. Frantic scribbling
+    can be seen.
   icon: {fileID: 21300000, guid: 0c1b6c8eb69f6024297431f0319e851a, type: 3}
   isDefaultItem: 0
   prefabToSpawn: {fileID: 78441391505075482, guid: 91c3f9da66c2d374eb169f713c913813,

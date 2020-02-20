@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: ThirdDate
   m_EditorClassIdentifier: 
   name: ThirdDate
+  description: A picture of a girl in a field of flowers.
   icon: {fileID: 21300000, guid: 251202f31dd80374d86de00f391c7b8e, type: 3}
   isDefaultItem: 0
   prefabToSpawn: {fileID: 2554100546318057044, guid: 413265e004f4107459a944591c450431,

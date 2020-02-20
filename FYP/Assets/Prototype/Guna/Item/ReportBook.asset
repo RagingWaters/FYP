@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: ReportBook
   m_EditorClassIdentifier: 
   name: ReportBook
+  description: A report book with Secondary School results in it. The grades are execellent.
   icon: {fileID: 21300000, guid: 2b5c63be951042942823b1d0fb5663f2, type: 3}
   isDefaultItem: 0
   prefabToSpawn: {fileID: 4320179948867755560, guid: ebf9a3568c1324c48837e3266539b1be,

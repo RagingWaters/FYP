@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: ChildrenChair
   m_EditorClassIdentifier: 
   name: ChildrenChair
+  description: A small chair for a child. Looks like an object for a ritual.
   icon: {fileID: 21300000, guid: 3a456db506fd2584d97f17a5ad682cd2, type: 3}
   isDefaultItem: 0
   prefabToSpawn: {fileID: 14933297287279134, guid: f9ee4d19f2ab9044d979ba02645a6ff3,
