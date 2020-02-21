@@ -5,6 +5,7 @@ using UnityEngine;
 public class lastinst : MonoBehaviour
 {
     public GameObject inst1;
+    public AudioSource audioSource;
 
     PlayerControls pc;
 
@@ -22,6 +23,7 @@ public class lastinst : MonoBehaviour
         {
             inst1.SetActive(false);        
             instructionIsActive = false;
+            audioSource.Play();
         }
     }
 }

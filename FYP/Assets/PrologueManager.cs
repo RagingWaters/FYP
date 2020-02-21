@@ -12,6 +12,7 @@ public class PrologueManager : MonoBehaviour
     private int index;
     public float typingSpeed;
     bool sentenceCompleted = false;
+    public GameObject[] images;
 
     public GameObject continueButton;
     public Image blackBG;
