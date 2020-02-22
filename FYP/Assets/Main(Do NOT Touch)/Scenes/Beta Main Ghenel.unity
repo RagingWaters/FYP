@@ -20995,6 +20995,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 1.8551
       objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: a5d8829039be1d542869a0346b515522, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.766
+      objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: a5d8829039be1d542869a0346b515522, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -21019,10 +21023,6 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300002, guid: 5aa117b71086d194c9007c5ab5bcbacf, type: 3}
-    - target: {fileID: 400004, guid: a5d8829039be1d542869a0346b515522, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.766
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5d8829039be1d542869a0346b515522, type: 3}
 --- !u!4 &430227473 stripped
@@ -34234,6 +34234,18 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 2.4662
       objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: a5d8829039be1d542869a0346b515522, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.4351
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: a5d8829039be1d542869a0346b515522, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.61108
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: a5d8829039be1d542869a0346b515522, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.271
+      objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: a5d8829039be1d542869a0346b515522, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -34258,18 +34270,6 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300002, guid: 5aa117b71086d194c9007c5ab5bcbacf, type: 3}
-    - target: {fileID: 400004, guid: a5d8829039be1d542869a0346b515522, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.4351
-      objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: a5d8829039be1d542869a0346b515522, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.61108
-      objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: a5d8829039be1d542869a0346b515522, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.271
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5d8829039be1d542869a0346b515522, type: 3}
 --- !u!4 &512334229 stripped
@@ -44848,6 +44848,18 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 2.4953
       objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: a5d8829039be1d542869a0346b515522, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.1964
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: a5d8829039be1d542869a0346b515522, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.61103
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: a5d8829039be1d542869a0346b515522, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.2917
+      objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: a5d8829039be1d542869a0346b515522, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -44872,18 +44884,6 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300002, guid: 5aa117b71086d194c9007c5ab5bcbacf, type: 3}
-    - target: {fileID: 400004, guid: a5d8829039be1d542869a0346b515522, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.1964
-      objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: a5d8829039be1d542869a0346b515522, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.61103
-      objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: a5d8829039be1d542869a0346b515522, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.2917
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5d8829039be1d542869a0346b515522, type: 3}
 --- !u!4 &726275324 stripped
@@ -96953,6 +96953,18 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 2.4662
       objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: a5d8829039be1d542869a0346b515522, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.3201
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: a5d8829039be1d542869a0346b515522, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.61108
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: a5d8829039be1d542869a0346b515522, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.0663
+      objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: a5d8829039be1d542869a0346b515522, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -96977,18 +96989,6 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300002, guid: 5aa117b71086d194c9007c5ab5bcbacf, type: 3}
-    - target: {fileID: 400004, guid: a5d8829039be1d542869a0346b515522, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.3201
-      objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: a5d8829039be1d542869a0346b515522, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.61108
-      objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: a5d8829039be1d542869a0346b515522, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.0663
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5d8829039be1d542869a0346b515522, type: 3}
 --- !u!4 &1658646468 stripped
@@ -100990,7 +100990,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9bcf105cc11fb11418fe18c52cffc356, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 927e20bfce6211846b10ec962a1df266, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1.88
