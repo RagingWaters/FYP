@@ -5,7 +5,7 @@ using UnityEngine;
 public class Item : ScriptableObject
 {
     new public string name = "New Item";
-    new public string description = "New Description";
+    public string description = "New Description";
     public Sprite icon = null;
     public bool isDefaultItem = false;
     public GameObject prefabToSpawn;

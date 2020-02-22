@@ -31,8 +31,8 @@ public class PrologueManager : MonoBehaviour
     {
         if (index >= sentences.Length)
         {
-            prelogueManager.SetActive(false);
             instructionLog.SetActive(true);
+            prelogueManager.SetActive(false);
             return;
         }
 

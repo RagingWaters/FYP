@@ -13,8 +13,8 @@ public class ZoomOutCam : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StoredCam.transform.position = Camera.main.transform.position;
-        StoredCam.transform.rotation = Camera.main.transform.rotation;
+        StoredCam.transform.position = ZoomoutCam.transform.position;
+        StoredCam.transform.rotation = ZoomoutCam.transform.rotation;
     }
 
     // Update is called once per frame
