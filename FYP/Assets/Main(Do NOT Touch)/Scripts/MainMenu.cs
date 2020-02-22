@@ -43,7 +43,7 @@ public class MainMenu : MonoBehaviour
 
     public void Restart()
     {
-        SceneManager.LoadScene("Test");
+        SceneManager.LoadScene("Gold Main");
     }
 
     public void Settings()
@@ -53,7 +53,7 @@ public class MainMenu : MonoBehaviour
 
     public void Play()
     {
-        SceneManager.LoadScene("Beta Main");
+        SceneManager.LoadScene("Gold Main");
     }
 
     public void LeaveGame()
