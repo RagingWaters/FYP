@@ -12,19 +12,27 @@ public class PrologueManager : MonoBehaviour
     private int index;
     public float typingSpeed;
     bool sentenceCompleted = false;
-    public GameObject[] images;
+
+    private int indexx;
 
     public GameObject continueButton;
-    public Image blackBG;
+    //public Image blackBG;
     public GameObject prelogueManager;
     public GameObject instructionLog;
     public AudioSource audio;
 
+    public GameObject bg1;
+    public GameObject bg2;
+    public GameObject bg3;
+    public GameObject bg4;
+    public GameObject bg5;
 
-     void Start()
+
+    void Start()
     {
         //continueButton.SetActive(false);
-        StartCoroutine(Type());       
+        StartCoroutine(Type());
+        StartCoroutine(Show());
     }
 
     void Update()
@@ -48,7 +56,8 @@ public class PrologueManager : MonoBehaviour
         foreach (char letter in sentences[index].ToCharArray())
         {
             textDisplay.text += letter;
-            audio.Play();            
+            audio.Play();
+            
             yield return new WaitForSeconds(typingSpeed);
         }
 
@@ -71,7 +80,27 @@ public class PrologueManager : MonoBehaviour
         {
             textDisplay.text = "";
             continueButton.SetActive(false);
+            bg5.SetActive(false);
         }        
     }
-    
+
+    IEnumerator Show()
+    {
+        bg1.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        bg1.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        bg1.SetActive(false);
+        bg2.SetActive(true);
+        yield return new WaitForSeconds(4f);
+        bg2.SetActive(false);
+        bg3.SetActive(true);
+        yield return new WaitForSeconds(4f);
+        bg3.SetActive(false);
+        bg4.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        bg4.SetActive(false);
+        bg5.SetActive(true);
+    }
+
 }
