@@ -9,15 +9,6 @@ public class pulsetrigger : MonoBehaviour
     public GameObject box3;
     //public Animator anim;
     // Start is called before the first frame update
-    public Light myLight;
-    public Light myLight1;
-    public Light myLight2;
-    public float maxIntensity = 0.7f;
-    public float minIntensity = 0f;
-    public float pulseSpeed = 0.5f; //here, a value of 0.5f would take 2 seconds and a value of 2f would take half a second
-    private float targetIntensity = 1f;
-    private float currentIntensity;
-
     void Start()
     {
         box1.SetActive(false);
@@ -27,45 +18,6 @@ public class pulsetrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        currentIntensity = Mathf.MoveTowards(myLight.intensity, targetIntensity, Time.deltaTime * pulseSpeed);
-        if (currentIntensity >= maxIntensity)
-        {
-            currentIntensity = maxIntensity;
-            targetIntensity = minIntensity;
-        }
-        else if (currentIntensity <= minIntensity)
-        {
-            currentIntensity = minIntensity;
-            targetIntensity = maxIntensity;
-        }
-        myLight.intensity = currentIntensity;
-
-        currentIntensity = Mathf.MoveTowards(myLight1.intensity, targetIntensity, Time.deltaTime * pulseSpeed);
-        if (currentIntensity >= maxIntensity)
-        {
-            currentIntensity = maxIntensity;
-            targetIntensity = minIntensity;
-        }
-        else if (currentIntensity <= minIntensity)
-        {
-            currentIntensity = minIntensity;
-            targetIntensity = maxIntensity;
-        }
-        myLight1.intensity = currentIntensity;
-
-
-        currentIntensity = Mathf.MoveTowards(myLight2.intensity, targetIntensity, Time.deltaTime * pulseSpeed);
-        if (currentIntensity >= maxIntensity)
-        {
-            currentIntensity = maxIntensity;
-            targetIntensity = minIntensity;
-        }
-        else if (currentIntensity <= minIntensity)
-        {
-            currentIntensity = minIntensity;
-            targetIntensity = maxIntensity;
-        }
-        myLight2.intensity = currentIntensity;
     }
 
 
