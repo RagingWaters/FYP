@@ -60,13 +60,13 @@ public class LevelManager : MonoBehaviour
     public GameObject foundcigg;
     public GameObject randompotopt;
 
+    EndSceneManager esm;
+    public GameObject endSceneManager;
+    public bool winConditionsMet = false;
+
     //public GameObject L2blocker;
     //public GameObject L3blocker;
     //public GameObject L4blocker;
-
-
-
-
 
     // Start is called before the first frame update
     void Start()
@@ -75,12 +75,15 @@ public class LevelManager : MonoBehaviour
         //keyy.SetActive(false);
         //theScore = 0;
         newspaperText.GetComponent<Text>().text = "Pieces : " + currentScore + " / 4";
+        esm = FindObjectOfType<EndSceneManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if (winConditionsMet == true)
+            endSceneManager.SetActive(true);
+            //esm.endSceneManager.SetActive(true);
     }
 
     public void Win()
@@ -88,7 +91,10 @@ public class LevelManager : MonoBehaviour
         inventory.SetActive(false);
         prompt.SetActive(false);
         option.SetActive(false);
-        winscreen.SetActive(true);
+        //winscreen.SetActive(true);
+        winConditionsMet = true;
+        StartCoroutine(esm.Typing());
+        StartCoroutine(esm.ShowBG());
         staminaSlider.gameObject.SetActive(false);
         Player.gameObject.SetActive(false);
         print("print");
