@@ -12,6 +12,8 @@ public class EndSceneManager : MonoBehaviour
     private int index;
     public float typingSpeed;
     bool sentenceCompleted = false;
+    
+    public PuzzleManager puzzleManager;
 
     public GameObject endSceneManager;
     public GameObject continueButton;
@@ -48,6 +50,12 @@ public class EndSceneManager : MonoBehaviour
         }
     }
 
+    public void CallTyping()
+    {
+        StartCoroutine(Typing());
+        StartCoroutine(ShowBG());
+    }
+
     public IEnumerator Typing()
     {
         foreach (char letter in sentences[index].ToCharArray())
@@ -62,6 +70,7 @@ public class EndSceneManager : MonoBehaviour
         sentenceCompleted = true;
         continueButton.SetActive(true);
         Debug.Log("esm3");
+        puzzleManager.winner = true;
     }
 
     public void NextSentence()

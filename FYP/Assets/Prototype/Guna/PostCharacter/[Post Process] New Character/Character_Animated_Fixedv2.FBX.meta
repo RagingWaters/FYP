@@ -1,0 +1,240 @@
+fileFormatVersion: 2
+guid: 67b21db7215fad345ab11bbf8a1d0eef
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Base HumanHead
+    100002: Base HumanLCalf
+    100004: Base HumanLCollarbone
+    100006: Base HumanLDigit11
+    100008: Base HumanLDigit12
+    100010: Base HumanLDigit13
+    100012: Base HumanLDigit21
+    100014: Base HumanLDigit22
+    100016: Base HumanLDigit23
+    100018: Base HumanLDigit31
+    100020: Base HumanLDigit32
+    100022: Base HumanLDigit33
+    100024: Base HumanLDigit41
+    100026: Base HumanLDigit42
+    100028: Base HumanLDigit43
+    100030: Base HumanLDigit51
+    100032: Base HumanLDigit52
+    100034: Base HumanLDigit53
+    100036: Base HumanLFoot
+    100038: Base HumanLForearm
+    100040: Base HumanLPalm
+    100042: Base HumanLThigh
+    100044: Base HumanLUpperarm
+    100046: Base HumanNeck
+    100048: Base HumanPelvis
+    100050: Base HumanRCalf
+    100052: Base HumanRCollarbone
+    100054: Base HumanRDigit11
+    100056: Base HumanRDigit12
+    100058: Base HumanRDigit13
+    100060: Base HumanRDigit21
+    100062: Base HumanRDigit22
+    100064: Base HumanRDigit23
+    100066: Base HumanRDigit31
+    100068: Base HumanRDigit32
+    100070: Base HumanRDigit33
+    100072: Base HumanRDigit41
+    100074: Base HumanRDigit42
+    100076: Base HumanRDigit43
+    100078: Base HumanRDigit51
+    100080: Base HumanRDigit52
+    100082: Base HumanRDigit53
+    100084: Base HumanRFoot
+    100086: Base HumanRForearm
+    100088: Base HumanRibcage
+    100090: Base HumanRPalm
+    100092: Base HumanRThigh
+    100094: Base HumanRUpperarm
+    100096: Base HumanSpine1
+    100098: Base HumanSpine2
+    100100: Boots_Low001
+    100102: //RootNode
+    100104: Character_Unwrapped
+    100106: Hair_Low001
+    100108: Hand_Low001
+    100110: Head_Low001
+    100112: Inner_Shirt_Low001
+    100114: Jacket_Low001
+    100116: Object002
+    100118: Pants_Low001
+    100120: Torghlight001
+    400000: Base HumanHead
+    400002: Base HumanLCalf
+    400004: Base HumanLCollarbone
+    400006: Base HumanLDigit11
+    400008: Base HumanLDigit12
+    400010: Base HumanLDigit13
+    400012: Base HumanLDigit21
+    400014: Base HumanLDigit22
+    400016: Base HumanLDigit23
+    400018: Base HumanLDigit31
+    400020: Base HumanLDigit32
+    400022: Base HumanLDigit33
+    400024: Base HumanLDigit41
+    400026: Base HumanLDigit42
+    400028: Base HumanLDigit43
+    400030: Base HumanLDigit51
+    400032: Base HumanLDigit52
+    400034: Base HumanLDigit53
+    400036: Base HumanLFoot
+    400038: Base HumanLForearm
+    400040: Base HumanLPalm
+    400042: Base HumanLThigh
+    400044: Base HumanLUpperarm
+    400046: Base HumanNeck
+    400048: Base HumanPelvis
+    400050: Base HumanRCalf
+    400052: Base HumanRCollarbone
+    400054: Base HumanRDigit11
+    400056: Base HumanRDigit12
+    400058: Base HumanRDigit13
+    400060: Base HumanRDigit21
+    400062: Base HumanRDigit22
+    400064: Base HumanRDigit23
+    400066: Base HumanRDigit31
+    400068: Base HumanRDigit32
+    400070: Base HumanRDigit33
+    400072: Base HumanRDigit41
+    400074: Base HumanRDigit42
+    400076: Base HumanRDigit43
+    400078: Base HumanRDigit51
+    400080: Base HumanRDigit52
+    400082: Base HumanRDigit53
+    400084: Base HumanRFoot
+    400086: Base HumanRForearm
+    400088: Base HumanRibcage
+    400090: Base HumanRPalm
+    400092: Base HumanRThigh
+    400094: Base HumanRUpperarm
+    400096: Base HumanSpine1
+    400098: Base HumanSpine2
+    400100: Boots_Low001
+    400102: //RootNode
+    400104: Character_Unwrapped
+    400106: Hair_Low001
+    400108: Hand_Low001
+    400110: Head_Low001
+    400112: Inner_Shirt_Low001
+    400114: Jacket_Low001
+    400116: Object002
+    400118: Pants_Low001
+    400120: Torghlight001
+    2100000: 'Material #13'
+    2100002: 'Material #14'
+    2100004: 'Material #19'
+    2100006: 'Material #20'
+    2100008: 'Material #18'
+    2100010: 'Material #16'
+    2100012: 'Material #17'
+    2100014: 'Material #15'
+    2300000: Object002
+    3300000: Object002
+    4300000: Object002
+    4300002: Boots_Low001
+    4300004: Jacket_Low001
+    4300006: Pants_Low001
+    4300008: Inner_Shirt_Low001
+    4300010: Hand_Low001
+    4300012: Head_Low001
+    4300014: Hair_Low001
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Boots_Low001
+    13700002: Hair_Low001
+    13700004: Hand_Low001
+    13700006: Head_Low001
+    13700008: Inner_Shirt_Low001
+    13700010: Jacket_Low001
+    13700012: Pants_Low001
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

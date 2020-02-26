@@ -5,7 +5,7 @@ using UnityEngine;
 public class ItemPickup : MonoBehaviour
 {
     public Item item;
-    //private Animator anim;
+    //public Animator animator;
     //public AudioClip clip;
     //public AudioManager source;
     //public GameObject icons;
@@ -32,7 +32,6 @@ public class ItemPickup : MonoBehaviour
         if(wasPickedUp)
         {
             Destroy(gameObject);
-            //anim.SetBool("wasPickedUp", true);
         }
     }
 }

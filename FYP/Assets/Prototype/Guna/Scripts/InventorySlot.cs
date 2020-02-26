@@ -39,7 +39,7 @@ public class InventorySlot : MonoBehaviour, ISelectHandler
     {
         if (item != null)
         {
-            Collider[] colliders = Physics.OverlapSphere(PlayerControls.instance.transform.position, 0.01f);
+            Collider[] colliders = Physics.OverlapSphere(PlayerControls.instance.transform.position, 0.05f);
 
             foreach(Collider c in colliders)
             {

@@ -60,7 +60,7 @@ public class LevelManager : MonoBehaviour
     public GameObject foundcigg;
     public GameObject randompotopt;
 
-    EndSceneManager esm;
+    public EndSceneManager esm;
     public GameObject endSceneManager;
     public bool winConditionsMet = false;
 
@@ -75,7 +75,6 @@ public class LevelManager : MonoBehaviour
         //keyy.SetActive(false);
         //theScore = 0;
         newspaperText.GetComponent<Text>().text = "Pieces : " + currentScore + " / 4";
-        esm = FindObjectOfType<EndSceneManager>();
     }
 
     // Update is called once per frame
@@ -93,8 +92,7 @@ public class LevelManager : MonoBehaviour
         option.SetActive(false);
         //winscreen.SetActive(true);
         winConditionsMet = true;
-        StartCoroutine(esm.Typing());
-        StartCoroutine(esm.ShowBG());
+        esm.CallTyping();
         staminaSlider.gameObject.SetActive(false);
         Player.gameObject.SetActive(false);
         print("print");
