@@ -18,6 +18,8 @@ public class FlashBackDialog : MonoBehaviour
     public bool alreadyTalked = false;
     public static bool isListening;
     public GameObject speechBubble;
+    public Footsteps footsteps;
+    public Animator animator;
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +45,8 @@ public class FlashBackDialog : MonoBehaviour
         if (other.tag == "Player" && conversated == false)
         {
             speechBubble.SetActive(true);
+            footsteps.enabled = false;
+            animator.SetBool("isMoving", false);
             isListening = true;
             bubbles1.SetActive(true);
             print("detected");
@@ -78,6 +82,7 @@ public class FlashBackDialog : MonoBehaviour
             textDisplay.text = "";
             convoDone = true;
             isListening = false;
+            footsteps.enabled = true;
             speechBubble.SetActive(false);
             continueButton.SetActive(false);
             alreadyTalked = true;

@@ -15,7 +15,9 @@ public class DialogueTrigger : MonoBehaviour
     public static bool isTalking;
     PlayerControls pc;
     public Radio radio;
-    public AudioSource audio;
+    //public AudioSource audioSource;
+    public Footsteps footsteps;
+    public Animator animator;
     /*
     private void Start()
     {
@@ -29,6 +31,8 @@ public class DialogueTrigger : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("Interact"))
             {
                 //pc.freezeMovement = true;
+                footsteps.enabled = false;
+                animator.SetBool("isMoving", false);
                 isTalking = true;
                 dialogue1.SetActive(true);
                 dialogueImage.enabled = (true);
@@ -74,6 +78,7 @@ public class DialogueTrigger : MonoBehaviour
         dialogue3.SetActive(false);
         dialogueImage.enabled = (false);
         isTalking = false;
+        footsteps.enabled = true;
     }
 
     /*public void Next()

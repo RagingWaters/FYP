@@ -19,6 +19,8 @@ public class tutorial : MonoBehaviour
 
     public Image dialogueImage;
 
+    public Footsteps footsteps;
+
     //public DialogueManager theDialogueManager;
     public static bool isTalking;
     PlayerControls pc;
@@ -47,6 +49,7 @@ public class tutorial : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space) && stated == false || Input.GetButtonDown("Interact") && stated == false)
             {
                 //pc.freezeMovement = true;
+                footsteps.enabled = false;
                 isTalking = true;
                 dialogue1.SetActive(true);
                 key1.SetActive(true);
@@ -76,6 +79,7 @@ public class tutorial : MonoBehaviour
             dialogue2.SetActive(false);
             dialogueImage.enabled = (false);
             isTalking = false;
+            footsteps.enabled = true;
             //pc.freezeMovement = false;
         }
     }
@@ -91,6 +95,7 @@ public class tutorial : MonoBehaviour
         dialogueImage.enabled = (true);
         yield return new WaitForSeconds(2f);
         isTalking = false;
+        footsteps.enabled = true;
         dialogue2.SetActive(false);
         dialogueImage.enabled = (false);
     }

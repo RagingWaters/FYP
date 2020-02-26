@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Main(Do NOT Touch)/Scenes/Beta Main Ghenel.unity
+    path: Assets/Main(Do NOT Touch)/Scenes/MainMenuPost.unity
     guid: d19e9f6b654e461468c080ea8a81a8d7
   - enabled: 0
     path: Assets/Main(Do NOT Touch)/Scenes/Main New.unity
